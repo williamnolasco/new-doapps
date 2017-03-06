@@ -1,0 +1,110 @@
+doctype html
+html(lang='es')
+	head
+		meta(charset='utf-8') 
+		title DoApps
+		link(rel='stylesheet', type='text/css', href='./client/js/Rcarousel/rcarousel.css')
+		link(rel='stylesheet', type='text/css', href='./client/css/main.css')
+		link(rel='stylesheet', type='text/css', href='./client/css/header.css')
+	body
+		include ./blocks/header.pug
+		section.we-love
+			.wancho 
+				.we-love-content
+					h1 Amamos lo que hacemos
+					h2
+						| Nos especializamos en desarrollo y diseño de
+						span interfaces móviles.
+					.row-buttons
+						a(href='#').g-btn.btn-green Contáctanos
+						a(href='#').g-btn.btn-transparent Nuestros trabajos
+				a(href='#').scroll
+					img(src='./client/img/scroll.png', width='22px', height='28px', alt='Scroll')
+					h6 Scroll para más
+		section.client
+			.wancho
+				.g-title
+					h5 
+						| Nuestros
+						span Clientes
+				.client-description
+					p Trabajamos con entidades privadas y del gobierno quienes apostaron por el desarrollo móvil como apoyo a su crecimiento.
+				#carousel
+					#slide01.slide
+						img(src='./client/img/upc.png')
+						img(src='./client/img/miraflores.png')
+						img(src='./client/img/congreso.png')
+						img(src='./client/img/marina.png')
+					#slide02.slide
+						img(src='./client/img/miraflores.png')
+						img(src='./client/img/congreso.png')
+						img(src='./client/img/marina.png')
+						img(src='./client/img/upc.png')
+					#slide03.slide
+						img(src='./client/img/marina.png')
+						img(src='./client/img/upc.png')
+						img(src='./client/img/miraflores.png')
+						img(src='./client/img/congreso.png')
+				#pages
+					a(href='javascript:void(0)', class='bullet')
+					a(href='javascript:void(0)', class='bullet off')
+					a(href='javascript:void(0)', class='bullet off')
+
+				a(href='#').g-btn.btn-green Contáctanos
+		section.we-develop
+			.wancho
+				.g-title
+					h5 
+						| Desarrollamos Aplicaciones
+						span Móviles Nativas
+				.we-develop-left
+					ul.we-develop-top
+						li
+							img(src='./client/img/check.png')
+							h6
+								| Integramos
+								span metodologías ágiles.
+						li
+							img(src='./client/img/check.png')
+							h6
+								| Usamos las últimas tecnologias para
+								span iOs y Android.
+						li
+							img(src='./client/img/check.png')
+							h6
+								| Expertos en la
+								span UX y UI
+								| de las interfaces móviles.
+						li
+							img(src='./client/img/check.png')
+							h6
+								| Creamos apps con
+								span éxito asegurado.
+					.we-develop-bottom
+						.item-we-develop
+							img(src='./client/img/we-develop1.png')
+							h6.timer1 140
+							h5 proyectos desarrollados
+						.item-we-develop
+							img(src='./client/img/we-develop2.png')
+							.row-timer
+								h6.timer2 50
+								h4 k
+							h5 Descargas en tiendas
+						.item-we-develop
+							img(src='./client/img/we-develop3.png')
+							h6.timer3 80
+							h5 clientes satisfechos
+				.we-develop-right
+					img(src='./client/img/borde-celular.png', width='381px', height='646px')
+					img(src='./client/img/fondo-celular.jpg')
+
+		script(src='./client/js/Rcarousel/jquery-1.7.1.min.js')
+		script(src='./client/js/Rcarousel/jquery.ui.core.min.js')
+		script(src='./client/js/Rcarousel/jquery.ui.widget.min.js')
+		script(src='./client/js/Rcarousel/jquery.ui.rcarousel.min.js')
+		script(type='text/javascript', src='./client/js/jquery.waypoints.js')
+		script(type='text/javascript', src='./client/js/contador.js')
+		script(src='./client/js/header.js')
+		script(src='./client/js/client.js')
+

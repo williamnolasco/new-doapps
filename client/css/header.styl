@@ -1,0 +1,34 @@
+@import 'mixin.styl'
+
+header
+	using-flex(row, space-between, center)
+	width 100%
+	padding 35px 80px 35px 112px
+	position absolute
+	left 0
+	top 0
+	z-index 2
+.list-items
+	using-flex(row, space-around, center)
+	list-style none
+	width 80%
+	max-width 780px
+	height 52px
+	position relative
+.item-link
+	display inline-block
+	text-decoration none
+	width 130px
+	text-align center
+	font-family 'Roboto-Medium'
+	font-size 17px
+	color white
+.movable-bar
+	width 130px
+	height 0
+	border-bottom 1px solid white
+	position absolute
+	left 0
+	bottom 0
+	transition all 0.5s ease
+				

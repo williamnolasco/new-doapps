@@ -1,0 +1,182 @@
+@import 'mixin.styl'
+
+*
+	margin 0
+	padding 0
+	box-sizing border-box
+.we-love
+	using-flex(column, center, center)
+	height 100vh
+	background-image url(../img/we-love.jpg)
+	using-background()
+	position relative
+	&:before
+		content ''
+		width 100%
+		height 100%
+		background linear-gradient(to bottom, rgba(0, 0, 0, 0.95) 0%,
+											rgba(0, 0, 0, 0.95) 20%,
+											rgba(0, 0, 0, 0.9) 40%,
+											rgba(0, 0, 0, 0.4) 100%)
+		position absolute
+		left 0
+		top 0
+.we-love-content
+	text-align center
+	color white
+	position relative
+	z-index 2
+	h1 
+		font-family 'Roboto-Bold'
+		font-size 66px
+	h2 
+		font-family 'Roboto-Light'
+		font-size 25px
+		margin-top 2px
+		span 
+			font-family 'Roboto-Italic'
+			font-weight bold
+			margin-left 10px
+.row-buttons
+	margin-top 25px
+	a 
+		&:nth-of-type(1)
+			margin-right 28px
+.scroll
+	using-flex(row, center, center)
+	flex-flow row nowrap
+	position absolute
+	left 50%
+	bottom 63px
+	-webkit-transform translateX(-50%)
+	transform translateX(-50%)
+	z-index 2
+	color white
+	h6 
+		font-family 'Roboto-Regular'
+		font-size 14px
+		margin-left 15px
+.client
+	padding 112px 0 60px
+	.wancho 
+		text-align center
+	.g-btn
+		margin-top 61px
+.client-description
+	width 100%
+	max-width 520px
+	margin 7px auto 0
+	p 
+		font-family 'Roboto-Light'
+		font-size 17px
+		text-align center
+		line-height 1.5
+		color #a0a0a0
+#pages
+	using-flex(row, space-between, center)
+	width 100px
+	margin auto
+	a 
+		width 12px
+		height 12px
+		background-color #727272
+		border-radius 50%
+		&:nth-of-type(1), &:nth-of-type(2), &:nth-of-type(3)
+			display none
+#carousel
+	margin -5px auto 0
+.slide
+	display flex !important
+	using-flex(row, space-around, center)
+.we-develop
+	background-image url(../img/we-develop.jpg)
+	using-background()
+	position relative
+	overflow hidden
+	padding 162px 0 14px
+	&:before
+		content ''
+		width 100%
+		height 100%
+		background radial-gradient(circle, rgba(green-doapps-dark, 0.8) 0%,
+											rgba(green-doapps-dark, 0.85) 25%,
+											rgba(green-doapps-dark, 0.9) 50%,
+											rgb(green-doapps-dark) 100%)
+		position absolute
+		left 0
+		top 0
+	.wancho 
+		using-flex(row, center, center)
+		position relative
+		z-index 2
+		.g-title
+			width 100%
+			max-width 600px
+			color white
+			margin auto
+			line-height 1.2
+			margin-bottom 32px
+			span 
+				display block
+.we-develop-left
+	width calc(100% - 381px)
+	padding-right 25px 
+.we-develop-right
+	width 381px
+	height 646px
+	position relative
+	img 
+		display block
+		max-width 100%
+		height auto
+		position absolute
+		left 0
+		bottom -40px
+		&:nth-of-type(2)
+			width 336px
+			left 50%
+			bottom -80px
+			-webkit-transform translateX(-50%)
+			transform translateX(-50%)
+.we-develop-top
+	li 
+		using-flex(row, flex-start, center)
+		margin-bottom 38px 
+		&:nth-last-child(1)
+			margin-bottom 0
+		img 
+			margin-right 23px
+		h6 
+			font-size 22px
+			font-family 'Roboto-Light'
+			color white
+			span 
+				font-family 'Roboto-Black'
+				margin 0 10px
+.we-develop-bottom
+	width 100%
+	using-flex(row, space-around, center)
+	margin-top 75px
+.item-we-develop
+	width 33.333%
+	padding 0 35px
+	border-right 2px dashed rgba(white, 0.4)
+	text-align center
+	color white
+	&:nth-last-child(1)
+		border-right 0
+	h6 
+		font-family 'Roboto-Black'
+		font-size 60px
+	h5 
+		line-height 1.2
+		font-family 'Roboto-Regular'
+		font-size 15px
+		text-transform uppercase
+.row-timer
+	using-flex(row, center, center)
+	flex-flow row nowrap
+	h4
+		font-family 'Roboto-Black'
+		font-size 60px
+	
