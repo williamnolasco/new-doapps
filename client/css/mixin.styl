@@ -1,3 +1,8 @@
+*
+	margin 0
+	padding 0
+	box-sizing border-box
+
 using-flex(direction, justify-content, align-items)
 	display flex 
 	flex-flow direction wrap
@@ -7,6 +12,10 @@ using-background()
 	background-size cover
 	backgrund-position center
 	background-repeat no-repeat
+img-responsive()
+	max-width 100%
+	height auto
+	display block
 	
 @font-face 
 	font-family 'Roboto-Thin'
@@ -33,6 +42,9 @@ using-background()
 green-doapps = #26ad91
 green-doapps-dark = #239e84
 
+body
+	overflow-x hidden
+
 h1, h2, h3, h4, h5, h6 
 	font-weight normal
 a 
@@ -40,6 +52,11 @@ a
 	display inline-block
 ul 
 	list-style none
+input, select, textarea, button
+	appearance none
+	outline 0
+	border 0
+	box-shadow none
 .wancho 
 	width 95%
 	max-width 1100px
@@ -69,12 +86,11 @@ ul
 		right -20px
 		transform translate(50%, -50%)
 	&:hover
-		color green-doapps
 		z-index 2
 		&:before
-			animation show-before 1s both
+			animation show-before 0.7s both
 		&:after
-			animation show-after 1s both
+			animation show-after 0.7s both
 @keyframes show-before
 	0%
 		left -20px
@@ -103,14 +119,19 @@ ul
 	line-height 60px
 	background-color green-doapps
 	color white
+	&:before, &:after 
+		background-color #3cc8ab
 .btn-transparent
 	line-height 56px
 	background-color transparent 
 	border 2px solid green-doapps
 	color green-doapps
+	&:before, &:after 
+		background-color rgba(0, 0, 0, 0.4)
 .g-title
 	text-align center
 	color #070707
+	line-height 1.2
 	h5
 		font-size 50px
 		font-family 'Roboto-Thin'

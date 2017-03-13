@@ -3,9 +3,10 @@ html(lang='es')
 	head
 		meta(charset='utf-8') 
 		title DoApps
-		link(rel='stylesheet', type='text/css', href='./client/js/Rcarousel/rcarousel.css')
+		link(rel='stylesheet', type='text/css', href='./client/js/owl-carousel/owl.carousel.css')
 		link(rel='stylesheet', type='text/css', href='./client/css/main.css')
 		link(rel='stylesheet', type='text/css', href='./client/css/header.css')
+		link(rel='stylesheet', type='text/css', href='./client/css/footer.css')
 	body
 		include ./blocks/header.pug
 		section.we-love
@@ -18,7 +19,7 @@ html(lang='es')
 					.row-buttons
 						a(href='#').g-btn.btn-green Contáctanos
 						a(href='#').g-btn.btn-transparent Nuestros trabajos
-				a(href='#').scroll
+				a(href='javascript:void(0)').scroll-down
 					img(src='./client/img/scroll.png', width='22px', height='28px', alt='Scroll')
 					h6 Scroll para más
 		section.client
@@ -29,28 +30,23 @@ html(lang='es')
 						span Clientes
 				.client-description
 					p Trabajamos con entidades privadas y del gobierno quienes apostaron por el desarrollo móvil como apoyo a su crecimiento.
-				#carousel
-					#slide01.slide
+				.slider-clients-container
+					.row-clients
 						img(src='./client/img/upc.png')
 						img(src='./client/img/miraflores.png')
 						img(src='./client/img/congreso.png')
 						img(src='./client/img/marina.png')
-					#slide02.slide
+					.row-clients
 						img(src='./client/img/miraflores.png')
 						img(src='./client/img/congreso.png')
 						img(src='./client/img/marina.png')
 						img(src='./client/img/upc.png')
-					#slide03.slide
+					.row-clients
 						img(src='./client/img/marina.png')
 						img(src='./client/img/upc.png')
 						img(src='./client/img/miraflores.png')
 						img(src='./client/img/congreso.png')
-				#pages
-					a(href='javascript:void(0)', class='bullet')
-					a(href='javascript:void(0)', class='bullet off')
-					a(href='javascript:void(0)', class='bullet off')
-
-				a(href='#').g-btn.btn-green Contáctanos
+				a(href='#').g-btn.btn-green.btn-client Contáctanos
 		section.we-develop
 			.wancho
 				.g-title
@@ -98,13 +94,61 @@ html(lang='es')
 				.we-develop-right
 					img(src='./client/img/borde-celular.png', width='381px', height='646px')
 					img(src='./client/img/fondo-celular.jpg')
+		section.works
+			.g-title
+				h5 
+					| Casos de
+					span Éxito
+			.works-container
+				.work-card
+					img(src='./client/img/work1.jpg').work-background
+					img(src='./client/img/work1-celular.png' width='190', height='386').img-cel
+					.work-card-description
+						h5 Descubre San Isidro
+						h6 Para la municipalidad de San Isidro
+						a(href='detail-project.html').g-btn.btn-green Conoce más
+				.work-card
+					img(src='./client/img/work2.jpg').work-background
+					img(src='./client/img/work2-celular.png' width='190', height='386').img-cel
+					.work-card-description
+						h5 Descubre San Isidro
+						h6 Para la municipalidad de San Isidro
+						a(href='detail-project.html').g-btn.btn-green Conoce más
+				.work-card
+					img(src='./client/img/work3.jpg').work-background
+					img(src='./client/img/work3-celular.png' width='190', height='386').img-cel
+					.work-card-description
+						h5 Descubre San Isidro
+						h6 Para la municipalidad de San Isidro
+						a(href='detail-project.html').g-btn.btn-green Conoce más
+				.work-card
+					img(src='./client/img/work4.jpg').work-background
+					img(src='./client/img/work4-celular.png' width='190', height='386').img-cel
+					.work-card-description
+						h5 Descubre San Isidro
+						h6 Para la municipalidad de San Isidro
+						a(href='detail-project.html').g-btn.btn-green Conoce más
+				.work-card
+					img(src='./client/img/work5.jpg').work-background
+					img(src='./client/img/work5-celular.png' width='190', height='386').img-cel
+					.work-card-description
+						h5 Descubre San Isidro
+						h6 Para la municipalidad de San Isidro
+						a(href='detail-project.html').g-btn.btn-green Conoce más
+				.work-card
+					img(src='./client/img/work6.jpg').work-background
+					img(src='./client/img/work6-celular.png' width='190', height='386').img-cel
+					.work-card-description
+						h5 Descubre San Isidro
+						h6 Para la municipalidad de San Isidro
+						a(href='detail-project.html').g-btn.btn-green Conoce más
+		include ./blocks/footer.pug
 
-		script(src='./client/js/Rcarousel/jquery-1.7.1.min.js')
-		script(src='./client/js/Rcarousel/jquery.ui.core.min.js')
-		script(src='./client/js/Rcarousel/jquery.ui.widget.min.js')
-		script(src='./client/js/Rcarousel/jquery.ui.rcarousel.min.js')
+		script(src='./client/js/jquery1.8.3.min.js')
+		script(src='./client/js/owl-carousel/owl.carousel.js')
 		script(type='text/javascript', src='./client/js/jquery.waypoints.js')
 		script(type='text/javascript', src='./client/js/contador.js')
+		script(src='./client/js/footer.js')
 		script(src='./client/js/header.js')
-		script(src='./client/js/client.js')
+		script(src='./client/js/index.js')
 

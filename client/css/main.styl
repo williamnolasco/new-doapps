@@ -1,9 +1,5 @@
 @import 'mixin.styl'
 
-*
-	margin 0
-	padding 0
-	box-sizing border-box
 .we-love
 	using-flex(column, center, center)
 	height 100vh
@@ -42,7 +38,7 @@
 	a 
 		&:nth-of-type(1)
 			margin-right 28px
-.scroll
+.scroll-down
 	using-flex(row, center, center)
 	flex-flow row nowrap
 	position absolute
@@ -57,37 +53,48 @@
 		font-size 14px
 		margin-left 15px
 .client
-	padding 112px 0 60px
+	padding 114px 0 60px
 	.wancho 
 		text-align center
 	.g-btn
 		margin-top 61px
+		@media screen and (min-width 1024px)
+			transition all 0.7s
+			transform translateY(100px) scaleX(0)
+			opacity 0
+			&.active
+				transform translateY(0) scaleX(1)
+				opacity 1
 .client-description
 	width 100%
 	max-width 520px
-	margin 7px auto 0
+	margin 9px auto 0
 	p 
 		font-family 'Roboto-Light'
 		font-size 17px
 		text-align center
 		line-height 1.5
 		color #a0a0a0
-#pages
-	using-flex(row, space-between, center)
-	width 100px
-	margin auto
-	a 
-		width 12px
-		height 12px
-		background-color #727272
-		border-radius 50%
-		&:nth-of-type(1), &:nth-of-type(2), &:nth-of-type(3)
-			display none
-#carousel
-	margin -5px auto 0
-.slide
-	display flex !important
+.row-clients
 	using-flex(row, space-around, center)
+	margin-top 50px
+.owl-dots
+	using-flex(row, center, center)
+	margin-top 35px
+.owl-dot
+	width 12px
+	height 12px
+	background-color #727272
+	border-radius 50%
+	transition all 0.5s
+	cursor pointer
+	&.active, &:hover
+		width 15px
+		height 15px
+		background-color white
+		border 2px solid #727272
+	&:nth-of-type(2)
+		margin 0 25px
 .we-develop
 	background-image url(../img/we-develop.jpg)
 	using-background()
@@ -125,6 +132,11 @@
 	width 381px
 	height 646px
 	position relative
+	@media screen and (min-width 1024px)
+		transition all 0.7s
+		transform translateY(100%)
+		&.active
+			transform translateY(0)
 	img 
 		display block
 		max-width 100%
@@ -155,7 +167,7 @@
 				margin 0 10px
 .we-develop-bottom
 	width 100%
-	using-flex(row, space-around, center)
+	using-flex(row, space-around, flex-end)
 	margin-top 75px
 .item-we-develop
 	width 33.333%
@@ -179,4 +191,81 @@
 	h4
 		font-family 'Roboto-Black'
 		font-size 60px
+.works 
+	.g-title 
+		margin 62px 0 65px
+.works-container
+	using-flex(row, space-between, center)
+.work-card-description
+	using-flex(column, center, center)
+	width 100%
+	height 100%
+	background-color rgba(0, 0, 0, 0.77)
+	padding 0 63px
+	position absolute
+	let 0
+	top 0
+	transition all 0.5s ease
+	transform scale(0)
+	h5, h6
+		color white
+		text-transform uppercase
+		text-align center
+		line-height 1
+	h5, h6, a
+		opacity 0
+		transition all 0.5s ease 0.4s
+	h5 
+		font-family 'Roboto-Black'
+		font-size 32px
+	h6
+		font-family 'Roboto-Regular'
+		font-size 16px
+		margin 5px 0 15px
+.work-card 
+	using-flex(row, center, center)
+	width calc(33.333% - 0.666px)
+	height 464px
+	using-background()
+	margin-bottom 1px
+	position relative
+	overflow hidden
+	&:nth-of-type(2), &:nth-last-child(2)
+		margin 0 1px 1px
+	&:hover	
+		.work-card-description
+			transform scale(1)
+			-webkit-transform scale(1)
+			h5, h6, a 
+				opacity 1
+		.work-background
+			-webkit-transform scale(1.4)
+			transform scale(1.4)
+	.img-cel
+		position absolute
+		left 50%
+		top 50%
+		-webkit-transform translateX(-50%) translateY(-50%)
+		transform translateX(-50%) translateY(-50%)
+.work-background
+	img-responsive()
+	min-height 100%
+	position absolute
+	left 0
+	top 0
+	transition all 0.5s
+	/*
+	&:nth-of-type(1)
+		background-image url(../img/work1.jpg)
+	&:nth-of-type(2)
+		background-image url(../img/work2.jpg)
+	&:nth-of-type(3)
+		background-image url(../img/work3.jpg)
+	&:nth-of-type(4)
+		background-image url(../img/work4.jpg)
+	&:nth-of-type(5)
+		background-image url(../img/work5.jpg)
+	&:nth-of-type(6)
+		background-image url(../img/work6.jpg)*/
+		
 	

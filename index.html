@@ -3,9 +3,10 @@
   <head>
     <meta charset="utf-8">
     <title>DoApps</title>
-    <link rel="stylesheet" type="text/css" href="./client/js/Rcarousel/rcarousel.css">
+    <link rel="stylesheet" type="text/css" href="./client/js/owl-carousel/owl.carousel.css">
     <link rel="stylesheet" type="text/css" href="./client/css/main.css">
     <link rel="stylesheet" type="text/css" href="./client/css/header.css">
+    <link rel="stylesheet" type="text/css" href="./client/css/footer.css">
   </head>
   <body>
     <header> <img src="./client/img/logo.png" width="228px" height="67px" alt="DoApps">
@@ -24,7 +25,7 @@
           <h1>Amamos lo que hacemos</h1>
           <h2>Nos especializamos en desarrollo y diseño de<span>interfaces móviles.</span></h2>
           <div class="row-buttons"><a class="g-btn btn-green" href="#">Contáctanos</a><a class="g-btn btn-transparent" href="#">Nuestros trabajos</a></div>
-        </div><a class="scroll" href="#"><img src="./client/img/scroll.png" width="22px" height="28px" alt="Scroll">
+        </div><a class="scroll-down" href="javascript:void(0)"><img src="./client/img/scroll.png" width="22px" height="28px" alt="Scroll">
           <h6>Scroll para más</h6></a>
       </div>
     </section>
@@ -37,12 +38,11 @@
         <div class="client-description">
           <p>Trabajamos con entidades privadas y del gobierno quienes apostaron por el desarrollo móvil como apoyo a su crecimiento.</p>
         </div>
-        <div id="carousel">
-          <div class="slide" id="slide01"><img src="./client/img/upc.png"><img src="./client/img/miraflores.png"><img src="./client/img/congreso.png"><img src="./client/img/marina.png"></div>
-          <div class="slide" id="slide02"><img src="./client/img/miraflores.png"><img src="./client/img/congreso.png"><img src="./client/img/marina.png"><img src="./client/img/upc.png"></div>
-          <div class="slide" id="slide03"><img src="./client/img/marina.png"><img src="./client/img/upc.png"><img src="./client/img/miraflores.png"><img src="./client/img/congreso.png"></div>
-        </div>
-        <div id="pages"><a class="bullet" href="javascript:void(0)"></a><a class="bullet off" href="javascript:void(0)"></a><a class="bullet off" href="javascript:void(0)"></a></div><a class="g-btn btn-green" href="#">Contáctanos</a>
+        <div class="slider-clients-container">
+          <div class="row-clients"><img src="./client/img/upc.png"><img src="./client/img/miraflores.png"><img src="./client/img/congreso.png"><img src="./client/img/marina.png"></div>
+          <div class="row-clients"><img src="./client/img/miraflores.png"><img src="./client/img/congreso.png"><img src="./client/img/marina.png"><img src="./client/img/upc.png"></div>
+          <div class="row-clients"><img src="./client/img/marina.png"><img src="./client/img/upc.png"><img src="./client/img/miraflores.png"><img src="./client/img/congreso.png"></div>
+        </div><a class="g-btn btn-green btn-client" href="#">Contáctanos</a>
       </div>
     </section>
     <section class="we-develop">
@@ -87,13 +87,111 @@
         <div class="we-develop-right"><img src="./client/img/borde-celular.png" width="381px" height="646px"><img src="./client/img/fondo-celular.jpg"></div>
       </div>
     </section>
-    <script src="./client/js/Rcarousel/jquery-1.7.1.min.js"></script>
-    <script src="./client/js/Rcarousel/jquery.ui.core.min.js"></script>
-    <script src="./client/js/Rcarousel/jquery.ui.widget.min.js"></script>
-    <script src="./client/js/Rcarousel/jquery.ui.rcarousel.min.js"></script>
+    <section class="works">
+      <div class="g-title">
+        <h5>
+           Casos de<span>Éxito</span></h5>
+      </div>
+      <div class="works-container">
+        <div class="work-card"><img class="work-background" src="./client/img/work1.jpg"><img class="img-cel" src="./client/img/work1-celular.png" width="190" height="386">
+          <div class="work-card-description">
+            <h5>Descubre San Isidro</h5>
+            <h6>Para la municipalidad de San Isidro</h6><a class="g-btn btn-green" href="detail-project.html">Conoce más</a>
+          </div>
+        </div>
+        <div class="work-card"><img class="work-background" src="./client/img/work2.jpg"><img class="img-cel" src="./client/img/work2-celular.png" width="190" height="386">
+          <div class="work-card-description">
+            <h5>Descubre San Isidro</h5>
+            <h6>Para la municipalidad de San Isidro</h6><a class="g-btn btn-green" href="detail-project.html">Conoce más</a>
+          </div>
+        </div>
+        <div class="work-card"><img class="work-background" src="./client/img/work3.jpg"><img class="img-cel" src="./client/img/work3-celular.png" width="190" height="386">
+          <div class="work-card-description">
+            <h5>Descubre San Isidro</h5>
+            <h6>Para la municipalidad de San Isidro</h6><a class="g-btn btn-green" href="detail-project.html">Conoce más</a>
+          </div>
+        </div>
+        <div class="work-card"><img class="work-background" src="./client/img/work4.jpg"><img class="img-cel" src="./client/img/work4-celular.png" width="190" height="386">
+          <div class="work-card-description">
+            <h5>Descubre San Isidro</h5>
+            <h6>Para la municipalidad de San Isidro</h6><a class="g-btn btn-green" href="detail-project.html">Conoce más</a>
+          </div>
+        </div>
+        <div class="work-card"><img class="work-background" src="./client/img/work5.jpg"><img class="img-cel" src="./client/img/work5-celular.png" width="190" height="386">
+          <div class="work-card-description">
+            <h5>Descubre San Isidro</h5>
+            <h6>Para la municipalidad de San Isidro</h6><a class="g-btn btn-green" href="detail-project.html">Conoce más</a>
+          </div>
+        </div>
+        <div class="work-card"><img class="work-background" src="./client/img/work6.jpg"><img class="img-cel" src="./client/img/work6-celular.png" width="190" height="386">
+          <div class="work-card-description">
+            <h5>Descubre San Isidro</h5>
+            <h6>Para la municipalidad de San Isidro</h6><a class="g-btn btn-green" href="detail-project.html">Conoce más</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="footer-top">
+      <div class="wancho"> 
+        <div class="g-title">
+          <h5>
+             Cúentanos sobre <br><span>tu proyecto</span></h5>
+        </div>
+        <form class="footer-form">
+          <div class="input-container">
+            <input class="form-input" id="name">
+            <div class="row-input-content"><img src="./client/img/input-name.png" width="38" height="32">
+              <label for="name">Cúal es tu nombre?</label>
+            </div><span class="lively-bar"></span>
+          </div>
+          <div class="input-container">
+            <input class="form-input" id="email">
+            <div class="row-input-content"><img src="./client/img/input-email.png" width="38" height="32">
+              <label for="email">Cúal es tu correo?</label>
+            </div><span class="lively-bar"></span>
+          </div>
+          <div class="input-container">
+            <input class="form-input" id="tel">
+            <div class="row-input-content"><img src="./client/img/input-tel.png" width="38" height="32">
+              <label for="tel">Cúal es tu teléfono?</label>
+            </div><span class="lively-bar"></span>
+          </div>
+          <div class="input-container">
+            <input class="form-input" id="product">
+            <div class="row-input-content"><img src="./client/img/input-product.png" width="38" height="32">
+              <label for="product">Elige un producto?</label>
+            </div><span class="lively-bar"></span>
+          </div>
+          <div class="input-container textarea-container">
+            <textarea class="form-input" id="write"></textarea>
+            <div class="row-input-content"><img src="./client/img/input-write.png" width="38" height="32">
+              <label for="write">Describenos tu proyecto</label>
+            </div><span class="lively-bar"></span>
+          </div>
+          <button class="g-btn btn-green button-form">Empecemos!</button>
+        </form>
+      </div>
+    </div>
+    <footer class="footer-bottom">
+      <div class="wancho"> <img class="logo-footer" src="./client/img/logo-footer.png">
+        <div class="footer-bottom-left">
+          <div class="footer-item"><img src="./client/img/footer-direction.png">
+            <h6>Av. Aramburú #856 Of.301 / Surquillo</h6>
+          </div>
+          <div class="footer-item"><img src="./client/img/footer-email.png"><a href="mailto:hola@doapps.me">hola@doapps.me</a></div>
+          <div class="footer-item"><img src="./client/img/footer-tel.png"><a href="tel:2832025">(+51) 283 2025</a><span>/</span><a href="tel:986077524">986077524</a></div>
+          <div class="footer-copyright">
+            <h5>&copy 2017 DoApps S.A.C Todos los derechos reservados</h5>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="./client/js/jquery1.8.3.min.js"></script>
+    <script src="./client/js/owl-carousel/owl.carousel.js"></script>
     <script type="text/javascript" src="./client/js/jquery.waypoints.js"></script>
     <script type="text/javascript" src="./client/js/contador.js"></script>
+    <script src="./client/js/footer.js"></script>
     <script src="./client/js/header.js"></script>
-    <script src="./client/js/client.js"></script>
+    <script src="./client/js/index.js"></script>
   </body>
 </html>
