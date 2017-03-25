@@ -1,0 +1,43 @@
+@import 'mixin.styl'
+
+.products-title
+	text-align center
+	padding 120px 0
+	.g-title
+		span
+			display block
+.product-item
+	padding 120px 0
+	display flex
+	flex-direction column
+	&:nth-child(odd)
+		background-color #fcfcfc
+		.cnt-products
+			flex-direction row-reverse
+		.prod-left
+			padding-left 70px
+			padding-right 0
+	
+.cnt-products
+	max-width 1000px
+	margin auto
+	justify-content space-between
+	align-items center
+	display flex
+	.prod-left
+		padding-right 70px
+		.g-title
+			text-align left
+			margin-bottom 40px
+			span
+				margin 0
+	.prod-right
+		width 365px
+.product-item-paragraph
+	margin-bottom 30px
+	p
+		font-size 22px
+		font-family 'Roboto-Regular'
+		line-height 1.5
+	strong
+		font-family 'Roboto-Bold'
