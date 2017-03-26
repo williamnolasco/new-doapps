@@ -5,16 +5,11 @@ html(lang='es')
 		title Pideloo
 		link(rel='stylesheet', type='text/css', href='./client/css/header.css')
 		link(rel='stylesheet', type='text/css', href='./client/css/footer.css')
+		link(rel='stylesheet', type='text/css', href='./client/css/banner.css')
 		link(rel='stylesheet', type='text/css', href='./client/css/products.css')
-		link(rel='stylesheet', type='text/css', href='./client/css/detail-project.css')
 	body 
 		include ./blocks/header.pug
-		section.project-title
-			.wancho
-				.project-title-left
-					h5 Comida Rápida
-					h6 Aplicación Nativa Android para Pideloo
-				img(src='./client/img/detail-project/project-title-cel.png' width='329' height='478')
+		include ./blocks/banner.pug
 		section.products-title
 			.wancho
 				.g-title
