@@ -1,0 +1,63 @@
+doctype html
+html(lang='es')
+	head
+		meta(charset='utf-8') 
+		title Pideloo
+		link(rel='stylesheet', type='text/css', href='./client/css/header.css')
+		link(rel='stylesheet', type='text/css', href='./client/css/footer.css')
+		link(rel='stylesheet', type='text/css', href='./client/css/banner.css')
+		link(rel='stylesheet', type='text/css', href='./client/css/team.css')
+	body 
+		include ./blocks/header.pug
+		include ./blocks/banner.pug
+		section.team-title
+			.wancho
+				.g-title
+					h5 
+						| Éstos somos quienes
+						span formamos DoApps 
+					p ¿Quieres ser parte de nuestro equipo?
+					a(href='#').g-btn.btn-transparent postula aquí
+		section.team
+			.team-item
+				.left
+					figure.team-img(style='background-image: url(./client/img/team/team-img-1.jpg);')
+						figcaption ANGEL 
+							span ESPINOZA
+				.right
+					figure.team-img(style='background-image: url(./client/img/team/team-img-2.jpg);')
+						figcaption JORGE
+							span RAMIREZ 
+					figure.team-img(style='background-image: url(./client/img/team/team-img-3.jpg);')
+						figcaption WILLIAM 
+							span SULCA
+			.team-item
+				.left
+					figure.team-img(style='background-image: url(./client/img/team/team-img-7.jpg);')
+						figcaption JONATHAN
+							span NOLASCO
+				.right
+					figure.team-img(style='background-image: url(./client/img/team/team-img-4.jpg);')
+						figcaption ANGEL 
+							span ESPINOZA
+					figure.team-img(style='background-image: url(./client/img/team/team-img-5.jpg);')
+						figcaption ANGEL 
+							span ESPINOZA
+			.team-item
+				.left
+					figure.team-img(style='background-image: url(./client/img/team/team-img-8.jpg);')
+						figcaption ANGEL 
+							span ESPINOZA
+				.right
+					figure.team-img(style='background-image: url(./client/img/team/team-img-2.jpg);')
+						figcaption ANGEL 
+							span ESPINOZA
+					figure.team-img(style='background-image: url(./client/img/team/team-img-3.jpg);')
+						figcaption ANGEL 
+							span ESPINOZA
+		include ./blocks/footer.pug
+
+		script(src='./client/js/jquery1.8.3.min.js')
+		script(type='text/javascript', src='./client/js/jquery.waypoints.js')
+		script(src='./client/js/footer.js')
+		script(src='./client/js/header.js')
