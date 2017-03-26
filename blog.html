@@ -3,17 +3,153 @@
   <head>
     <meta charset="utf-8">
     <title>Blog</title>
+    <link rel="stylesheet" type="text/css" href="./client/css/mixin.css">
+    <link rel="stylesheet" type="text/css" href="./client/css/header.css">
+    <link rel="stylesheet" type="text/css" href="./client/css/footer.css">
     <link rel="stylesheet" type="text/css" href="./client/css/banner.css">
+    <link rel="stylesheet" type="text/css" href="./client/css/blog.css">
   </head>
   <body>
-    <div class="g-banner">
+    <header> <img src="./client/img/logo.png" width="228px" height="67px" alt="DoApps">
+      <ul class="list-items"><span class="movable-bar"></span>
+        <li><a class="item-link" href="#">Servicios</a></li>
+        <li><a class="item-link" href="#">Casos de Éxito</a></li>
+        <li><a class="item-link" href="#">Productos</a></li>
+        <li><a class="item-link" href="#">Equipo</a></li>
+        <li><a class="item-link" href="#">Blog</a></li>
+        <li><a class="item-link" href="#">Contacto</a></li>
+      </ul>
+    </header>
+    <section class="blog g-banner">
       <div class="wancho"> 
         <div class="g-banner-content">
-          <h5>Desarrollamos productos</h5>
+          <h5>Creamos historias</h5>
           <h6>
-             a medida de lo que <strong>requiera el cliente</strong></h6>
+             Relacionadas con la tecnología en general<strong>en el mundo entero.</strong></h6>
         </div>
       </div>
+    </section>
+    <section class="blog-content">
+      <div class="wancho">
+        <div class="blog-content-title">
+          <h6>Publicaciones más recientes</h6>
+        </div>
+        <div class="blog-new-big">
+          <figure class="new-big-photo category code"><img src="./client/img/blog/blog-new-big.jpg" width="772px" height="397px"></figure>
+          <div class="blog-new-description">
+            <h2>¿Cómo generar apps móviles desde cero?</h2>
+            <p>Aplicaciones Android, iOs, desarrollo móvil y mucho más, sin tener muchos conocimientos previos.</p>
+            <div class="row-author">
+              <figure><img src="./client/"></figure>
+              <div class="author-name">
+                <h5>Ángel Espinoza</h5>
+                <h6>Mar 14</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="blog-list-new-small">
+          <div class="new-small">
+            <figure class="new-small-photo"><img src=""></figure>
+            <div class="blog-new-description">
+              <h2>¿Cómo generar apps móviles desde cero?</h2>
+              <p>Aplicaciones Android, iOs, desarrollo móvil y mucho más, sin tener muchos conocimientos previos.</p>
+              <div class="row-author">
+                <figure><img src=""></figure>
+                <div class="author-name">
+                  <h5>Ángel Espinoza</h5>
+                  <h6>Mar 14</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="blog-pagination">
+            <div class="number-pag">
+              <h6>1</h6>
+            </div>
+            <div class="number-pag">
+              <h6>2</h6>
+            </div>
+            <div class="number-pag">
+              <h6>3</h6>
+            </div>
+            <div class="number-pag">
+              <h6>4</h6>
+            </div>
+            <div class="number-pag">
+              <h6>5</h6>
+            </div>
+          </div>
+        </div>
+        <div class="publicity">
+          <div class="question">
+            <figure class="quesiton-icon"><img src=""></figure>
+            <h5>Nuestra pregunta es</h5>
+            <h6>¿Te parece útil que se realice un curso de Github para desarrolladores?</h6>
+            <div class="question-buttons"><a class="g-btn btn-transparent" href="#">SI</a><a class="g-btn btn-transparent" href="#">NO</a></div>
+          </div>
+          <figure class="publicity-image"><img src=""></figure>
+        </div>
+      </div>
+    </section>
+    <div class="footer-top">
+      <div class="wancho"> 
+        <div class="g-title">
+          <h5>
+             Cúentanos sobre <br><span>tu proyecto</span></h5>
+        </div>
+        <form class="footer-form">
+          <div class="input-container">
+            <input class="form-input" id="name">
+            <div class="row-input-content"><img src="./client/img/input-name.png" width="38" height="32">
+              <label for="name">Cúal es tu nombre?</label>
+            </div><span class="lively-bar"></span>
+          </div>
+          <div class="input-container">
+            <input class="form-input" id="email">
+            <div class="row-input-content"><img src="./client/img/input-email.png" width="38" height="32">
+              <label for="email">Cúal es tu correo?</label>
+            </div><span class="lively-bar"></span>
+          </div>
+          <div class="input-container">
+            <input class="form-input" id="tel">
+            <div class="row-input-content"><img src="./client/img/input-tel.png" width="38" height="32">
+              <label for="tel">Cúal es tu teléfono?</label>
+            </div><span class="lively-bar"></span>
+          </div>
+          <div class="input-container">
+            <input class="form-input" id="product">
+            <div class="row-input-content"><img src="./client/img/input-product.png" width="38" height="32">
+              <label for="product">Elige un producto?</label>
+            </div><span class="lively-bar"></span>
+          </div>
+          <div class="input-container textarea-container">
+            <textarea class="form-input" id="write"></textarea>
+            <div class="row-input-content"><img src="./client/img/input-write.png" width="38" height="32">
+              <label for="write">Describenos tu proyecto</label>
+            </div><span class="lively-bar"></span>
+          </div>
+          <button class="g-btn btn-green button-form">Empecemos!</button>
+        </form>
+      </div>
     </div>
+    <footer class="footer-bottom">
+      <div class="wancho"> <img class="logo-footer" src="./client/img/logo-footer.png">
+        <div class="footer-bottom-left">
+          <div class="footer-item"><img src="./client/img/footer-direction.png">
+            <h6>Av. Aramburú #856 Of.301 / Surquillo</h6>
+          </div>
+          <div class="footer-item"><img src="./client/img/footer-email.png"><a href="mailto:hola@doapps.me">hola@doapps.me</a></div>
+          <div class="footer-item"><img src="./client/img/footer-tel.png"><a href="tel:2832025">(+51) 283 2025</a><span>/</span><a href="tel:986077524">986077524</a></div>
+          <div class="footer-copyright">
+            <h5>&copy 2017 DoApps S.A.C Todos los derechos reservados</h5>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="./client/js/jquery1.8.3.min.js"></script>
+    <script src="./client/js/jquery.waypoints.js"></script>
+    <script src="./client/js/footer.js"></script>
+    <script src="./client/js/header.js"></script>
   </body>
 </html>

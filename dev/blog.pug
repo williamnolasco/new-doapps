@@ -3,6 +3,76 @@ html(lang='es')
 	head
 		meta(charset='utf-8') 
 		title Blog
+		link(rel='stylesheet', type='text/css', href='./client/css/mixin.css')
+		link(rel='stylesheet', type='text/css', href='./client/css/header.css')
+		link(rel='stylesheet', type='text/css', href='./client/css/footer.css')
 		link(rel='stylesheet', type='text/css', href='./client/css/banner.css')
+		link(rel='stylesheet', type='text/css', href='./client/css/blog.css')
 	body
-		include ./blocks/banner.pug
+		include ./blocks/header.pug
+		section.blog.g-banner
+			.wancho 
+				.g-banner-content
+					h5 Creamos historias
+					h6 
+						| Relacionadas con la tecnología en general
+						strong en el mundo entero.
+		section.blog-content
+			.wancho
+				.blog-content-title
+					h6 Publicaciones más recientes
+				.blog-new-big
+					figure.new-big-photo.category.code
+						img(src='./client/img/blog/blog-new-big.jpg' width='772px' height='397px')
+					.blog-new-description
+						h2 ¿Cómo generar apps móviles desde cero?
+						p Aplicaciones Android, iOs, desarrollo móvil y mucho más, sin tener muchos conocimientos previos.
+						.row-author
+							figure
+								img(src='./client/')
+							.author-name
+								h5 Ángel Espinoza
+								h6 Mar 14
+				.blog-list-new-small
+					.new-small
+						figure.new-small-photo
+							img(src='')
+						.blog-new-description
+							h2 ¿Cómo generar apps móviles desde cero?
+							p Aplicaciones Android, iOs, desarrollo móvil y mucho más, sin tener muchos conocimientos previos.
+							.row-author
+								figure
+									img(src='')
+								.author-name
+									h5 Ángel Espinoza
+									h6 Mar 14
+					.blog-pagination
+						.number-pag
+							h6 1
+						.number-pag
+							h6 2
+						.number-pag
+							h6 3
+						.number-pag
+							h6 4
+						.number-pag
+							h6 5
+				.publicity
+					.question
+						figure.quesiton-icon
+							img(src='')
+						h5 Nuestra pregunta es
+						h6 ¿Te parece útil que se realice un curso de Github para desarrolladores?
+						.question-buttons
+							a(href='#').g-btn.btn-transparent SI
+							a(href='#').g-btn.btn-transparent NO
+					figure.publicity-image
+						img(src='')
+		include ./blocks/footer.pug
+
+		script(src='./client/js/jquery1.8.3.min.js')
+		script(src='./client/js/jquery.waypoints.js')
+		script(src='./client/js/footer.js')
+		script(src='./client/js/header.js')
+
+
