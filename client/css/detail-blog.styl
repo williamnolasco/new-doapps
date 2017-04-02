@@ -1,0 +1,136 @@
+@import 'mixin.styl'
+
+.detail-blog-content
+	padding 132px 0 23px
+	.wancho
+		max-width 1168px
+	.blog-new-description
+		padding 38px 0 0
+		p 
+			line-height 1.25
+	.row-author
+		margin-top 27px
+.detail-blog-new
+	width 66%
+	max-width 771px
+.detail-blog-new-title
+	margin-bottom 43px
+	h3 
+		font-family 'Roboto-Bold'
+		font-size 50px
+		color #070707
+		line-height 1.15
+.detail-blog-new-photo
+	width 100%
+	margin-bottom 43px
+	img 
+		img-responsive()
+.detail-blog-description
+	p 
+		font-family 'Roboto-Light'
+		font-size 22px
+		color lead-text
+		margin-bottom 41px
+		line-height 1.82
+		&:nth-last-child(1)
+			margin-bottom 0
+		strong
+			font-family 'Roboto-Bold'
+			margin 0 5px
+.detail-blog-tags
+	using-flex(row, flex-start, center)
+	margin-top 42px
+	figure
+		margin-right 25px
+.tag 
+	width 13%
+	max-width 96px 
+	height 40px
+	text-align center
+	border 1px solid lead-text
+	margin 0 8px
+	h2 
+		line-height 40px
+		font-size 16px
+		color lead-text
+		font-family 'Roboto-Medium'
+.btn-share
+	using-flex(row, center, center)
+	width 170px
+	height 45px
+	color white
+	text-align center
+	border-radius 10px
+	&:nth-of-type(1)
+		background-color #23539d
+	&:nth-of-type(2)
+		background-color #00a8f6
+		margin 0 15px
+	&:nth-of-type(3)
+		background-color #258ab0
+	i 
+		font-size 20px 
+		margin-right 5px
+	h6 
+		display inline-block
+		font-size 12px
+		line-height 45px
+		color white
+		font-family 'Roboto-Black'
+		text-transform uppercase
+.number-share
+	using-flex(row, flex-end, center)
+	width 193px
+	height 45px
+	border-left 1px solid rgba(100,100,100,0.7)
+	text-align right
+	h6, h5
+		color #212121
+		display inline-block
+	h6 
+		font-family 'Roboto-Bold'
+		font-size 35px
+		margin-right 8px
+	h5 
+		font-family 'Roboto-Light'
+		font-size 20px
+.detail-blog-author-description
+	h5 
+		color green-doapps
+		font-family 'Roboto-Medium'
+		font-size 26px
+	h6 
+		margin-top 9px
+		font-family 'Roboto-Light'
+		font-size 18px
+		color #4e4e4e
+.detail-blog-top
+	using-flex(row, space-between, flex-start)
+	.publicity
+		position relative
+		top -30px
+		.question
+			margin-bottom 29px
+.detail-blog-share
+	using-flex(row, space-between, center)
+	margin-top 33px
+.btn-share-container
+	width calc(100% - 193px)
+	using-flex(row, flex-start, center)
+.comments-facebook
+	width 100%
+	height 704px
+	background-color rgba(lead-text, 0.05)
+	margin 65px 0 47px
+.detail-blog-author
+	using-flex(row, flex-start, flex-start)
+	margin-bottom 106px
+	figure
+		margin-right 20px
+		img 
+			border-radius 50%
+.detal-blog-row-news
+	using-flex(row, space-between, center)
+	margin-top 36px
+	.new-small
+		width 31.7%

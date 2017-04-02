@@ -1,0 +1,53 @@
+doctype html
+html(lang='es')
+	head
+		meta(charset='utf-8') 
+		title Blog
+		link(rel='stylesheet', type='text/css', href='./client/js/owl-carousel/owl.carousel.css')
+		link(rel='stylesheet', type='text/css', href='./client/css/header.css')
+		link(rel='stylesheet', type='text/css', href='./client/css/footer.css')
+		link(rel='stylesheet', type='text/css', href='./client/css/banner.css')
+		link(rel='stylesheet', type='text/css', href='./client/css/service.css')
+	body
+		include ./blocks/header.pug
+		section.blog.g-banner
+			.wancho 
+				.g-banner-content
+					h5 Trazamos un camino
+					h6 
+						| Desarrollando para Android y iOs, diseñando interfaces
+						strong móviles nativas y aplicando IOT.
+		section.client
+			.wancho
+				.g-title
+					h5 
+						| Nuestros
+						span Clientes
+				.client-description
+					p Trabajamos con entidades privadas y del gobierno quienes apostaron por el desarrollo móvil como apoyo a su crecimiento.
+				.slider-clients-container
+					.row-clients
+						img(src='./client/img/upc.png')
+						img(src='./client/img/miraflores.png')
+						img(src='./client/img/congreso.png')
+						img(src='./client/img/marina.png')
+					.row-clients
+						img(src='./client/img/miraflores.png')
+						img(src='./client/img/congreso.png')
+						img(src='./client/img/marina.png')
+						img(src='./client/img/upc.png')
+					.row-clients
+						img(src='./client/img/marina.png')
+						img(src='./client/img/upc.png')
+						img(src='./client/img/miraflores.png')
+						img(src='./client/img/congreso.png')
+				a(href='#').g-btn.btn-green.btn-client Contáctanos
+
+		include ./blocks/footer.pug
+
+		script(src='./client/js/jquery1.8.3.min.js')
+		script(src='./client/js/owl-carousel/owl.carousel.js')
+		script(src='./client/js/jquery.waypoints.js')
+		script(src='./client/js/footer.js')
+		script(src='./client/js/header.js')
+		script(src='./client/js/service.js')

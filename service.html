@@ -2,13 +2,14 @@
 <html lang="es">
   <head>
     <meta charset="utf-8">
-    <title>Pideloo</title>
+    <title>Blog</title>
+    <link rel="stylesheet" type="text/css" href="./client/js/owl-carousel/owl.carousel.css">
     <link rel="stylesheet" type="text/css" href="./client/css/header.css">
     <link rel="stylesheet" type="text/css" href="./client/css/footer.css">
     <link rel="stylesheet" type="text/css" href="./client/css/banner.css">
-    <link rel="stylesheet" type="text/css" href="./client/css/products.css">
+    <link rel="stylesheet" type="text/css" href="./client/css/service.css">
   </head>
-  <body> 
+  <body>
     <header> <a href="index.html"><img src="./client/img/logo.png" width="228px" height="67px" alt="DoApps"></a>
       <ul class="list-items"><span class="movable-bar"></span>
         <li><a class="item-link" href="service.html">Servicios</a></li>
@@ -19,74 +20,29 @@
         <li><a class="item-link" href="contac.html">Contacto</a></li>
       </ul>
     </header>
-    <div class="g-banner">
+    <section class="blog g-banner">
       <div class="wancho"> 
         <div class="g-banner-content">
-          <h5>Desarrollamos productos</h5>
+          <h5>Trazamos un camino</h5>
           <h6>
-             a medida de lo que <strong>requiera el cliente</strong></h6>
-        </div>
-      </div>
-    </div>
-    <section class="products-title">
-      <div class="wancho">
-        <div class="g-title">
-          <h5>
-             Algunos de nuestros<span>mejores trabajos</span></h5>
+             Desarrollando para Android y iOs, diseñando interfaces<strong>móviles nativas y aplicando IOT.</strong></h6>
         </div>
       </div>
     </section>
-    <section class="products-items">
-      <div class="product-item">
-        <div class="wancho">
-          <div class="cnt-products">
-            <div class="prod-left">
-              <div class="g-title">
-                <h5> <span>Aplicaciones móviles para Restaurantes</span></h5>
-              </div>
-              <div class="product-item-paragraph">
-                <p>En junio de 2014 Apple anunció su nuevo lenguaje de programación Swift que ha tenido una recepción sorprendente por parte de la comunidad de desarrolladores, ocasionando que cada vez más personas lo usen para el diseño de sus <strong>aplicaciones en iOS.</strong></p>
-              </div><a class="g-btn btn-transparent" href="detail-project.html">descubre mas</a>
-            </div>
-            <div class="prod-right">
-              <figure><img src="./client/img/products/movil-1.png" width="328" height="635"></figure>
-            </div>
-          </div>
+    <section class="client">
+      <div class="wancho">
+        <div class="g-title">
+          <h5>
+             Nuestros<span>Clientes</span></h5>
         </div>
-      </div>
-      <div class="product-item">
-        <div class="wancho">
-          <div class="cnt-products">
-            <div class="prod-left">
-              <div class="g-title">
-                <h5> <span>Aplicaciones móviles para entidades de Gobierno</span></h5>
-              </div>
-              <div class="product-item-paragraph">
-                <p>En junio de 2014 Apple anunció su nuevo lenguaje de programación Swift que ha tenido una recepción sorprendente por parte de la comunidad de desarrolladores, ocasionando que cada vez más personas lo usen para el diseño de sus <strong>aplicaciones en iOS.</strong></p>
-              </div><a class="g-btn btn-transparent" href="detail-project.html">descubre más</a>
-            </div>
-            <div class="prod-right">
-              <figure><img src="./client/img/products/movil-2.png" width="282" height="580"></figure>
-            </div>
-          </div>
+        <div class="client-description">
+          <p>Trabajamos con entidades privadas y del gobierno quienes apostaron por el desarrollo móvil como apoyo a su crecimiento.</p>
         </div>
-      </div>
-      <div class="product-item">
-        <div class="wancho">
-          <div class="cnt-products">
-            <div class="prod-left">
-              <div class="g-title">
-                <h5> <span>Aplicaciones móviles para Restaurantes</span></h5>
-              </div>
-              <div class="product-item-paragraph">
-                <p>En junio de 2014 Apple anunció su nuevo lenguaje de programación Swift que ha tenido una recepción sorprendente por parte de la comunidad de desarrolladores, ocasionando que cada vez más personas lo usen para el diseño de sus <strong>aplicaciones en iOS.</strong></p>
-              </div><a class="g-btn btn-transparent" href="detail-project.html">descubre más</a>
-            </div>
-            <div class="prod-right">
-              <figure><img src="./client/img/products/movil-1.png" width="328" height="635"></figure>
-            </div>
-          </div>
-        </div>
+        <div class="slider-clients-container">
+          <div class="row-clients"><img src="./client/img/upc.png"><img src="./client/img/miraflores.png"><img src="./client/img/congreso.png"><img src="./client/img/marina.png"></div>
+          <div class="row-clients"><img src="./client/img/miraflores.png"><img src="./client/img/congreso.png"><img src="./client/img/marina.png"><img src="./client/img/upc.png"></div>
+          <div class="row-clients"><img src="./client/img/marina.png"><img src="./client/img/upc.png"><img src="./client/img/miraflores.png"><img src="./client/img/congreso.png"></div>
+        </div><a class="g-btn btn-green btn-client" href="#">Contáctanos</a>
       </div>
     </section>
     <div class="footer-top">
@@ -145,8 +101,10 @@
       </div>
     </footer>
     <script src="./client/js/jquery1.8.3.min.js"></script>
+    <script src="./client/js/owl-carousel/owl.carousel.js"></script>
     <script src="./client/js/jquery.waypoints.js"></script>
     <script src="./client/js/footer.js"></script>
     <script src="./client/js/header.js"></script>
+    <script src="./client/js/service.js"></script>
   </body>
 </html>
