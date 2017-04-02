@@ -1,39 +1,168 @@
+@import 'mixin.styl'
+
 .blog 
 	&.g-banner
-		background-image url(../img/blog/blog-background.jpg)
+		background-image url(../img/blog/blog-background.jpg)	
+	.g-banner-content
+		width 90%
+		max-width 540px
+		margin 0 auto
+		top 19px
+		h5 
+			margin-bottom 5px
+		h6 
+			line-height 1.2
+.blog-content 
+	padding 80px 0 84px
+	.wancho 
+		max-width 1170px
 .blog-content-title
-	padding-bottom 25px
+	padding-bottom 22px
+	border-bottom 1px solid #b9b9b9
 	h6
 		font-family 'Roboto-Black'
 		font-size 22px
 .blog-new-big
-	outline 2px solid red 
+	using-flex(row, space-between, flex-start)
+	margin-top 33px
 .new-big-photo
+	width 66%
+	max-width 772px
 	position relative
 	img 
 		img-responsive()
 .category
-	width 171px
-	height 43px
-	background-color green-doapps
-	color white
-	position absolute
-	right 10px
-	bottom -15px
-	font-family 'Roboto-Medium'
-	font-size 16px
+	&:after
+		width 171px
+		height 43px
+		line-height 43px
+		text-align center
+		background-color green-doapps
+		color white
+		position absolute
+		right 10px
+		bottom -15px
+		font-family 'Roboto-Medium'
+		font-size 16px
 	&.code 
-		content 'PROGRAMACIÓN'
+		&:after
+			content 'PROGRAMACIÓN'
 .blog-new-description
+	width 34%
+	padding 25px 0 0 47px
 	h2 
 		font-family 'Roboto-Bold'
 		font-size 50px
 		color black-text
+		margin-bottom 20px
 	p 
 		font-family 'Roboto-Light'
 		font-size 22px
 		color lead-text
+		line-height 1.2
 .row-author
-	
-		
-	
+	using-flex(row, flex-start, center)
+	margin-top 25px
+	figure 
+		img 
+			img-responsive()
+.author-name
+	margin-left 18px
+	h5 
+		font-family 'Roboto-Medium'
+		font-size 18px
+		color green-doapps
+		margin-bottom 4px
+	h6 
+		font-family 'Roboto-Light'
+		font-size 16px
+		color #8e8e8e
+.new-small
+	width calc(50% - 14px)
+	max-width 377px
+	margin-bottom 72px
+	.blog-new-description
+		width 100%
+		padding 33px 0 0
+		h2
+			font-size 35px
+			line-height 1.1
+			margin-bottom 14px
+		p 
+			line-height 1.2
+.new-small-photo
+	position relative
+	img 
+		img-responsive()
+.blog-list-new-small
+	using-flex(row, space-between, flex-start) 
+	width 66%
+	max-width 772px
+.blog-pagination
+	width 100%
+	text-align center
+	margin-top 1px
+.number-pag 
+	width 40px 
+	height 40px 
+	text-align center
+	border 1px solid #2a2a2a
+	line-height 40px 
+	font-family 'Roboto-Light'
+	font-size 22px
+	color #2a2a2a
+	margin 0 12px
+	&.active 
+		border-color green-doapps
+		color green-doapps
+.publicity
+	width 34%
+	max-width 368px
+.blog-content-down
+	padding-top 57px
+	using-flex(row, space-between, flex-start)
+.publicity-image
+	width 100%
+	img 
+		img-responsive()
+.question
+	text-align center
+	border 1px solid rgba(191, 191, 191, 0.5)
+	padding 60px 56px 51px
+	margin-bottom 47px
+	h5 
+		font-family 'Roboto-Bold'
+		font-size 35px
+		color #070707
+		margin 12px 0 24px
+		line-height 1.1
+	h6 
+		font-family 'Roboto-Light'
+		font-size 22px
+		color load-text
+		margin-bottom 38px
+		line-height 1.2
+.question-buttons
+	.g-btn 
+		width 115px
+		height 55px
+		line-height 55px
+		&:nth-of-type(1)
+			margin-right 17px
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

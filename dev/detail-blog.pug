@@ -1,0 +1,65 @@
+doctype html
+html(lang='es')
+	head
+		meta(charset='utf-8') 
+		title Deatalle del Blog
+		link(rel='stylesheet', type='text/css', href='./client/css/header.css')
+		link(rel='stylesheet', type='text/css', href='./client/css/footer.css')
+		link(rel='stylesheet', type='text/css', href='./client/css/banner.css')
+		link(rel='stylesheet', type='text/css', href='./client/css/blog.css')
+		link(rel='stylesheet', type='text/css', href='./client/css/detail-blog.css')
+	body
+		include ./blocks/header.pug
+		section.blog.g-banner
+			.wancho 
+				.g-banner-content
+					h5 Creamos historias
+					h6 
+						| Relacionadas con la tecnología en general
+						strong en el mundo entero.
+		section.detail-blog-content
+			.detail-blog-top
+				.detail-blog-new
+					.detail-blog-new-title
+						h3 ¿Cómo generar apps moviles para iOs y con el lenguaje nativo Swift?
+					figure.detail-blog-new-photo
+						img(src='./client/img/detail-blog/new-image.jpg' width='771' height='397')
+					.detail-blog-description
+						p 	
+							| Let’s look at an example: The top voted post-it here says “I have no idea what’s happening on “project x”. Because many people have voted on it, we can 
+							strong application movil
+							| see it’s clearly an issue many people are having. Rephrasing the post-it in a “How Might We” format allows us to make it solvable and standardise the way the challenges are written. Here’s how that problem might be rewritten into a more general challenge:
+						p   
+							| The moderator now takes the “Sweet Spot” solutions off the E/I scale and asks the person who wrote the solution to give actionable steps toward testing the solution. When I say actionable, I really mean something that could be executed on in the timeframe of 1–2 weeks. My rule of thumb 
+							strong is a 1-week experiment, but 
+							| of course this will depend on what the solution entails.
+						p 	
+							| Let’s look at an example: The top voted post-it here says “I have no idea what’s happening on “project x”. Because many people have voted on it, we can 
+							strong application movil
+							| see it’s clearly an issue many people are having. Rephrasing the post-it in a “How Might We” format allows us to make 
+						p   
+							| The moderator now takes the “Sweet Spot” solutions off the E/I scale and asks the person who wrote the solution to give actionable steps toward testing the solution. When I say actionable, I really mean something that could be executed on in the timeframe of 1–2 weeks. My rule of thumb 
+							strong is a 1-week experiment, but 
+							| of course this will depend on what the solution entails.
+						p   
+							| The moderator now takes the “Sweet Spot” solutions off the E/I scale and asks the person who wrote the solution to give actionable steps toward testing the solution. When I say actionable, I really mean something that could be executed on in the timeframe of 1–2 weeks.
+							strong My rule of thumb 
+							| of course this will depend on what the solution entail
+				.publicity
+						.question
+							figure.quesiton-icon
+								img(src='./client/img/blog/icon-question.png')
+							h5 Nuestra pregunta es
+							h6 ¿Te parece útil que se realice un curso de Github para desarrolladores?
+							.question-buttons
+								a(href='#').g-btn.btn-transparent SI
+								a(href='#').g-btn.btn-transparent NO
+						figure.publicity-image
+							img(src='./client/img/blog/publicity.jpg')
+			.detail-blog-bottom
+		include ./blocks/footer.pug
+
+		script(src='./client/js/jquery1.8.3.min.js')
+		script(src='./client/js/jquery.waypoints.js')
+		script(src='./client/js/footer.js')
+		script(src='./client/js/header.js')
