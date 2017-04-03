@@ -1,0 +1,29 @@
+doctype html
+html(lang='es')
+	head
+		meta(charset='utf-8') 
+		title Contact
+		link(rel='stylesheet', type='text/css', href='./client/css/header.css')
+		link(rel='stylesheet', type='text/css', href='./client/css/footer.css')
+		link(rel='stylesheet', type='text/css', href='./client/css/banner.css')
+		link(rel='stylesheet', type='text/css', href='./client/css/contact.css')
+	body 
+		include ./blocks/header.pug
+		include ./blocks/banner.pug
+		section.contact-title
+			.wancho
+				.g-title
+					h5 
+						span ¿Quieres visitarnos? 
+					p Estamos en Av.Aramburu #856 Of.301 / Surquillo
+					p
+						a(href='tel:(+51) 283-2015') (+51) 283-2015
+						||
+						a(href='tel:(+51) 986 077 524 ') (+51) 986 077 524 
+		
+		include ./blocks/footer.pug
+
+		script(src='./client/js/jquery1.8.3.min.js')
+		script(type='text/javascript', src='./client/js/jquery.waypoints.js')
+		script(src='./client/js/footer.js')
+		script(src='./client/js/header.js')
