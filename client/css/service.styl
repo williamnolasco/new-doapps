@@ -1,0 +1,45 @@
+@import 'mixin.styl'
+
+.client
+	padding 114px 0 60px
+	.wancho 
+		text-align center
+	.g-btn
+		margin-top 61px
+		@media screen and (min-width 1024px)
+			transition all 0.7s
+			transform translateY(100px) scaleX(0)
+			opacity 0
+			&.active
+				transform translateY(0) scaleX(1)
+				opacity 1
+.client-description
+	width 100%
+	max-width 520px
+	margin 9px auto 0
+	p 
+		font-family 'Roboto-Light'
+		font-size 17px
+		text-align center
+		line-height 1.5
+		color #a0a0a0
+.row-clients
+	using-flex(row, space-around, center)
+	margin-top 50px
+.owl-dots
+	using-flex(row, center, center)
+	margin-top 35px
+.owl-dot
+	width 12px
+	height 12px
+	background-color #727272
+	border-radius 50%
+	transition all 0.5s
+	cursor pointer
+	&.active, &:hover
+		width 15px
+		height 15px
+		background-color white
+		border 2px solid #727272
+	&:nth-of-type(2)
+		margin 0 25px
