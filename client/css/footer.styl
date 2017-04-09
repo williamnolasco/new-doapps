@@ -27,7 +27,7 @@
 	width 100%
 	height 50px
 	background-color transparent
-	border-bottom 1px solid rgba(255, 255, 255, .4)
+	border-bottom 1px solid rgba(255, 255, 255, .35)
 	font-family 'Roboto-Light'
 	color #c1c1c1
 	font-size 22px
@@ -66,7 +66,7 @@
 .button-form
 	margin 76px auto 0
 	cursor pointer
-	@media screen and (min-width 1024px)
+	@media screen and (min-width 1025px)
 		transition all 0.7s
 		transform translateY(100px) scaleX(0)
 		opacity 0
@@ -91,6 +91,7 @@
 		margin-right 15px
 	&:nth-of-type(2)
 		justify-content center
+		margin 0 10px
 .footer-copyright
 	text-align center
 	width 100%
@@ -103,3 +104,119 @@
 		font-size 12px
 .logo-footer
 	margin-top -55px
+
+@media screen and (max-width 924px)
+	.footer-bottom-left
+		padding-left 20px
+@media screen and (max-width 860px)
+	.footer-bottom-left
+		justify-content center
+	.footer-item
+		width 50%
+		margin 0
+		padding 13px 15px
+		justify-content center
+		&:nth-of-type(1)
+			padding-left 0
+			padding-right 0
+		&:nth-of-type(2)
+			margin 0
+		&:nth-of-type(3)
+			width 100%
+			padding-top 5px
+	.logo-footer
+		margin-top -80px
+@media screen and (max-width 768px)
+	.footer-top
+		padding 50px 0 85px
+		.g-title
+			margin-bottom 60px
+			h5 
+				font-size 30px
+				br 
+					display none
+				span 
+					margin 0 2px
+	.row-input-content
+		top 2px
+		&.active
+			top -20px
+		label 
+			font-size 20px
+			margin-left 3px
+	.input-container
+		margin-bottom 45px
+	.form-input
+		font-size 20px
+		height 40px
+	.footer-form
+		.g-btn 
+			margin-top 0px
+	.footer-bottom-left
+		width 100%
+		padding 0
+	.logo-footer
+		position relative
+		left 50%
+		transform translateX(-50%)
+		margin-top -40px
+	.textarea-container
+		.row-input-content
+			&.active
+				top -25px
+@media screen and (max-width 600px)
+	.input-container
+		width calc(50% - 10px)
+		&:nth-child(even)
+			margin-left 20px
+	.textarea-container
+		width 100%
+	.footer-item
+		flex-direction column
+		h6 
+			text-align center
+		img 
+			margin 0 0 10px
+	.footer-row-tel
+		using-flex(row, center, center)
+@media screen and (max-width 500px)
+	.footer-top
+		padding 47px 0 85px
+	.input-container
+		width 100%
+		&:nth-child(even)
+			margin-left 0
+	.row-input-content
+		top -1px
+		label 
+			font-size 16px
+			margin-left 10px
+		img 
+			width 28px
+			height auto
+	.footer-top
+		.g-title
+			margin-bottom 48px
+			h5 
+				line-height 1.2
+				font-size 28px
+	.textarea-container
+		margin-bottom 41px
+		textarea 
+			height 110px
+	.logo-footer
+		width 103px
+		height 103px
+		margin-top -41px
+		margin-bottom 25px
+	.footer-bottom-left
+		align-items flex-start
+	.footer-item
+		img 
+			width 33px
+			height 33px
+@media screen and (max-width 375px)
+	.footer-item
+		width 100%
+	
+		

@@ -1,18 +1,26 @@
 @import 'mixin.styl'
 
 header
-	using-flex(row, space-between, center)
 	width 100%
-	padding 35px 80px 35px 112px
+	//padding 35px 80px 35px 112px
+	padding 35px 0
 	position absolute
 	left 0
 	top 0
 	z-index 2
+	.wancho 
+		using-flex(row, space-between, center)
+.link-logo-mobile
+	display none
+.link-logo
+	width 18%
+	img 
+		img-responsive()
 .list-items
 	using-flex(row, space-around, center)
 	list-style none
 	width 80%
-	max-width 780px
+	max-width 720px
 	height 52px
 	position relative
 	li 
@@ -35,4 +43,22 @@ header
 	left 15px
 	bottom 0
 	transition all 0.5s ease
-				
+.open-menu-mobile
+	display none
+@media screen and (max-width 980px)
+	.link-logo
+		width 40%
+		max-width 200px
+	.list-items
+		display none
+	.open-menu-mobile
+		display block
+		font-size 40px
+		color white
+@media screen and (max-width 480px)
+	header
+		padding 30px 0
+	.link-logo
+		display none
+	.link-logo-mobile
+		display block
