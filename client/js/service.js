@@ -25,18 +25,18 @@ function medidas(){
 		var img = urlimg.split(';');
 
 		var screen = $(window).width();
-		var bgi = 'background-image:url(';
-		var cierre = ')';
+		var bgi = '';
+		var cierre = '';
 
 		// insertando imagen segun medida
 		if (screen > 0 && screen <= 480) {
-			$(el).find('.service-process-bg').attr('style', bgi+img[0]+cierre);
+			$(el).find('.service-process-bg').attr('src', bgi+img[0]+cierre);
 		}
 		if (screen > 480 && screen <= 768) {
-			$(el).find('.service-process-bg').attr('style', bgi+img[1]+cierre);
+			$(el).find('.service-process-bg').attr('src', bgi+img[1]+cierre);
 		}
 		if (screen > 768){
-			$(el).find('.service-process-bg').attr('style', bgi+img[2]+cierre);
+			$(el).find('.service-process-bg').attr('src', bgi+img[2]+cierre);
 		}
 	});
 }

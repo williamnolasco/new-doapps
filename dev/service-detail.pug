@@ -1,0 +1,66 @@
+doctype html
+html(lang='es')
+	head
+		meta(charset='utf-8') 
+		title Pideloo
+		link(rel='stylesheet', type='text/css', href='./client/css/header.css')
+		link(rel='stylesheet', type='text/css', href='./client/css/footer.css')
+		link(rel='stylesheet', type='text/css', href='./client/css/detail-products.css')
+		link(rel='stylesheet', type='text/css', href='./client/css/detail-project.css')
+		link(rel='stylesheet', type='text/css', href='./client/css/service-detail.css')
+	body.detail-products
+		include ./blocks/header.pug
+		section.project-title
+			.wancho
+				.project-title-left
+					h5 Comida Rápida
+					h6 Aplicación Nativa Android para Pideloo
+				img(src='./client/img/detail-project/project-title-cel.png' width='329' height='478')
+
+
+		section.detail-client.products-detail
+			.wancho
+				.g-title
+					h5 
+						| La
+						span Descripción
+				.detail-client-p
+					p 
+						| En primer lugar, nos encontramos con tener que saber y tener
+						strong a la mano los reportes
+						| de
+						strong tsunamis en el Perú.
+						| Es muy importante que los anunciantes aprendan a planificarse. Algunas empresas suelen hacer acciones de
+						strong marketing por separado,
+						| pero se olvidan de que el marketing es algo global con tener que saber.
+		.wancho
+			.detail-characteristics-cnt
+				.g-title
+					h5 
+						| Las 
+						span Características
+				ul.characteristics
+					li En primer lugar
+						i.icon-check
+						strong tsunamis en el Peru  
+					li En primer lugar
+						i.icon-check
+						strong tsunamis en el Peru  
+					li En primer lugar
+						i.icon-check
+						strong tsunamis en el Peru  
+					li En primer lugar
+						i.icon-check
+						strong tsunamis en el Peru  
+					li En primer lugar
+						i.icon-check
+						strong tsunamis en el Peru  
+					li En primer lugar
+						i.icon-check
+						strong tsunamis en el Peru 
+		include ./blocks/footer.pug
+
+		script(src='./client/js/jquery1.8.3.min.js')
+		script(type='text/javascript', src='./client/js/jquery.waypoints.js')
+		script(src='./client/js/footer.js')
+		script(src='./client/js/header.js')
