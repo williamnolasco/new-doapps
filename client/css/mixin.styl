@@ -141,7 +141,28 @@ input, select, textarea, button
 		span
 			font-family 'Roboto-Bold'
 			margin-left 10px
-			
+.title-special
+	width auto
+	padding-left 27px
+	position relative
+	&:before
+		content ''
+		width 5px 
+		height 90%
+		background-color green-doapps
+		position absolute
+		left 0
+		top 50%
+		transform translateY(-50%)
+	.g-title
+		text-align left
+		line-height 1
+	h6 
+		color #656565
+		font-family 'Roboto-Light'
+		font-size 22px
+		margin-top 1px
+		
 @media screen and (max-width 480px)
 	.wancho 
 		width 86%

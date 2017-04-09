@@ -57,6 +57,10 @@
 		border 2px solid #727272
 	&:nth-of-type(2)
 		margin 0 25px
+.service-client
+	padding 123px 0 127px
+	.client-description
+		margin-top 14px
 .service-list 
 	background-color #fcfcfc
 	padding 120px 0 100px
@@ -80,17 +84,34 @@
 	height 242px
 	border 1px solid #d4d4d4
 	margin-bottom 42px
+	&:nth-of-type(1)
+		.service-image	
+			background-image url(../img/service/service1.jpg)
+	&:nth-of-type(2)
+		.service-image	
+			background-image url(../img/service/service2.jpg)
+	&:nth-of-type(3)
+		.service-image	
+			background-image url(../img/service/service3.jpg)
+	&:nth-of-type(4)
+		.service-image	
+			background-image url(../img/service/service4.jpg)
+	&:nth-of-type(5)
+		.service-image	
+			background-image url(../img/service/service5.jpg)
+	&:nth-of-type(6)
+		.service-image	
+			background-image url(../img/service/service6.jpg)
 .service-image, .service-content-item
 	width 50%
 	height 100%
 .service-image
-	background-image url(../img/service/service1.jpg)
 	using-background()
 .service-content-item
 	using-flex(column, center, center)
 	text-align center
 	background-color white
-	padding 15px 30px
+	padding 15px 20px
 	figure
 		img 
 			img-responsive()
@@ -103,4 +124,17 @@
 		font-size 16px
 		margin-top 6px
 		line-height 1.15
+.service-process
+	background-color #f3fafd
+/*.service-process-figure
+	img 
+		outline 1px solid red
+		img-responsive()*/
+.service-process-bg
+	outline 2px solid green 
+	width 100%
+	height 300px
+	using-background()
+	display block
+		
 			

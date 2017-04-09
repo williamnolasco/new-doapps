@@ -2,6 +2,7 @@ doctype html
 html(lang='es')
 	head
 		meta(charset='utf-8') 
+		meta(name='viewport', content='width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0')
 		title Blog
 		link(rel='stylesheet', type='text/css', href='./client/js/owl-carousel/owl.carousel.css')
 		link(rel='stylesheet', type='text/css', href='./client/css/header.css')
@@ -67,7 +68,7 @@ html(lang='es')
 								img(src='./client/img/service/service-icon6.png')
 							h2 Realidad Virtual
 							h5 Uso de Google Cardboard
-		section.client
+		section.client.service-client
 			.wancho
 				.g-title
 					h5 
@@ -91,7 +92,18 @@ html(lang='es')
 						img(src='./client/img/upc.png')
 						img(src='./client/img/miraflores.png')
 						img(src='./client/img/congreso.png')
-				a(href='#').g-btn.btn-green.btn-client Contáctanos
+		section.service-process
+			.wancho
+				.title-special
+					.g-title
+						h5 
+							| Los
+							span Wireframes
+					h6 UX (Experiencia de Usuario)
+				.service-process-image(data-img='./client/img/service/service-process-mobile.png;./client/img/service/service-process-tablet.png;./client/img/service/service-process-desktop.png')
+					//
+						figure.service-process-figure
+					span.service-process-bg
 		include ./blocks/footer.pug
 
 		script(src='./client/js/jquery1.8.3.min.js')

@@ -17,3 +17,30 @@ if (row_clients_length > 1) {
 
 	});
 }
+
+//section "service-process", para cambiar imagen de fondo segun el dispositivo
+function medidas(){
+	$('.service-process-image').each(function(index, el) {
+		var urlimg = $(this).attr('data-img');
+		var img = urlimg.split(';');
+
+		var screen = $(window).width();
+		var bgi = 'background-image:url(';
+		var cierre = ')';
+
+		// insertando imagen segun medida
+		if (screen > 0 && screen <= 480) {
+			$(el).find('.service-process-bg').attr('style', bgi+img[0]+cierre);
+		}
+		if (screen > 480 && screen <= 768) {
+			$(el).find('.service-process-bg').attr('style', bgi+img[1]+cierre);
+		}
+		if (screen > 768){
+			$(el).find('.service-process-bg').attr('style', bgi+img[2]+cierre);
+		}
+	});
+}
+medidas();
+$(window).resize(function(event) {
+	medidas();
+});
