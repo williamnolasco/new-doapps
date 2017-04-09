@@ -10,13 +10,63 @@ html(lang='es')
 		link(rel='stylesheet', type='text/css', href='./client/css/service.css')
 	body
 		include ./blocks/header.pug
-		section.blog.g-banner
+		section.service.g-banner
 			.wancho 
 				.g-banner-content
 					h5 Trazamos un camino
 					h6 
 						| Desarrollando para Android y iOs, diseñando interfaces
 						strong móviles nativas y aplicando IOT.
+		section.service-list
+			.wancho
+				.g-title
+					h5 
+						| Nuestros
+						span Servicios
+					h6 Descubre cada uno de los servicios que desarrollamos.
+				.service-row-service
+					.service-item
+						.service-image
+						.service-content-item
+							figure
+								img(src='./client/img/service/service-icon1.png')
+							h2 Android
+							h5 Aplicaciones Nativas en Java
+					.service-item
+						.service-image
+						.service-content-item
+							figure
+								img(src='./client/img/service/service-icon2.png')
+							h2 iOs
+							h5 Aplicaciones Nativas en Swift
+					.service-item
+						.service-image
+						.service-content-item
+							figure
+								img(src='./client/img/service/service-icon3.png')
+							h2 UX - UI
+							h5 Diseño de interfaces móviles
+					.service-item
+						.service-image
+						.service-content-item
+							figure
+								img(src='./client/img/service/service-icon4.png')
+							h2 IOT
+							h5 Arduino - Beacones & Rasberry Pi
+					.service-item
+						.service-image
+						.service-content-item
+							figure
+								img(src='./client/img/service/service-icon5.png')
+							h2 Realidad Aumentada
+							h5 Uso específico de coordenadas
+					.service-item
+						.service-image
+						.service-content-item
+							figure
+								img(src='./client/img/service/service-icon6.png')
+							h2 Realidad Virtual
+							h5 Uso de Google Cardboard
 		section.client
 			.wancho
 				.g-title
@@ -42,7 +92,6 @@ html(lang='es')
 						img(src='./client/img/miraflores.png')
 						img(src='./client/img/congreso.png')
 				a(href='#').g-btn.btn-green.btn-client Contáctanos
-
 		include ./blocks/footer.pug
 
 		script(src='./client/js/jquery1.8.3.min.js')

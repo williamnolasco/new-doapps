@@ -4,7 +4,7 @@ var item_link = document.querySelectorAll('.item-link'),
 
 function hoverItem(posLeft){
 	return function(){
-		movable_bar.style.left = ((posLeft*130) + 15) + 'px';
+		movable_bar.style.left = ((posLeft*120) + 10) + 'px';
 	};
 }
 

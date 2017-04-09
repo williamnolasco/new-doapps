@@ -1,5 +1,19 @@
 @import 'mixin.styl'
 
+.service
+	&.g-banner
+		background-image url(../img/service/service-background.jpg)	
+	.g-banner-content
+		width 90%
+		max-width 620px
+		margin 0 auto
+		top 15px
+		h5 
+			margin-bottom 5px
+		h6 
+			width 78%
+			margin 0 auto
+			line-height 1.2
 .client
 	padding 114px 0 60px
 	.wancho 
@@ -43,3 +57,50 @@
 		border 2px solid #727272
 	&:nth-of-type(2)
 		margin 0 25px
+.service-list 
+	background-color #fcfcfc
+	padding 120px 0 100px
+	.g-title
+		h5 
+			margin-bottom 11px
+		h6 
+			font-family 'Roboto-Light'
+			font-size 25px
+			width 100%
+			max-width 400px
+			margin 0 auto
+			line-height 1.2
+.service-row-service
+	using-flex(row, space-between, center)
+	margin-top 78px
+.service-item
+	using-flex(row, center, center)
+	width calc(33.33% - 12px)
+	max-width 380px
+	height 242px
+	border 1px solid #d4d4d4
+	margin-bottom 42px
+.service-image, .service-content-item
+	width 50%
+	height 100%
+.service-image
+	background-image url(../img/service/service1.jpg)
+	using-background()
+.service-content-item
+	using-flex(column, center, center)
+	text-align center
+	background-color white
+	padding 15px 30px
+	figure
+		img 
+			img-responsive()
+	h2
+		font-family 'Roboto-Black'
+		font-size 30px
+		margin-top 12px
+	h5 
+		font-family 'Roboto-Light'
+		font-size 16px
+		margin-top 6px
+		line-height 1.15
+			
