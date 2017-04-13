@@ -134,7 +134,40 @@
 	margin-top 36px
 	.new-small
 		width 31.7%
-		
+.nav-lateral
+	margin-top 55px
+	h5 
+		font-family 'Roboto-Regular'
+		padding-bottom 6px
+		font-size 20px
+		color lead-text 
+		border-bottom 1px solid rgba(lead-text, 0.3)
+		margin-bottom 20px 
+.nav-lateral-ul
+	margin-bottom 40px
+	&:nth-last-child
+		margin-bottom 0
+	li 
+		margin-bottom 5px 
+		&:nth-last-child(1)
+			margin-bottom 0
+			
+.nav-lateral-item
+	font-family 'Roboto-Light'
+	font-size 17px
+	color lead-text
+	position relative
+	padding-left 20px
+	&:before
+		content ''
+		width 7px 
+		height 7px 
+		border-radius 50%
+		background-color rgba(lead-text, 0.7)
+		position absolute
+		left 0
+		top 50%
+		transform translateY(-50%)
 @media screen and (max-width 1024px)
 	.detail-blog-top .publicity
 		top 0 

@@ -5,25 +5,26 @@ html(lang='es')
 		title Pideloo
 		link(rel='stylesheet', type='text/css', href='./client/css/header.css')
 		link(rel='stylesheet', type='text/css', href='./client/css/footer.css')
+		link(rel='stylesheet', type='text/css', href='./client/css/banner.css')
 		link(rel='stylesheet', type='text/css', href='./client/css/detail-products.css')
 		link(rel='stylesheet', type='text/css', href='./client/css/detail-project.css')
 		link(rel='stylesheet', type='text/css', href='./client/css/service-detail.css')
-	body.detail-products
+	body
 		include ./blocks/header.pug
-		section.project-title
-			.wancho
-				.project-title-left
-					h5 Comida Rápida
-					h6 Aplicación Nativa Android para Pideloo
-				img(src='./client/img/detail-project/project-title-cel.png' width='329' height='478')
+		section.service-detail.g-banner
+			.wancho 
+				.g-banner-content
+					h5 Desarrollo Android
+					h6 
+						| Aplicaciones nativas
+						strong en java.
 
-
-		section.detail-client.products-detail
+		section.service-detail.detail-client.products-detail
 			.wancho
 				.g-title
 					h5 
-						| La
-						span Descripción
+						| ¿Cómo
+						span lo hacemos?
 				.detail-client-p
 					p 
 						| En primer lugar, nos encontramos con tener que saber y tener
@@ -33,31 +34,43 @@ html(lang='es')
 						| Es muy importante que los anunciantes aprendan a planificarse. Algunas empresas suelen hacer acciones de
 						strong marketing por separado,
 						| pero se olvidan de que el marketing es algo global con tener que saber.
-		.wancho
-			.detail-characteristics-cnt
+				.detail-characteristics-cnt
+					ul.characteristics
+						li En primer lugar
+							i.icon-check
+							strong tsunamis en el Peru  
+						li En primer lugar
+							i.icon-check
+							strong tsunamis en el Peru  
+						li En primer lugar
+							i.icon-check
+							strong tsunamis en el Peru  
+						li En primer lugar
+							i.icon-check
+							strong tsunamis en el Peru  
+						li En primer lugar
+							i.icon-check
+							strong tsunamis en el Peru  
+						li En primer lugar
+							i.icon-check
+							strong tsunamis en el Peru 
+		section.service-detail-works
+			.wancho
 				.g-title
 					h5 
-						| Las 
-						span Características
-				ul.characteristics
-					li En primer lugar
-						i.icon-check
-						strong tsunamis en el Peru  
-					li En primer lugar
-						i.icon-check
-						strong tsunamis en el Peru  
-					li En primer lugar
-						i.icon-check
-						strong tsunamis en el Peru  
-					li En primer lugar
-						i.icon-check
-						strong tsunamis en el Peru  
-					li En primer lugar
-						i.icon-check
-						strong tsunamis en el Peru  
-					li En primer lugar
-						i.icon-check
-						strong tsunamis en el Peru 
+						| Algunos de nuestros
+						span mejores trabajos
+				.service-detail-item
+					.service-detail-left
+						.service-detail-background
+						img(src='')
+					.service-detail-right
+						h5 Admisión UPC
+						p 
+							| En junio de 2014 Apple anunció su nuevo lenguaje de 
+							strong programación Swift 
+							| que ha tenido una recepción sorprendente por parte de la comunidad de de sus aplicaciones 
+						a(href='detail-project.html').g-btn.btn-transparent descubre más
 		include ./blocks/footer.pug
 
 		script(src='./client/js/jquery1.8.3.min.js')
