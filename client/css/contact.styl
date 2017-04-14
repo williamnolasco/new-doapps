@@ -1,5 +1,12 @@
 @import 'mixin.styl'
 
+.body-contact
+	.list-items
+		li 
+			&:nth-of-type(6)
+				a 
+					&:after
+						item-header-active()
 .contact-banner
 	&.g-banner
 		background-image url(../img/contact/contact-banner.jpg)
@@ -9,18 +16,18 @@
 		margin 0 auto
 .contact-title
 	text-align center
-	padding 100px 0 
+	padding 103px 0 108px 
 	.g-title
 		span
 			display block
 	p
 		font-family 'Roboto-Light'
 		font-size 25px
-		margin-top 10px
+		margin-top 14px
 		color #343434
 		&:last-child
 			font-family 'Roboto-Black'
-			
+			margin-top 12px	
 	a
 		font-family 'Roboto-Black'
 		font-size 22px
@@ -33,13 +40,17 @@
 	width 100%
 	height 100%
 .contact-row-icon
-	outline 1px solid red
-	margin-top 30px
+	margin-top 22px
 	a 
-		font-size 30px 
-		padding 10px 
+		font-size 32px 
+		padding 12px 
 		border-radius 50%
 		color #999999
-		border 1px solid #999999
+		border 2px solid #999999
 		&:nth-of-type(2)
 			margin 0 25px
+		@media screen and (min-width 1025px)
+			transition all 0.5s
+			&:hover
+				color white
+				background-color #999999
