@@ -1,0 +1,114 @@
+@import 'mixin.styl'
+
+.success-stories-banner
+	&.g-banner
+		background-image url(../img/success-stories/success-stories-banner.jpg)
+	.g-banner-content
+		width 100%
+		max-width 627px
+		margin 0 auto
+		h6 
+			strong 
+				font-style italic
+				font-family 'Roboto-Black'
+.works 
+	.g-title 
+		margin 62px 0 65px
+.works-container
+	using-flex(row, space-between, center)
+.work-card-description
+	using-flex(column, center, center)
+	width 100%
+	height 100%
+	background-color rgba(0, 0, 0, 0.77)
+	padding 0 63px
+	position absolute
+	left 0
+	top 0
+	transition all 1s ease-out
+	opacity 0
+	h5, h6
+		color white
+		text-transform uppercase
+		text-align center
+		line-height 1
+	h5, h6, a
+		transition all 1s ease-out
+		opacity 0
+	h5 
+		font-family 'Roboto-Black'
+		font-size 32px
+	h6
+		font-family 'Roboto-Regular'
+		font-size 16px
+		margin 5px 0 15px
+.work-card 
+	using-flex(row, center, center)
+	width calc(33.333% - 0.666px)
+	height 464px
+	using-background()
+	margin-bottom 1px
+	position relative
+	overflow hidden
+	&:nth-of-type(2), &:nth-last-child(2)
+		margin 0 1px 1px
+	&:hover	
+		.work-card-description
+			opacity 1
+			h5, h6, a
+				opacity 1
+		.work-background
+			-webkit-transform scale(1.05)
+			transform scale(1.05)
+	.img-cel
+		position absolute
+		left 50%
+		top 50%
+		-webkit-transform translateX(-50%) translateY(-50%)
+		transform translateX(-50%) translateY(-50%)
+	&:nth-of-type(1)
+		.work-background
+			background-image url(../img/home/work1.jpg)
+	&:nth-of-type(2)
+		.work-background
+			background-image url(../img/home/work2.jpg)
+	&:nth-of-type(3)
+		.work-background
+			background-image url(../img/home/work3.jpg)
+	&:nth-of-type(4)
+		.work-background
+			background-image url(../img/home/work4.jpg)
+	&:nth-of-type(5)
+		.work-background
+			background-image url(../img/home/work5.jpg)
+	&:nth-of-type(6)
+		.work-background
+			background-image url(../img/home/work6.jpg)
+	&:nth-of-type(7)
+		.work-background
+			background-image url(../img/home/work4.jpg)
+	&:nth-of-type(8)
+		.work-background
+			background-image url(../img/home/work5.jpg)
+	&:nth-of-type(9)
+		.work-background
+			background-image url(../img/home/work6.jpg)
+.work-background
+	width 100%
+	height 100%
+	using-background()
+	position absolute
+	left 0
+	top 0
+	transition all 2s ease-out
+.success-stories-works
+	.g-title
+		margin 125px 0 98px
+		p 
+			width 100%
+			max-width 425px
+			font-family 'Roboto-Light'
+			font-size 25px
+			line-height 1.19
+			margin 10px auto 0
+			color #353535
