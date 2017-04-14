@@ -72,7 +72,7 @@
 		text-align center
 		line-height 1.6
 		strong 
-			font-family 'Roboto-Regular'
+			font-family 'Roboto-Bold'
 			margin 0 7px
 .detail-proposal
 	background-color green-doapps
@@ -170,7 +170,7 @@
 		color #656565
 		font-family 'Roboto-Light'
 		font-size 22px
-		margin-top 1px
+		margin-top 5px
 .detail-wireframe-row-screen
 	using-flex(row, space-around, center)
 	figure
@@ -181,24 +181,45 @@
 			img-responsive()
 			margin 0 auto
 .detail-wireframe-subtitle
-	margin 18px 0 40px
+	margin 20px 0 40px
+	position relative
+	z-index 2
 	p 
 		font-family 'Roboto-Light'
 		font-size 20px
 		color #1a1a1a
 		line-height 1.6
 .f-s-colors-container
-	//outline 1px solid red 
 	using-flex(row, space-between, center)
-	width 80%
+	width 100%
+	max-width 706px
+	margin 227px auto 227px
+	position relative
+	z-index 1
+	&:before
+		content ''
+		width 496px
+		height 496px
+		background-color #fbfbfb
+		border-radius 50%
+		position absolute
+		left 50%
+		top 50%
+		-webkit-transform translate(-50%, -50%)
+		transform translate(-50%, -50%)
+		z-index -1
 .f-s-colors-left
-	using-flex(row, space-around, center)
+	using-flex(row, space-between, center)
+	width 394px
 .f-s-color
 	width 120px 
 	height 97px
 	position relative
 	box-shadow 2px -2px 15px rgba(0, 0, 0, 0.15)
 	border-radius 10px
+	margin-bottom 22px
+	&:nth-last-child(1), &:nth-last-child(2), &:nth-last-child(3)
+		margin-bottom 0
 	&:after
 		content '#ff7400'
 		width 100%
@@ -226,7 +247,9 @@
 	&.color6 
 		background-color #cdcdcd
 .final-screen
-	padding 50px 0 50px
+	padding 50px 0 20px
+	position relative
+	z-index 1
 .f-s-typography
 	width 220px
 	height 178px
@@ -234,6 +257,7 @@
 	background-color white
 	box-shadow 2px -2px 15px rgba(0, 0, 0, 0.15)
 	text-align center
+	border-radius 8px
 	&:before, &:after
 		width 100%
 		color #1c1c1c
@@ -247,7 +271,6 @@
 		height 130px 
 		line-height 130px
 		top 0
-		border-radius 10px 10px 0 0
 	&:after 
 		font-size 18px
 		font-family 'Roboto-Light'
@@ -255,10 +278,130 @@
 		height 48px
 		line-height 48px
 		bottom 0
-		border-radius 0 0 10px 10px
 		border-top 1px solid #efefef
+.set-screen
+	width 100%
+	height 1202px
+	background-color #eeeeee
+	position relative
+.set-screen-background
+	background-image url(../img/detail-project/detail-project-screen-background.png)
+	using-background()
+	width 100%
+	height 100%
+	position absolute
+	left 0
+	top 0
+.results
+	padding 155px 0 186px
+	.row-detail-client-title
+		margin-bottom 30px
+	.we-develop-bottom
+		width 100%
+		max-width 650px
+		using-flex(row, space-around, flex-end)
+		margin 60px auto 0
+	.row-timer
+		using-flex(row, center, center)
+		flex-flow row nowrap
+		h4
+			font-family 'Roboto-Black'
+			font-size 60px
+		span 
+			font-size 60px
+			color #1a1a1a
+			font-family 'Roboto-Black'
+	.item-we-develop
+		width 33.333%
+		padding 0 15px
+		border-right 2px dashed rgba(#1a1a1a, 0.3)
+		text-align center
+		color #1a1a1a
+		&:nth-of-type(1)
+			img 
+				margin-bottom -16px 
+			h5 
+				margin-top 2px
+		&:nth-last-child(1)
+			border-right 0
+		img 
+			margin-bottom 8px
+		h6 
+			font-family 'Roboto-Black'
+			font-size 60px
+		h5 
+			width 100%
+			max-width 100px
+			line-height 1.2
+			font-family 'Roboto-Regular'
+			font-size 15px
+			text-transform uppercase
+			margin 9px auto 0
+.detail-project-share
+	background-color #1a1a1a
+	padding 84px 0 94px
+	.wancho 
+		using-flex(row, space-between, center)
+		max-width 1140px
+	.g-title
+		width 100%
+		max-width 262px
+		h5 
+			color white
+			text-align left
+			span 
+				display block
+				margin -5px 0 0
+	.btn-share-container
+		using-flex(row, space-between, center)
+		width 100%
+		max-width 604px
+	.btn-share
+		using-flex(row, center, center)
+		width 190px
+		height 60px
+		color white
+		text-align center
+		border-radius 10px
+		margin 0
+		&:nth-of-type(1)
+			background-color #23539d
+		&:nth-of-type(2)
+			background-color #00a8f6
+			margin 0 15px
+		&:nth-of-type(3)
+			background-color #258ab0
+		i 
+			font-size 25px 
+			margin-right 5px
+		h6 
+			display inline-block
+			font-size 16px
+			line-height 45px
+			color white
+			font-family 'Roboto-Black'
+			text-transform uppercase
+.detail-project-share-number
+	using-flex(column, center, center)
+	color white
+	padding-left 40px
+	position relative
+	h5 
+		font-family 'Roboto-Bold'
+		font-size 50px
+	h6 
+		font-size 22px 
+		font-family 'Roboto-Light'
+	&:before
+		content ''
+		width 1px 
+		height 130px
+		background-color rgba(white, 0.4)
+		position absolute
+		left 0
+		top 50%
+		transform translateY(-50%)
 		
-	
 			
 			
 

@@ -5,6 +5,7 @@ html(lang='es')
 		title Pideloo
 		link(rel='stylesheet', type='text/css', href='./client/css/header.css')
 		link(rel='stylesheet', type='text/css', href='./client/css/footer.css')
+		link(rel='stylesheet', type='text/css', href='./client/css/icons.css')
 		link(rel='stylesheet', type='text/css', href='./client/css/detail-project.css')
 	body 
 		include ./blocks/header.pug
@@ -96,9 +97,9 @@ html(lang='es')
 				.detail-wireframe-title
 					.g-title
 						h5 
-							| Los
-							span Wireframes
-					h6 UX (Experiencia de Usuario)
+							| Pantallas
+							span Finales
+					h6 UI (Interfaz de Usuario)
 				.detail-wireframe-subtitle
 					p Tienen un propósito simple y específico, que queriamos que los usuarios estuvieran realmente enfocados al usa la aplicación. La experiencia principal se construye alrededor de la pantalla del tablero de instrumentos para faciliar la reproducción y grabación de mensajes de audio.
 				.f-s-colors-container
@@ -110,10 +111,67 @@ html(lang='es')
 						.f-s-color.color5
 						.f-s-color.color6
 					.f-s-typography
-
+		section.set-screen
+			.set-screen-background
+		section.results
+			.wancho
+				.row-detail-client-title
+					h6 04
+					.g-title
+						h5 
+							| Los
+							span Resultados
+				.detail-client-p
+					p 
+						| En primer lugar, nos encontramos con tener que saber y tener
+						strong a la mano los reportes
+						| de
+						strong tsunamis en el Perú.
+						| Es muy importante que los anunciantes aprendan a planificarse. Algunas empresas suelen hacer acciones de
+						strong marketing por separado,
+						| pero se olvidan de que el marketing es algo global con tener que saber.
+				.we-develop-bottom
+					.item-we-develop
+						img(src='./client/img/detail-project/results-icon1.png')
+						.row-timer
+							span +
+							h6.timer1 30
+							span %
+						h5 incremento en ventas
+					.item-we-develop
+						img(src='./client/img/detail-project/results-icon2.png')
+						.row-timer
+							h6.timer2 50
+							h4 k
+						h5 Descargas en tiendas
+					.item-we-develop
+						img(src='./client/img/detail-project/results-icon3.png')
+						h6.timer3 80
+						h5 clientes satisfechos
+		section.detail-project-share
+			.wancho
+				.g-title
+					h5 
+						| Si te gusto
+						span compártelo
+				.btn-share-container
+					a(href='#').btn-share
+						i.icon-social-facebook
+						h6 Compartelo
+					a(href='#').btn-share
+						i.icon-social-twitter
+						h6 Twittealo
+					a(href='#').btn-share
+						i.icon-social-linkedin
+						h6 Compartelo
+				.detail-project-share-number
+					h5 20 
+					h6 compartidos
 		include ./blocks/footer.pug
 
 		script(src='./client/js/jquery1.8.3.min.js')
 		script(type='text/javascript', src='./client/js/jquery.waypoints.js')
+		script(type='text/javascript', src='./client/js/contador.js')
 		script(src='./client/js/footer.js')
 		script(src='./client/js/header.js')
+		script(src='./client/js/detail-project.js')

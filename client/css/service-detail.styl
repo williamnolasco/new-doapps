@@ -26,7 +26,9 @@
 		li 
 			margin-bottom 42px
 .service-detail-works
-	padding 134px 0 86px
+	padding 125px 0 86px
+	.wancho
+		max-width 1172px
 	.product-item
 		background-color white
 		&:nth-child(odd)
@@ -34,9 +36,53 @@
 	.g-title
 		width 100%
 		max-width 450px
-		margin 0 auto
+		margin 0 auto 75px
 		h5 
 			span 
 				margin 0
 				display block
+.service-detail-background
+	background-image url(../img/service-detail/service-detail-item-backgrund.jpg)
+	using-background()
+	width 100%
+	height 100%
+	position absolute
+	left 0
+	top 0
+.service-detail-item
+	using-flex(row, space-between, center)
+	height 466px
+	border 1px solid #c7c7c7
+	margin-bottom 83px 
+	&:nth-last-child(1)
+		margin-bottom 0
+.service-detail-left
+	width 466px
+	height 100%
+	position relative
+	figure 
+		position absolute
+		left 50%
+		top 50%
+		-webkit-transform translate(-50%, -50%)
+		transform translate(-50%, -50%)
+		img 
+			img-responsive()
+.service-detail-right
+	using-flex(column, center, flex-start)
+	width calc(100% - 466px)
+	height 100%
+	padding 20px 67px 20px 76px
+	h5 
+		font-family 'Roboto-Bold'
+		font-size 30px
+		margin-bottom 32px
+	p 
+		font-size 22px
+		font-family 'Roboto-Light'
+		margin-bottom 26px
+		line-height 1.85
+		strong 
+			font-family 'Roboto-Bold'
+			margin 0 7px
 		
