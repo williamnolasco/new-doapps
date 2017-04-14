@@ -3,13 +3,20 @@ html(lang='es')
 	head
 		meta(charset='utf-8') 
 		title Contact
+		link(rel='stylesheet', type='text/css', href='./client/css/icons.css')
 		link(rel='stylesheet', type='text/css', href='./client/css/header.css')
 		link(rel='stylesheet', type='text/css', href='./client/css/footer.css')
 		link(rel='stylesheet', type='text/css', href='./client/css/banner.css')
 		link(rel='stylesheet', type='text/css', href='./client/css/contact.css')
 	body 
 		include ./blocks/header.pug
-		include ./blocks/banner.pug
+		section.contact-banner.g-banner
+			.wancho 
+				.g-banner-content
+					h5 Estamos para servirte
+					h6 
+						|Encuentranos en nuestra oficina en Lima, llamándonos o escribiéndonos un correo.
+						strong Abajo te decimos como...
 		section.contact-title
 			.wancho
 				.g-title
@@ -19,11 +26,19 @@ html(lang='es')
 					p
 						a(href='tel:(+51) 283-2015') (+51) 283-2015
 						||
-						a(href='tel:(+51) 986 077 524 ') (+51) 986 077 524 
-		
+						a(href='tel:(+51) 986 077 524 ') (+51) 986 077 524
+				.contact-row-icon
+					a(href='#').icon-social-facebook
+					a(href='#').icon-social-twitter
+					a(href='#').icon-social-linkedin
+		section.contact-ubication
+			#ubication-google-maps
+
 		include ./blocks/footer.pug
 
 		script(src='./client/js/jquery1.8.3.min.js')
-		script(type='text/javascript', src='./client/js/jquery.waypoints.js')
+		script(src='http://maps.googleapis.com/maps/api/js?key=AIzaSyC6HdYzQtgz_4PNyWeWvgSQYcfmtscOopA')
+		script(src='./client/js/jquery.waypoints.js')
 		script(src='./client/js/footer.js')
 		script(src='./client/js/header.js')
+		script(src='./client/js/contact.js')

@@ -9,7 +9,7 @@ html(lang='es')
 		link(rel='stylesheet', type='text/css', href='./client/css/footer.css')
 		link(rel='stylesheet', type='text/css', href='./client/css/banner.css')
 		link(rel='stylesheet', type='text/css', href='./client/css/blog.css')
-	body
+	body.body-blog
 		include ./blocks/header.pug
 		section.blog.g-banner
 			.wancho 
@@ -23,8 +23,7 @@ html(lang='es')
 				.blog-content-title
 					h6 Publicaciones más recientes
 				a(href='detail-blog.html').blog-new-big
-					figure.new-big-photo
-						img(src='./client/img/blog/blog-new-big.jpg' width='772px' height='397px')
+					.new-big-photo
 						.category
 							h6 programación
 					.blog-new-description
@@ -39,8 +38,7 @@ html(lang='es')
 				.blog-content-down
 					.blog-list-new-small
 						a(href='detail-blog.html').new-small
-							figure.new-small-photo
-								img(src='./client/img/blog/blog-new-small.jpg' width='372' height='256')
+							.new-small-photo
 								.category
 									h6 programación
 							.blog-new-description
@@ -53,8 +51,7 @@ html(lang='es')
 										h5 Ángel Espinoza
 										h6 Mar 14
 						a(href='detail-blog.html').new-small
-							figure.new-small-photo
-								img(src='./client/img/blog/blog-new-small.jpg' width='372' height='256')
+							.new-small-photo
 								.category
 									h6 programación
 							.blog-new-description
@@ -67,8 +64,7 @@ html(lang='es')
 										h5 Ángel Espinoza
 										h6 Mar 14
 						a(href='detail-blog.html').new-small
-							figure.new-small-photo
-								img(src='./client/img/blog/blog-new-small.jpg' width='372' height='256')
+							.new-small-photo
 								.category
 									h6 programación
 							.blog-new-description
@@ -81,8 +77,7 @@ html(lang='es')
 										h5 Ángel Espinoza
 										h6 Mar 14
 						a(href='detail-blog.html').new-small
-							figure.new-small-photo
-								img(src='./client/img/blog/blog-new-small.jpg' width='372' height='256')
+							.new-small-photo
 								.category
 									h6 programación
 							.blog-new-description

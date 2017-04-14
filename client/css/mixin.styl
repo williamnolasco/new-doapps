@@ -16,6 +16,16 @@ img-responsive()
 	max-width 100%
 	height auto
 	display block
+item-header-active()
+	content ''
+	width 100px
+	height 0px
+	border-bottom 1px solid white
+	position absolute
+	left 50%
+	bottom 0
+	-webkit-transform translateX(-50%)
+	transform translateX(-50%)
 	
 @font-face 
 	font-family 'Roboto-Thin'
@@ -162,7 +172,7 @@ input, select, textarea, button
 		font-family 'Roboto-Light'
 		font-size 22px
 		margin-top 1px
-		
+
 @media screen and (max-width 480px)
 	.wancho 
 		width 86%

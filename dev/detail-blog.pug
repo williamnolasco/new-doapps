@@ -10,7 +10,7 @@ html(lang='es')
 		link(rel='stylesheet', type='text/css', href='./client/css/banner.css')
 		link(rel='stylesheet', type='text/css', href='./client/css/blog.css')
 		link(rel='stylesheet', type='text/css', href='./client/css/detail-blog.css')
-	body
+	body.body-blog
 		include ./blocks/header.pug
 		section.blog.g-banner
 			.wancho 
@@ -25,8 +25,7 @@ html(lang='es')
 					.detail-blog-new
 						.detail-blog-new-title
 							h3 ¿Cómo generar apps moviles para iOs y con el lenguaje nativo Swift?
-						figure.detail-blog-new-photo
-							img(src='./client/img/detail-blog/new-image.jpg' width='772' height='397')
+						.detail-blog-new-photo
 						.detail-blog-description
 							p 	
 								| Let’s look at an example: The top voted post-it here says “I have no idea what’s happening on “project x”. Because many people have voted on it, we can 
@@ -49,20 +48,28 @@ html(lang='es')
 								strong My rule of thumb
 								| of course this will depend on what the solution entail
 						.detail-blog-tags
-							figure
-								img(src='./client/img/detail-blog/tag-icon.png')
-							.tag
-								h2 iOs
-							.tag
-								h2 Apps
-							.tag
-								h2 Movil
-							.tag
-								h2 iOs
-							.tag
-								h2 Apps
-							.tag
-								h2 Movil
+							i.icon-tag2
+							.detail-group-tag
+								.tag
+									a(href='#') iOs
+								.tag
+									a(href='#') Posicionamiento aplicaciones
+								.tag
+									a(href='#') Aplicaciones moviles
+								.tag
+									a(href='#') iOs
+								.tag
+									a(href='#') Aplicaciones moviles
+								.tag
+									a(href='#') Posicionamiento aplicaciones
+								.tag
+									a(href='#') Aplicaciones moviles
+								.tag
+									a(href='#') iOs
+								.tag
+									a(href='#') Aplicaciones moviles
+								.tag
+									a(href='#') Posicionamiento aplicaciones
 						.detail-blog-share
 							.btn-share-container
 								a(href='#').btn-share
@@ -84,9 +91,9 @@ html(lang='es')
 									img(src='./client/img/detail-blog/author.jpg')
 								.detail-blog-author-description
 									h5 Jonathan Nolasco
-									h6 Co-founder in DoApps. Tech
-									h6 Entrepreneur, Android & iOS
-									h6 developer - http://doapps.me
+									p 
+										|Co-founder in DoApps. Tech Entrepreneur, Android & iOS developer - 
+										a(href='#') http://doapps.me
 					.publicity
 							.question
 								figure.quesiton-icon
@@ -132,8 +139,7 @@ html(lang='es')
 						h6 También te puede interesar
 					.detal-blog-row-news
 						a(href='detail-blog.html').new-small
-							figure.new-small-photo
-								img(src='./client/img/blog/blog-new-small.jpg' width='372' height='256')
+							.new-small-photo
 								.category
 									h6 programación
 							.blog-new-description
@@ -146,8 +152,7 @@ html(lang='es')
 										h5 Ángel Espinoza
 										h6 Mar 14
 						a(href='detail-blog.html').new-small
-							figure.new-small-photo
-								img(src='./client/img/blog/blog-new-small.jpg' width='372' height='256')
+							.new-small-photo
 								.category
 									h6 programación
 							.blog-new-description
@@ -160,8 +165,7 @@ html(lang='es')
 										h5 Ángel Espinoza
 										h6 Mar 14
 						a(href='detail-blog.html').new-small
-							figure.new-small-photo
-								img(src='./client/img/blog/blog-new-small.jpg' width='372' height='256')
+							.new-small-photo
 								.category
 									h6 programación
 							.blog-new-description

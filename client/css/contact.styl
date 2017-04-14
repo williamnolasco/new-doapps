@@ -1,5 +1,12 @@
 @import 'mixin.styl'
 
+.contact-banner
+	&.g-banner
+		background-image url(../img/contact/contact-banner.jpg)
+	.g-banner-content
+		width 100%
+		max-width 670px
+		margin 0 auto
 .contact-title
 	text-align center
 	padding 100px 0 
@@ -19,6 +26,20 @@
 		font-size 22px
 		color #343434
 		padding 0 10px
-.contact-map
-	height 646px
+.contact-ubication
 	width 100%
+	height 646px
+#ubication-google-maps
+	width 100%
+	height 100%
+.contact-row-icon
+	outline 1px solid red
+	margin-top 30px
+	a 
+		font-size 30px 
+		padding 10px 
+		border-radius 50%
+		color #999999
+		border 1px solid #999999
+		&:nth-of-type(2)
+			margin 0 25px
