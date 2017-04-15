@@ -1,15 +1,23 @@
 doctype html
 html(lang='es')
 	head
-		meta(charset='utf-8') 
-		title Pideloo
+		meta(charset='utf-8')
+		meta(name='viewport', content='width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0')
+		title Equipo
+		link(rel='stylesheet', type='text/css', href='./client/css/icons.css')
 		link(rel='stylesheet', type='text/css', href='./client/css/header.css')
 		link(rel='stylesheet', type='text/css', href='./client/css/footer.css')
 		link(rel='stylesheet', type='text/css', href='./client/css/banner.css')
 		link(rel='stylesheet', type='text/css', href='./client/css/team.css')
-	body 
+	body.body-team 
 		include ./blocks/header.pug
-		include ./blocks/banner.pug
+		section.team-banner.g-banner
+			.wancho 
+				.g-banner-content
+					h5 Nos enfocamos siempre
+					h6 
+						| En la creación de
+						strong productos digitales de calidad.
 		section.team-title
 			.wancho
 				.g-title
