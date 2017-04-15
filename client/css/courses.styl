@@ -97,7 +97,7 @@
 		margin-top -12px
 .courses-objectives
 	background-color #fcfcfc
-	padding 137px 0 202px
+	padding 137px 0 130px
 	.wancho
 		max-width 1190px
 	.g-title
@@ -118,3 +118,120 @@
 		font-family 'Roboto-Regular'
 		color #070707
 		line-height 1.25
+.courses-temary
+	width 100%
+	background-image url(../img/courses/courses-temary-background.jpg)
+	using-background()
+	padding 94px 0 105px
+	.wancho
+		max-width 1175px
+	.g-title
+		margin-bottom 55px
+.courses-temary-row
+	using-flex(row, space-between, flex-start)
+.courses-temary-item
+	width calc(33.333% - 20px)
+	max-width 372px
+	height 523px
+	border 1px solid #bebebe
+.courses-temary-item-top
+	using-flex(row, center, center)
+	height 70px
+	line-height 70px
+	text-align center
+	background-color #343434
+	figure
+		img 
+			display block
+	h5 
+		text-transform uppercase
+		color white
+		margin-left 20px
+		font-size 22px 
+		font-family 'Roboto-Bold'
+.courses-temary-item-bottom
+	height calc(100% - 70px)
+	padding 57px 32px
+	background-color white
+.courses-temary-item-li
+	position relative
+	padding-left 20px
+	font-size 22px 
+	font-family 'Roboto-Regular'
+	color black-text
+	margin-bottom 28px
+	line-height 1.17
+	&:nth-last-child(1)
+		margin-bottom 0
+	&:before
+		content ''
+		width 5px 
+		height 5px 
+		background-color green-doapps
+		border-radius 50%
+		position absolute
+		left 0
+		top 50%
+		-webkit-transform translateY(-50%)
+		transform translateY(-50%)
+.courses-teacher
+	padding 132px 0 169px
+	.wancho
+		max-width 1070px
+	.g-title
+		margin-bottom 99px
+.courses-teacher-row
+	using-flex(row, space-between, flex-start)
+.courses-teacher-item
+	using-flex(row, flex-start, center)
+	figure
+		img 
+			border-radius 50%
+			display block
+.courses-teacher-description
+	width calc(100% - 166px)
+	max-width 310px
+	padding-left 35px
+	h5 
+		font-family 'Roboto-Medium'
+		font-size 26px
+		color green-doapps
+		margin-bottom 9px
+	p 
+		font-family 'Roboto-Light'
+		font-size 18px
+		color #4e4e4e
+		line-height 1.47
+		a 
+			color #4e4e4e
+.courses-feature
+	width 100%
+	background-image url(../img/courses/courses-temary-background.jpg)
+	using-background()
+	padding 146px 0 227px
+	.wancho
+		max-width 1020px
+	.g-title
+		margin-bottom 72px
+.courses-feature-row
+	using-flex(row, space-between, flex-start)
+.courses-feature-item
+	text-align center
+	width 33.333%
+	max-width 290px
+	padding 0 20px
+	figure
+		img 
+			display block
+			margin 0 auto
+	h6 
+		font-size 22px
+		font-family 'Roboto-Black'
+		margin 21px 0 10px
+	p
+		font-family 'Roboto-Regular'
+		font-size 16px
+		line-height 1.6
+.courses-cost 
+	background-color #343434
+		
