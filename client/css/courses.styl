@@ -1,0 +1,120 @@
+@import 'mixin.styl'
+
+.body-courses
+	.footer-top 
+		display none
+	.footer-bottom
+		position relative
+		z-index 2
+.courses-banner
+	width 100%
+	height 800px
+	background-image url(../img/courses/courses-background.jpg)
+	using-background()
+	position relative
+	&:before
+		content ''
+		width 100%
+		height 100%
+		background linear-gradient(to bottom, rgba(0, 0, 0, 0.95) 0%,
+											rgba(0, 0, 0, 0.9) 25%,
+											rgba(0, 0, 0, 0.85) 50%,
+											rgba(0, 0, 0, 0.7) 70%,
+											rgba(0, 0, 0, 0.4) 100%)
+		position absolute
+		left 0
+		top 0
+	.wancho 
+		using-flex(row, space-between, flex-end)
+		height 100%
+		padding-bottom 55px
+		position relative
+		z-index 1
+.courses-date
+	width 50%
+	max-width 457px
+	margin-bottom 80px
+	color white
+	h4 
+		font-size 66px
+		font-family 'Roboto-Bold'
+		line-height 0.97
+	h5, h6 
+		font-family 'Roboto-Light'
+	h5 
+		font-size 22px
+		margin 22px 0 7px
+	h6 
+		font-size 35px
+.courses-form
+	width 50%
+	max-width 470px
+	margin-left 20px
+	background-color white
+	padding 68px 49px 57px
+	text-align center
+	h5 
+		font-family 'Roboto-Black'
+		font-size 35px
+		margin-bottom 67px
+	.input-container 
+		using-flex(row, flex-start, flex-end)
+		width 100%
+		margin-left 0
+		margin-bottom 52px
+		&:nth-child(even)
+			margin-left 0
+	.form-input
+		border-bottom 1px solid rgba(130, 130, 130, 0.6)
+		padding-left 45px
+		color #343434
+		font-family 'Roboto-Regular'
+	.lively-bar
+		background-color green-doapps
+		transition all 1s
+	.row-input-content
+		top 0
+		label 
+			font-family 'Roboto-Regular'
+			font-size 22px
+			position relative
+			color #7d7d7d
+			margin-left 5px
+			transition all 0.2s ease-out
+		img 
+			position relative
+			top 0
+		&.active
+			top 0
+			img 
+				width 38px 
+				height auto
+				top 0
+			label 
+				font-size 15px
+				top -25px
+	button
+		margin-top -12px
+.courses-objectives
+	background-color #fcfcfc
+	padding 137px 0 202px
+	.wancho
+		max-width 1190px
+	.g-title
+		margin-bottom 85px
+.courses-objectives-list
+	using-flex(row, space-between, flex-start)
+	width 100%
+.courses-objectives-item
+	using-flex(row, flex-start, flex-start)
+	width 50%
+	max-width 530px
+	margin-bottom 70px
+	p 
+		width calc(100% - 27px)
+		max-width 490px
+		padding-left 41px
+		font-size 22px 
+		font-family 'Roboto-Regular'
+		color #070707
+		line-height 1.25
