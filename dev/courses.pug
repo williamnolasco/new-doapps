@@ -1,0 +1,79 @@
+doctype html
+html(lang='es')
+	head
+		meta(charset='utf-8') 
+		meta(name='viewport', content='width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0')
+		title Cursos
+		link(rel='stylesheet', type='text/css', href='./client/css/icons.css')
+		link(rel='stylesheet', type='text/css', href='./client/css/header.css')
+		link(rel='stylesheet', type='text/css', href='./client/css/footer.css')
+		link(rel='stylesheet', type='text/css', href='./client/css/banner.css')
+		link(rel='stylesheet', type='text/css', href='./client/css/courses.css')
+	body.body-courses
+		include ./blocks/header.pug
+		section.courses-banner
+			.wancho 
+				.courses-date
+					h4 Programación para iOs
+					h5 Fecha de inicio
+					h6 20 de marzo
+				form.courses-form
+					h5 Inscríbete
+					.input-container
+						input(id='name').form-input
+						.row-input-content
+							img(src='./client/img/input-name.png', width='38', height='32')
+							label(for='name') ¿Cúal es tu nombre?
+						span.lively-bar
+					.input-container
+						input(id='name').form-input
+						.row-input-content
+							img(src='./client/img/input-email.png', width='38', height='32')
+							label(for='name') ¿Cúal es tu correo?
+						span.lively-bar
+					.input-container
+						input(id='name').form-input
+						.row-input-content
+							img(src='./client/img/input-tel.png', width='38', height='32')
+							label(for='name') ¿Cúal es tu teléfono?
+						span.lively-bar
+					button.g-btn.btn-green Comienza ahora
+		section.courses-objectives
+			.wancho
+				.g-title
+					h5 
+						| Los
+						span Objetivos
+				.courses-objectives-list
+					.courses-objectives-item
+						figure
+							img(src='./client/img/courses/courses-check.png' width='27px' height='27px')
+						p Aprender las bases de la programación de aplicaciones nativas para iOS en Objective C utilizando como herramienta Xcode.
+					.courses-objectives-item
+						figure
+							img(src='./client/img/courses/courses-check.png' width='27px' height='27px')
+						p Aprender las bases de la programación de aplicaciones nativas para iOS en Objective C utilizando como herramienta Xcode.
+					.courses-objectives-item
+						figure
+							img(src='./client/img/courses/courses-check.png' width='27px' height='27px')
+						p Aprender las bases de la programación de aplicaciones nativas para iOS en Objective C utilizando como herramienta Xcode.
+		
+					.courses-objectives-item
+						figure
+							img(src='./client/img/courses/courses-check.png' width='27px' height='27px')
+						p Aprender las bases de la programación de aplicaciones nativas para iOS en Objective C utilizando como herramienta Xcode.
+					.courses-objectives-item
+						figure
+							img(src='./client/img/courses/courses-check.png' width='27px' height='27px')
+						p Aprender las bases de la programación de aplicaciones nativas para iOS en Objective C utilizando como herramienta Xcode.
+					.courses-objectives-item
+						figure
+							img(src='./client/img/courses/courses-check.png' width='27px' height='27px')
+						p Aprender las bases de la programación de aplicaciones nativas para iOS en Objective C utilizando como herramienta Xcode.
+		include ./blocks/footer.pug
+
+		script(src='./client/js/jquery1.8.3.min.js')
+		script(src='./client/js/jquery.waypoints.js')
+		script(src='./client/js/footer.js')
+		script(src='./client/js/header.js')
+		script(src='./client/js/courses.js')
