@@ -6,6 +6,7 @@
 	background-image url(../img/we-love.jpg)
 	using-background()
 	position relative
+	z-index 1
 	&:before
 		content ''
 		width 100%
@@ -18,23 +19,26 @@
 		left 0
 		top 0
 .we-love-content
+	width 90%
+	max-width 770px
 	text-align center
 	color white
 	position relative
 	z-index 2
+	margin 0 auto
 	h1 
 		font-family 'Roboto-Bold'
 		font-size 66px
 	h2 
 		font-family 'Roboto-Light'
 		font-size 25px
-		margin-top 2px
+		margin-top 17px
 		span 
 			font-family 'Roboto-Italic'
 			font-weight bold
 			margin-left 10px
 .row-buttons
-	margin-top 25px
+	margin-top 31px
 	a 
 		&:nth-of-type(1)
 			margin-right 28px
@@ -65,6 +69,21 @@
 			&.active
 				transform translateY(0) scaleX(1)
 				opacity 1
+	.owl-dots
+		using-flex(row, center, center)
+		margin-top 35px
+	.owl-dot
+		width 12px
+		height 12px
+		background-color #727272
+		border-radius 50%
+		cursor pointer
+		margin 0 13px
+		&.active, &:hover
+			width 15px
+			height 15px
+			background-color white
+			border 2px solid #727272
 .client-description
 	width 100%
 	max-width 520px
@@ -76,25 +95,11 @@
 		line-height 1.5
 		color #a0a0a0
 .row-clients
-	using-flex(row, space-around, center)
+	/*using-flex(row, space-around, center)*/
 	margin-top 50px
-.owl-dots
-	using-flex(row, center, center)
-	margin-top 35px
-.owl-dot
-	width 12px
-	height 12px
-	background-color #727272
-	border-radius 50%
-	transition all 0.5s
-	cursor pointer
-	&.active, &:hover
-		width 15px
-		height 15px
-		background-color white
-		border 2px solid #727272
-	&:nth-of-type(2)
-		margin 0 25px
+	img 
+		img-responsive()
+		margin 0 auto
 .we-develop
 	background-image url(../img/we-develop.jpg)
 	using-background()
@@ -156,12 +161,13 @@
 		margin-bottom 38px 
 		&:nth-last-child(1)
 			margin-bottom 0
-		img 
-			margin-right 23px
 		h6 
+			width calc(100% - 27px)
 			font-size 22px
 			font-family 'Roboto-Light'
 			color white
+			padding-left 23px
+			line-height 1.2
 			span 
 				font-family 'Roboto-Black'
 				margin 0 10px
@@ -181,10 +187,13 @@
 		font-family 'Roboto-Black'
 		font-size 60px
 	h5 
+		width 100%
+		max-width 150px
 		line-height 1.2
 		font-family 'Roboto-Regular'
 		font-size 15px
 		text-transform uppercase
+		margin 0 auto
 .row-timer
 	using-flex(row, center, center)
 	flex-flow row nowrap
@@ -232,15 +241,17 @@
 	overflow hidden
 	&:nth-of-type(2), &:nth-last-child(2)
 		margin 0 1px 1px
-	&:hover	
-		.work-card-description
-			opacity 1
-			h5, h6, a
+	@media screen and (min-width 1025px)
+		&:hover	
+			.work-card-description
 				opacity 1
-		.work-background
-			-webkit-transform scale(1.05)
-			transform scale(1.05)
+				h5, h6, a
+					opacity 1
+			.work-background
+				-webkit-transform scale(1.05)
+				transform scale(1.05)
 	.img-cel
+		img-responsive()
 		position absolute
 		left 50%
 		top 50%
@@ -272,4 +283,180 @@
 	left 0
 	top 0
 	transition all 2s ease-out
-	
+
+@media screen and (max-height 610px)
+	.we-love
+		height 610px
+@media screen and (max-width 960px)
+	.we-love-content
+		h1 
+			font-size 50px
+	.client 
+		padding 60px 0
+	/*.row-clients
+		img 
+			width 70%*/
+	.we-develop-right
+		display none
+	.we-develop-left
+		width 100%
+		padding-right 0
+	.we-develop
+		padding 60px 0
+		.wancho
+			.g-title
+				margin-bottom 45px
+	.works 
+		.g-title
+			margin 60px 0
+@media screen and (max-width 768px)
+	.we-love-content
+		h1 
+			font-size 40px
+		h2 
+			font-size 23px
+	.row-buttons
+		margin-top 45px
+	.client
+		padding 30px 0
+		.g-btn 
+			margin-top 40px
+		.owl-dots
+			margin-top 25px
+	.we-develop
+		padding 30px 0
+	.we-develop-top
+		li 
+			margin-bottom 30px
+			h6 
+				font-size 20px
+	.item-we-develop
+		padding 0 15px
+		h6, h4
+			font-size 40px
+	.we-develop-bottom
+		margin-top 30px
+	.works 
+		.g-title
+			margin 30px 0
+@media screen and (max-width 767px)
+	.work-card
+		width calc(50% - 0.5px)
+		&:nth-of-type(2)
+			margin 0 0 1px 0
+		&:nth-last-child(2)
+			margin 0 0 1px 0
+		&:nth-child(even)
+			margin-left 1px
+@media screen and (max-width 540px)
+	.we-love-content
+		width 100%
+	.we-develop-top
+		li 
+			img 
+				width 20px
+				height auto
+			h6 
+				font-size 18px
+				padding-left 13px
+	.item-we-develop
+		width 50%
+		&:nth-of-type(2)
+			border-right 0
+		&:nth-last-child(1)
+			margin-top 20px
+@media screen and (max-width 480px)
+	.we-love 
+		height 480px
+	.we-love-content
+		h1 
+			font-size 28px
+			line-height 1.2
+		h2 
+			font-size 16px
+			margin-top 8px
+			line-height 1.35
+	.row-buttons
+		using-flex(column, center, center)
+		margin-top 32px
+		a 
+			&:nth-of-type(1)
+				margin-right 0
+				margin-bottom 18px
+	.scroll-down
+		display none
+	.we-love-content
+		margin-top 20px
+	.client-description
+		display none
+	.row-clients
+		margin-top 20px
+	.we-develop-bottom
+		display none
+	.we-develop-top
+		img 
+			width 17px 
+			height 17px
+		li 
+			margin-bottom 23px
+			h6 
+				font-size 16px
+				span 
+					font-family 'Roboto-Light'
+	.we-develop 
+		.wancho
+			.g-title
+				margin-bottom 30px
+	.work-card-description
+		position relative
+	.work-card-description
+		position relative
+		opacity 1
+		background-color white
+		h5, h6, a 
+			opacity 1
+		h5, h6
+			color black-text
+		h5 
+			font-size 18px
+			margin-top 15px
+			margin-bottom 4px
+		h6 
+			font-size 14px
+			margin-bottom 0
+		.g-btn 
+			overflow visible
+			margin-top -2px
+			&.btn-green
+				background-color transparent
+				color green-doapps
+			&:before 
+				display none
+			&:after
+				content '\e91d'
+				color green-doapps
+				font-family 'icomoon'
+				background-color transparent
+				transform rotateY(180deg) translateY(-100%)
+				font-size 15px
+				right 10px
+	.work-card
+		width 100%
+		height 484px
+		overflow visible
+		&:nth-child(even)
+			margin-left 0
+		.img-cel 
+			width 130px
+			max-width 130px
+			top -27px
+			transform translate(-50%, -100%)
+	.work-content
+		position relative
+		width 100%
+		height 160px
+		left 0
+		top 0
+	.work-background
+		height 324px
+		position relative

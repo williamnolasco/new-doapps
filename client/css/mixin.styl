@@ -2,6 +2,8 @@
 	margin 0
 	padding 0
 	box-sizing border-box
+body 
+	-webkit-font-smoothing antialiased
 
 using-flex(direction, justify-content, align-items)
 	display flex 
@@ -98,12 +100,13 @@ input, select, textarea, button
 	&:after
 		right -20px
 		transform translate(50%, -50%)
-	&:hover
-		z-index 2
-		&:before
-			animation show-before 0.7s both
-		&:after
-			animation show-after 0.7s both
+	@media screen and (min-width 1025px)
+		&:hover
+			z-index 2
+			&:before
+				animation show-before 0.7s both
+			&:after
+				animation show-after 0.7s both
 @keyframes show-before
 	0%
 		left -20px
@@ -173,15 +176,28 @@ input, select, textarea, button
 		font-size 22px
 		margin-top 1px
 
+@media screen and (max-width 960px)
+	.g-title
+		h5 
+			font-size 40px !important
 @media screen and (max-width 768px)
 	.g-title h5
-		font-size 28px
+		font-size 28px !important
 @media screen and (max-width 480px)
 	.g-title
 		h5 
-			font-size 28px
+			font-size 23px !important
 			span 
 				margin-top 2px
 				font-family 'Roboto-Black'
 	.wancho 
 		width 87%
+	.g-btn 
+			width 180px !important
+			padding 0px !important
+			height 44px  !important
+			font-size 14px !important
+			&.btn-transparent
+				line-height 40px !important
+			&.btn-green
+				line-height 44px !important

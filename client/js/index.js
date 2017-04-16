@@ -1,8 +1,8 @@
 // Slider
-var row_clients_length= $('.row-clients').length;
+var items_length= $('.row-clients img').length;
 
-if (row_clients_length > 1) {
-	$('.slider-clients-container').addClass('owl-carousel');
+if (items_length > 1) {
+	$('.row-clients').addClass('owl-carousel');
 
 	$('.owl-carousel').owlCarousel({
 		loop:true,
@@ -11,7 +11,13 @@ if (row_clients_length > 1) {
 		autoplay: true,
 		responsive:{
 			0:{
-				items:1
+				items:2
+			},
+			481:{
+				items:3
+			},
+			768:{
+				items: 4
 			}
 		}
 

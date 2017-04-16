@@ -1,5 +1,5 @@
 //google map
-var myLatlng = new google.maps.LatLng(-12.100395, -77.036606);
+var myLatlng = new google.maps.LatLng(-12.102469 , -77.022073);
 var styles = [
     {
         "featureType": "administrative",
