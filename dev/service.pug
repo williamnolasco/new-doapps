@@ -10,7 +10,7 @@ html(lang='es')
 		link(rel='stylesheet', type='text/css', href='./client/css/footer.css')
 		link(rel='stylesheet', type='text/css', href='./client/css/banner.css')
 		link(rel='stylesheet', type='text/css', href='./client/css/service.css')
-	body
+	body.body-service
 		include ./blocks/header.pug
 		section.service.g-banner
 			.wancho 
@@ -27,42 +27,42 @@ html(lang='es')
 						span Servicios
 					h6 Descubre cada uno de los servicios que desarrollamos.
 				.service-row-service
-					.service-item
+					a(href='service-detail.html').service-item
 						.service-image
 						.service-content-item
 							figure
 								img(src='./client/img/service/service-icon1.png')
 							h2 Android
 							h5 Aplicaciones Nativas en Java
-					.service-item
+					a(href='service-detail.html').service-item
 						.service-image
 						.service-content-item
 							figure
 								img(src='./client/img/service/service-icon2.png')
 							h2 iOs
 							h5 Aplicaciones Nativas en Swift
-					.service-item
+					a(href='service-detail.html').service-item
 						.service-image
 						.service-content-item
 							figure
 								img(src='./client/img/service/service-icon3.png')
 							h2 UX - UI
 							h5 Diseño de interfaces móviles
-					.service-item
+					a(href='service-detail.html').service-item
 						.service-image
 						.service-content-item
 							figure
 								img(src='./client/img/service/service-icon4.png')
 							h2 IOT
 							h5 Arduino - Beacones & Rasberry Pi
-					.service-item
+					a(href='service-detail.html').service-item
 						.service-image
 						.service-content-item
 							figure
 								img(src='./client/img/service/service-icon5.png')
 							h2 Realidad Aumentada
 							h5 Uso específico de coordenadas
-					.service-item
+					a(href='service-detail.html').service-item
 						.service-image
 						.service-content-item
 							figure
@@ -79,20 +79,18 @@ html(lang='es')
 					p Trabajamos con entidades privadas y del gobierno quienes apostaron por el desarrollo móvil como apoyo a su crecimiento.
 				.slider-clients-container
 					.row-clients
-						img(src='./client/img/upc.png')
-						img(src='./client/img/miraflores.png')
-						img(src='./client/img/congreso.png')
-						img(src='./client/img/marina.png')
-					.row-clients
-						img(src='./client/img/miraflores.png')
-						img(src='./client/img/congreso.png')
-						img(src='./client/img/marina.png')
-						img(src='./client/img/upc.png')
-					.row-clients
-						img(src='./client/img/marina.png')
-						img(src='./client/img/upc.png')
-						img(src='./client/img/miraflores.png')
-						img(src='./client/img/congreso.png')
+						img(src='./client/img/home/client-image1.png' width='231' height='147')
+						img(src='./client/img/home/client-image2.png' width='231' height='147')
+						img(src='./client/img/home/client-image3.png' width='231' height='147')
+						img(src='./client/img/home/client-image4.png' width='231' height='147')
+						img(src='./client/img/home/client-image1.png' width='231' height='147')
+						img(src='./client/img/home/client-image2.png' width='231' height='147')
+						img(src='./client/img/home/client-image3.png' width='231' height='147')
+						img(src='./client/img/home/client-image4.png' width='231' height='147')
+						img(src='./client/img/home/client-image1.png' width='231' height='147')
+						img(src='./client/img/home/client-image2.png' width='231' height='147')
+						img(src='./client/img/home/client-image3.png' width='231' height='147')
+						img(src='./client/img/home/client-image4.png' width='231' height='147')
 		section.service-process
 			.wancho
 				.title-special
