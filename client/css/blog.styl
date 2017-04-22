@@ -33,12 +33,14 @@
 	using-flex(row, space-between, flex-start)
 	margin-top 33px
 .new-big-photo
-	background-image url(../img/blog/blog-new-big.jpg)
-	using-background()
+	// background-image url(../img/blog/blog-new-big.jpg)
+	// using-background()
 	width 66%
 	max-width 772px
-	height 397px
+	// height 397px
 	position relative
+	img 
+		img-responsive()
 .category
 	width 171px
 	height 43px
@@ -102,12 +104,13 @@
 		p 
 			padding-top 2px
 .new-small-photo
-	background-image url(../img/blog/blog-new-small.jpg)
-	using-background()
+	// background-image url(../img/blog/blog-new-small.jpg)
+	// using-background()
 	width 100%
 	height 256px
 	position relative
-	
+	img 
+		img-responsive()
 .blog-list-new-small
 	using-flex(row, space-between, flex-start) 
 	width 66%
