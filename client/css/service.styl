@@ -39,7 +39,7 @@
 	max-width 520px
 	margin 9px auto 0
 	p 
-		font-family 'Roboto-Light'
+		font-family font-1
 		font-size 17px
 		text-align center
 		line-height 1.5
@@ -47,6 +47,10 @@
 .row-clients
 	using-flex(row, space-around, center)
 	margin-top 50px
+	img 
+		max-width 100%
+		height auto
+		display block
 .owl-dots
 	using-flex(row, center, center)
 	margin-top 35px
@@ -73,7 +77,7 @@
 		h5 
 			margin-bottom 11px
 		h6 
-			font-family 'Roboto-Light'
+			font-family font-1
 			font-size 25px
 			width 100%
 			max-width 400px
@@ -123,11 +127,11 @@
 	h2, h5 
 		color black-text
 	h2
-		font-family 'Roboto-Black'
+		font-family font-6
 		font-size 30px
 		margin-top 12px
 	h5 
-		font-family 'Roboto-Light'
+		font-family font-1
 		font-size 16px
 		margin-top 6px
 		line-height 1.15
@@ -156,7 +160,7 @@
 		width 45%
 	.service-content-item
 		width 55%
-		padding 15px
+		padding 10px
 		h2, h5 
 			width 100%
 			max-width 130px
@@ -166,4 +170,95 @@
 			font-size 20px
 		h5 
 			font-size 14px
-			
+	.service-item
+		height 200px 
+@media screen and (max-width 850px)
+	.service-item
+		height 170px 
+	.service-content-item
+		h2 
+			margin-top 6px
+		h5 
+			margin-top 3px
+@media screen and (max-width 768px)
+	.service-list 
+		padding 45px 0 25px
+		.g-title
+			h5 
+				margin-bottom 10px
+			h6 
+				font-size 17px
+	.service-row-service
+		margin-top 40px
+	.service-item
+		margin-bottom 20px
+	.service-client
+		padding 45px 0
+		.client-description
+			margin-top 5px
+	.row-clients
+		margin-top 25px
+	.service-process
+		padding 45px 0
+		.title-special
+			padding-left 20px
+			margin-bottom 35px
+	.title-special
+		h6 
+			font-size 18px
+			margin-top 3px
+	.service-content-item
+		h2 
+			font-size 18px
+@media screen and (max-width 750px)
+	.service-item
+		width calc(50% - 10px)
+@media screen and (max-width 570px)
+	.service-item
+		width 100%
+		max-width 400px
+		height 250px
+		margin-left auto
+		margin-right auto
+	.service-content-item
+		h2 
+			font-size 22px
+	.service-image, .service-content-item
+		width 50%
+@media screen and (max-width 480px)
+	.service 
+		.g-banner-content
+			h6 
+				line-height 1.6
+	.service-list 
+		padding 30px 0 10px
+		.g-title
+			h5 
+				margin-bottom 10px
+			h6 
+				font-size 16px
+	.service-client
+		padding 30px 0
+		.client-description
+			display none
+	.service-process
+		.title-special
+			&:before
+				display none
+			.g-title
+				text-align center
+				h5
+					text-align center
+			h6 
+				text-align center 
+	.title-special
+		h6 
+			font-size 16px
+	.service-process
+		padding 30px 0
+@media screen and (max-width 375px)
+	.service-item
+		height 178px
+	.service-content-item
+		padding 10px
+		

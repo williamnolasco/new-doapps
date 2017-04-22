@@ -7,7 +7,7 @@
 	p 
 		strong 
 			color #353535
-			font-family 'Roboto-Bold'
+			font-family font-3
 			font-size 22px
 .detail-characteristics-cnt
 	strong 
@@ -74,15 +74,42 @@
 	height 100%
 	padding 20px 67px 20px 76px
 	h5 
-		font-family 'Roboto-Bold'
+		font-family font-3
 		font-size 30px
 		margin-bottom 32px
 	p 
 		font-size 22px
-		font-family 'Roboto-Light'
+		font-family font-1
 		margin-bottom 26px
 		line-height 1.85
 		strong 
-			font-family 'Roboto-Bold'
+			font-family font-3
 			margin 0 7px
-		
+			
+@media screen and (max-width 960px)
+	.service-detail
+		padding-top 60px 
+		&.products-detail
+			padding-bottom 20px
+	.service-detail-works
+		padding 60px 0
+	.service-detail-left
+		width 45%
+	.service-detail-right
+		width 55%
+		padding 20px 40px
+@media screen and (max-width 768px)
+	.detail-client-p
+		p 
+			font-size 20px
+	.service-detail
+		.detail-client-p
+			margin-bottom 50px
+	.service-detail-works
+		padding 45px 0
+		.g-title
+			margin 0 auto 40px
+	.service-detail-left
+		width 300px
+	.service-detail-right
+		width calc(100% - 300px)
