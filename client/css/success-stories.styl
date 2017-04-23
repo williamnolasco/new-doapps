@@ -1,21 +1,24 @@
 @import 'mixin.styl'
 
+.body-success-stories
+	.list-items
+		li 
+			&:nth-of-type(2)
+				a 
+					&:after
+						item-header-active()
 .success-stories-banner
 	&.g-banner
 		background-image url(../img/success-stories/success-stories-banner.jpg)
 	.g-banner-content
 		width 100%
-		max-width 627px
+		max-width 700px
 		margin 0 auto
-		h6 
-			strong 
-				font-style italic
-				font-family font-6
 .works 
 	.g-title 
 		margin 62px 0 65px
 .works-container
-	using-flex(row, space-between, center)
+	using-flex(row, space-between, flex-start)
 .work-card-description
 	using-flex(column, center, center)
 	width 100%
@@ -50,17 +53,21 @@
 	margin-bottom 1px
 	position relative
 	overflow hidden
-	&:nth-of-type(2), &:nth-last-child(2)
+	&:nth-of-type(2), &:nth-of-type(5)
 		margin 0 1px 1px
-	&:hover	
-		.work-card-description
-			opacity 1
-			h5, h6, a
+	&:nth-of-type(6), &:nth-of-type(5), &:nth-of-type(4)
+		margin-bottom 0px
+	@media screen and (min-width 1025px)
+		&:hover	
+			.work-card-description
 				opacity 1
-		.work-background
-			-webkit-transform scale(1.05)
-			transform scale(1.05)
+				h5, h6, a
+					opacity 1
+			.work-background
+				-webkit-transform scale(1.05)
+				transform scale(1.05)
 	.img-cel
+		img-responsive()
 		position absolute
 		left 50%
 		top 50%
@@ -112,3 +119,105 @@
 			line-height 1.19
 			margin 10px auto 0
 			color #353535
+@media screen and (max-width 960px)
+	.works 
+		.g-title
+			margin 60px 0
+	.success-stories-works
+		.g-title
+			p 
+				font-size 20px
+@media screen and (max-width 768px)
+	.works 
+		.g-title
+			margin 45px 0
+	.success-stories-banner
+		.g-banner-content
+			max-width 550px
+@media screen and (max-width 767px)
+	.work-card
+		width calc(50% - 0.5px)
+		margin 0
+		margin-bottom 1px
+		&:nth-child(even)
+			margin-left 1px
+		&:nth-of-type(2), &:nth-of-type(5)
+			margin 0
+		&:nth-of-type(5), &:nth-of-type(6)
+			margin-bottom 0
+@media screen and (max-width 480px)
+	.work-card-description
+		position relative
+		padding 0 30px
+	.work-card-description
+		position relative
+		opacity 1
+		background-color white
+		h5, h6, a 
+			opacity 1
+		h5, h6
+			color black-text
+		h5 
+			font-size 18px
+			margin-top 15px
+			margin-bottom 4px
+		h6 
+			font-size 14px
+			margin-bottom 0
+		.g-btn 
+			overflow visible
+			margin-top -2px
+			&.btn-green
+				background-color transparent
+				color green-doapps
+			&:before 
+				display none
+			&:after
+				content '\e91d'
+				color green-doapps
+				font-family 'icomoon'
+				background-color transparent
+				transform rotateY(180deg) translateY(-100%)
+				font-size 15px
+				right 15px
+				top 45%
+	.work-card
+		width 100%
+		height 484px
+		overflow visible
+		display none
+		margin-bottom 0
+		&:nth-child(even)
+			margin-left 0
+		.img-cel 
+			width 130px
+			max-width 130px
+			top -27px
+			transform translate(-50%, -100%)
+		&:nth-of-type(1), &:nth-of-type(2), &:nth-of-type(3)
+			display block
+	.work-content
+		position relative
+		width 100%
+		height 160px
+		left 0
+		top 0
+	.work-background
+		height 324px
+		position relative
+	.button-work-mobile
+		display block
+		margin-bottom 30px
+	.works-container
+		justify-content center
+	.success-stories-banner
+		.g-banner-content
+			max-width 340px
+	.works 
+		.g-title
+			margin 30px 0
+	.success-stories-works
+		.g-title
+			p 
+				font-size 17px
+				max-width 390px

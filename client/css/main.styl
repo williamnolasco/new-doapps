@@ -1,5 +1,7 @@
 @import 'mixin.styl'
 
+.button-work-mobile
+	display none
 .we-love
 	using-flex(column, center, center)
 	height 100vh
@@ -34,7 +36,7 @@
 		font-size 25px
 		margin-top 17px
 		span 
-			font-family font-9
+			font-family font-3
 			margin-left 10px
 .row-buttons
 	margin-top 31px
@@ -203,7 +205,7 @@
 	.g-title 
 		margin 62px 0 65px
 .works-container
-	using-flex(row, space-between, center)
+	using-flex(row, space-between, flex-start)
 .work-card-description
 	using-flex(column, center, center)
 	width 100%
@@ -238,8 +240,10 @@
 	margin-bottom 1px
 	position relative
 	overflow hidden
-	&:nth-of-type(2), &:nth-last-child(2)
+	&:nth-of-type(2), &:nth-of-type(5)
 		margin 0 1px 1px
+	&:nth-of-type(6), &:nth-of-type(5), &:nth-of-type(4)
+		margin-bottom 0px
 	@media screen and (min-width 1025px)
 		&:hover	
 			.work-card-description
@@ -341,12 +345,14 @@
 @media screen and (max-width 767px)
 	.work-card
 		width calc(50% - 0.5px)
-		&:nth-of-type(2)
-			margin 0 0 1px 0
-		&:nth-last-child(2)
-			margin 0 0 1px 0
+		margin 0
+		margin-bottom 1px
 		&:nth-child(even)
 			margin-left 1px
+		&:nth-of-type(2), &:nth-of-type(5)
+			margin 0
+		&:nth-of-type(5), &:nth-of-type(6)
+			margin-bottom 0
 @media screen and (max-width 540px)
 	.we-love-content
 		width 100%
@@ -438,11 +444,14 @@
 				background-color transparent
 				transform rotateY(180deg) translateY(-100%)
 				font-size 15px
-				right 10px
+				right 15px
+				top 45%
 	.work-card
 		width 100%
 		height 484px
 		overflow visible
+		display none
+		margin-bottom 0
 		&:nth-child(even)
 			margin-left 0
 		.img-cel 
@@ -450,6 +459,8 @@
 			max-width 130px
 			top -27px
 			transform translate(-50%, -100%)
+		&:nth-of-type(1), &:nth-of-type(2), &:nth-of-type(3)
+			display block
 	.work-content
 		position relative
 		width 100%
@@ -459,3 +470,9 @@
 	.work-background
 		height 324px
 		position relative
+	.button-work-mobile
+		display block
+		margin-bottom 30px
+	.works-container
+		justify-content center
+	

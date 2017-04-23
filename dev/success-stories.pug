@@ -2,14 +2,14 @@ doctype html
 html(lang='es')
 	head
 		meta(charset='utf-8') 
-		meta(name='viewport', content='width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0')
+		meta(name='viewport', content='width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no')
 		title Casos de éxito
 		link(rel='stylesheet', type='text/css', href='./client/css/icons.css')
 		link(rel='stylesheet', type='text/css', href='./client/css/header.css')
 		link(rel='stylesheet', type='text/css', href='./client/css/footer.css')
 		link(rel='stylesheet', type='text/css', href='./client/css/banner.css')
 		link(rel='stylesheet', type='text/css', href='./client/css/success-stories.css')
-	body
+	body.body-success-stories
 		include ./blocks/header.pug
 		section.success-stories-banner.g-banner
 			.wancho 
@@ -73,30 +73,7 @@ html(lang='es')
 							h5 Descubre San Isidro
 							h6 Para la municipalidad de San Isidro
 							a(href='detail-project.html').g-btn.btn-green Conoce más
-				.work-card
-					.work-background
-					.work-content
-						img(src='./client/img/home/work4-celular.png' width='190', height='386').img-cel
-						.work-card-description
-							h5 Descubre San Isidro
-							h6 Para la municipalidad de San Isidro
-							a(href='detail-project.html').g-btn.btn-green Conoce más
-				.work-card
-					.work-background
-					.work-content
-						img(src='./client/img/home/work5-celular.png' width='190', height='386').img-cel
-						.work-card-description
-							h5 Descubre San Isidro
-							h6 Para la municipalidad de San Isidro
-							a(href='detail-project.html').g-btn.btn-green Conoce más
-				.work-card
-					.work-background
-					.work-content
-						img(src='./client/img/home/work6-celular.png' width='190', height='386').img-cel
-						.work-card-description
-							h5 Descubre San Isidro
-							h6 Para la municipalidad de San Isidro
-							a(href='detail-project.html').g-btn.btn-green Conoce más
+				a(href='#').g-btn.btn-green.button-work-mobile Ver más
 		include ./blocks/footer.pug
 
 		script(src='./client/js/jquery1.8.3.min.js')
