@@ -1,3 +1,4 @@
+
 var item_link = document.querySelectorAll('.item-link'),
 	movable_bar = document.querySelector('.movable-bar');
 
@@ -5,7 +6,20 @@ var item_link = document.querySelectorAll('.item-link'),
 function hoverItem(posLeft){
 	return function(){
 		movable_bar.style.opacity = '1';
-		movable_bar.style.left = ((posLeft*120) + 10) + 'px';
+		//movable_bar.style.left = ((posLeft*120) + 10) + 'px';
+		if(posLeft === 0){
+			movable_bar.style.left = (0 + 10) + 'px';
+		}else if(posLeft === 1){
+			movable_bar.style.left = (140 + 10) + 'px';
+		}else if(posLeft === 2){
+			movable_bar.style.left = (288 + 10) + 'px';
+		}else if(posLeft === 3){
+			movable_bar.style.left = (405 + 10) + 'px';
+		}else if(posLeft === 4){
+			movable_bar.style.left = (500 + 10) + 'px';
+		}else if(posLeft === 5){
+			movable_bar.style.left = (600 + 10) + 'px';
+		}
 	};
 }
 

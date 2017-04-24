@@ -88,16 +88,24 @@ input, select, textarea, button
 	max-width 1100px
 	margin auto
 .g-btn
-	width 190px
-	height 60px
+	//width 190px
+	//height 60px
+	height 53px 
+	line-height 53px
 	text-align center
-	border-radius 7px
+	border-radius 4px
+	padding 0 45px
 	font-family font-6
-	font-size 16px
+	//font-size 16px
+	font-weight 700
+	font-size 15px
 	text-transform uppercase
 	position relative
 	overflow hidden
-	&:before, &:after
+	box-sizing content-box
+	transition all .15s ease-in
+	cursor pointer
+	/*&:before, &:after
 		content ""
 		width 20px
 		height 20px
@@ -141,20 +149,40 @@ input, select, textarea, button
 		width 350px
 		height 350px
 		right 50%
-		z-index -1
-.btn-green
-	line-height 60px
+		z-index -1*/
+.btn-transparent-white
+	background-color transparent 
+	border 2px solid white
+	color white
+	&:hover 
+		border-color green-doapps
+		background-color green-doapps
+.btn-green1
 	background-color green-doapps
 	color white
-	&:before, &:after 
-		background-color #3cc8ab
-.btn-transparent
-	line-height 56px
+	border 2px solid green-doapps
+	&:hover
+		color green-doapps
+		background-color transparent
+	/*&:before, &:after 
+		background-color #3cc8ab*/
+.btn-green2
+	background-color green-doapps
+	color white
+	border 2px solid green-doapps
+	&:hover
+		color green-doapps
+		background-color white
+		border 2px solid white
+.btn-transparent-green
 	background-color transparent 
 	border 2px solid green-doapps
 	color green-doapps
-	&:before, &:after 
-		background-color rgba(0, 0, 0, 0.4)
+	&:hover 
+		background-color green-doapps
+		color white
+	/*&:before, &:after 
+		background-color rgba(0, 0, 0, 0.4)*/
 .g-title
 	text-align center
 	color #070707

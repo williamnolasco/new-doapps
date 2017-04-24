@@ -9,33 +9,36 @@
 				input(id='name').form-input
 				.row-input-content
 					img(src='./client/img/footer/input-name.png', width='38', height='32')
-					label(for='name') Cúal es tu nombre?
+					label(for='name') ¿Cúal es tu nombre?
 				span.lively-bar
 			.input-container
 				input(id='email').form-input
 				.row-input-content
 					img(src='./client/img/footer/input-email.png', width='38', height='32')
-					label(for='email') Cúal es tu correo?
+					label(for='email') ¿Cúal es tu correo?
 				span.lively-bar
 			.input-container
 				input(id='tel').form-input
 				.row-input-content
 					img(src='./client/img/footer/input-tel.png', width='38', height='32')
-					label(for='tel') Cúal es tu teléfono?
+					label(for='tel') ¿Cúal es tu teléfono?
 				span.lively-bar
 			.input-container
-				input(id='product').form-input
-				.row-input-content
+				input(id='product').form-select
+				.row-input-content.row-select-content
 					img(src='./client/img/footer/input-product.png', width='38', height='32')
-					label(for='product') Elige un producto?
+					label(for='product') ¿Qué eres?
+					ul.ul-form-select
+						li Empresa
+						li Emprendedor
 				span.lively-bar
 			.input-container.textarea-container
 				textarea(id='write').form-input
 				.row-input-content
 					img(src='./client/img/footer/input-write.png', width='38', height='32')
-					label(for='write') Describenos tu proyecto
+					label(for='write') Descríbenos tu proyecto
 				span.lively-bar
-			button.g-btn.btn-green.button-form Empecemos!
+			button.g-btn.btn-green2.button-form Empecemos!
 footer.footer-bottom
 	.wancho 
 		img(src='./client/img/footer/logo-footer.png').logo-footer

@@ -22,7 +22,7 @@
 	margin-bottom 0
 	textarea 
 		height 145px
-.form-input
+.form-input, .form-select
 	display block
 	width 100%
 	height 50px
@@ -32,7 +32,9 @@
 	color #c1c1c1
 	font-size 22px
 	resize none
+	padding-left 54px
 .row-input-content
+	width 100%
 	using-flex(row, flex-start, center)
 	position absolute
 	left 0
@@ -46,13 +48,16 @@
 		font-family font-2
 		color #c1c1c1
 		margin-left 15px
+		transition .2s ease-out
 	&.active
-		top -25px
-		img 
-			width 20px 
-			height 14px
 		label 
-			font-size 15px
+			font-size .8rem
+			transform translateY(-140%)
+.row-select-content
+	&.active
+		label 
+			font-size 22px
+			transform translateY(0)
 .lively-bar
 	width 0
 	height 1px 
@@ -66,13 +71,13 @@
 .button-form
 	margin 76px auto 0
 	cursor pointer
-	@media screen and (min-width 1025px)
+	/*@media screen and (min-width 1025px)
 		transition all 0.7s
 		transform translateY(100px) scaleX(0)
 		opacity 0
 		&.active
 			transform translateY(0) scaleX(1)
-			opacity 1
+			opacity 1*/
 .footer-bottom
 	.wancho 
 		using-flex(row, space-between, center)
@@ -104,7 +109,29 @@
 		font-size 12px
 .logo-footer
 	margin-top -55px
-
+.ul-form-select
+	width 100%
+	max-height 0
+	background-color white
+	position absolute
+	left 0
+	top 0
+	overflow hidden
+	transition all 0.2s ease-out
+	&.active
+		max-height 80px
+	li 
+		width 100%
+		height 40px 
+		line-height 40px 
+		color black-text
+		padding 0 10px
+		font-family font-1
+		font-size 14px 
+		border-bottom 1px solid rgba(black-text, 0.3)
+		cursor pointer
+		&:nth-last-child(1)
+			border-bottom 0
 @media screen and (max-width 924px)
 	.footer-bottom-left
 		padding-left 20px
@@ -146,7 +173,7 @@
 			margin-left 3px
 	.input-container
 		margin-bottom 45px
-	.form-input
+	.form-input, .form-select
 		font-size 20px
 		height 40px
 	.footer-form

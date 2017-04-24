@@ -1,5 +1,12 @@
 @import 'mixin.styl'
 
+.body-service-detail
+	.list-items
+		li 
+			&:nth-of-type(1)
+				a 
+					&:after
+						item-header-active()
 .service-detail
 	&.g-banner
 		background-image url(../img/service-detail/service-detail-background.jpg)
@@ -17,7 +24,7 @@
 		font-family font-1
 .service-detail
 	padding-top 134px
-	background-color #f5f5f5
+	background-color rgba(245, 245, 245, 0.7)
 	&.products-detail
 		padding-bottom 100px
 		.g-title

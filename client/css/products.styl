@@ -1,5 +1,12 @@
 @import 'mixin.styl'
 
+.body-products
+	.list-items
+		li 
+			&:nth-of-type(3)
+				a 
+					&:after
+						item-header-active()
 .products-title
 	text-align center
 	padding 120px 0

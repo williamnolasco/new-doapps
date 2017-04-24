@@ -22,7 +22,7 @@
 		top 0
 .we-love-content
 	width 90%
-	max-width 770px
+	max-width 700px
 	text-align center
 	color white
 	position relative
@@ -30,19 +30,20 @@
 	margin 0 auto
 	h1 
 		font-family font-3
-		font-size 66px
+		font-size 60px
+		line-height 60px
+		margin-bottom 28px
+		letter-spacing -3px
 	h2 
 		font-family font-1
 		font-size 25px
-		margin-top 17px
+		line-height 1.25
+		letter-spacing -1px
 		span 
 			font-family font-3
 			margin-left 10px
 .row-buttons
-	margin-top 31px
-	a 
-		&:nth-of-type(1)
-			margin-right 28px
+	margin-top 40px
 .scroll-down
 	using-flex(row, center, center)
 	flex-flow row nowrap
@@ -64,7 +65,6 @@
 	.g-btn
 		margin-top 61px
 		@media screen and (min-width 1024px)
-			transition all 0.7s
 			transform translateY(100px) scaleX(0)
 			opacity 0
 			&.active
@@ -201,9 +201,10 @@
 	h4
 		font-family font-6
 		font-size 60px
-.works 
+.works
+	padding-top 62px 
 	.g-title 
-		margin 62px 0 65px
+		margin-bottom 65px
 .works-container
 	using-flex(row, space-between, flex-start)
 .work-card-description
@@ -222,8 +223,8 @@
 		text-transform uppercase
 		text-align center
 		line-height 1
-	h5, h6, a
 		transition all 1s ease-out
+	h5, h6, a
 		opacity 0
 	h5 
 		font-family font-6
@@ -382,12 +383,7 @@
 			margin-top 8px
 			line-height 1.35
 	.row-buttons
-		using-flex(column, center, center)
 		margin-top 32px
-		a 
-			&:nth-of-type(1)
-				margin-right 0
-				margin-bottom 18px
 	.scroll-down
 		display none
 	.we-love-content

@@ -1,11 +1,12 @@
 @import 'mixin.styl'
 
-.list-items
-	li 
-		&:nth-of-type(2)
-			a 
-				&:after
-					item-header-active()
+.body-detail-project
+	.list-items
+		li 
+			&:nth-of-type(2)
+				a 
+					&:after
+						item-header-active()
 .project-title
 	background-image url(../img/detail-project/project-title-background.jpg)
 	using-background()
@@ -354,7 +355,7 @@
 		height 60px
 		color white
 		text-align center
-		border-radius 10px
+		border-radius 4px
 		margin 0
 		&:nth-of-type(1)
 			background-color #23539d

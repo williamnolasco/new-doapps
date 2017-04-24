@@ -8,9 +8,15 @@ html(lang='es')
 		link(rel='stylesheet', type='text/css', href='./client/css/footer.css')
 		link(rel='stylesheet', type='text/css', href='./client/css/banner.css')
 		link(rel='stylesheet', type='text/css', href='./client/css/products.css')
-	body 
+	body.body-products
 		include ./blocks/header.pug
-		include ./blocks/banner.pug
+		.g-banner
+			.wancho 
+				.g-banner-content
+					h5 Desarrollamos productos
+					h6 
+						| a medida de lo que 
+						strong requiera el cliente
 		section.products-title
 			.wancho
 				.g-title
