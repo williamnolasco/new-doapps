@@ -8,7 +8,7 @@ html(lang='es')
 		link(rel='stylesheet', type='text/css', href='./client/css/footer.css')
 		link(rel='stylesheet', type='text/css', href='./client/css/detail-products.css')
 		link(rel='stylesheet', type='text/css', href='./client/css/detail-project.css')
-	body.detail-products
+	body.detail-products.body-products
 		include ./blocks/header.pug
 		section.project-title
 			.wancho
@@ -101,8 +101,12 @@ html(lang='es')
 					| ¿Te interesa
 					span el producto?
 				p Y quieres adquirirlo o tener mayor información. Ponte en contacto con nosotros.
-				a(href='contac.html').g-btn.btn-green hazlo aquí 
-
+				a(href='contac.html').g-btn.btn-green2 hazlo aquí 
+			.results-button-apps
+					a(href='#').link-app
+						img(src='./client/img/detail-project/play-store.png' width='557' height='161')
+					a(href='#').link-app
+						img(src='./client/img/detail-project/app-store.png' width='557' height='161')
 
 
 		include ./blocks/footer.pug
