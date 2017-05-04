@@ -25,7 +25,7 @@
 	.wancho 
 		using-flex(row, space-between, flex-end)
 		position relative
-		z-index 2
+		z-index 1
 .project-title-left
 	width calc(100% - 330px)
 	color white
@@ -412,9 +412,23 @@
 		left 0
 		top 50%
 		transform translateY(-50%)
+
+@media screen and (max-width 768px)
+	.project-title-left
+		h5
+			line-height: 1;
+			margin-bottom: 30px;
+		h6
+			width: 70%
+	.row-detail-client-title
+		flex-flow: column;
+		margin-right: 0;
+		h6
+			margin-bottom: 26px;
 @media screen and (max-width 560px)
 	.detail-client-p p
 		font-size: 16px
+
 @media screen and (max-width 480px)
 	.detail-client-p
 		width 100%
