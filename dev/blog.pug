@@ -23,8 +23,8 @@ html(lang='es')
 				.blog-content-title
 					h6 Publicaciones más recientes
 				a(href='detail-blog.html').blog-new-big
-					figure.new-big-photo
-						img(src='./client/img/blog/blog-new-big.jpg' width='772' height='397')
+					.new-big-photo(style='background-image: url(./client/img/blog/blog-new-big.jpg)')
+						//img(src='./client/img/blog/blog-new-big.jpg' width='772' height='397')
 						.category
 							h6 programación
 					.blog-new-description
@@ -39,8 +39,8 @@ html(lang='es')
 				.blog-content-down
 					.blog-list-new-small
 						a(href='detail-blog.html').new-small
-							figure.new-small-photo
-								img(src='./client/img/blog/blog-new-small.jpg' width='368' height='256')
+							.new-small-photo(style='background-image: url(./client/img/blog/blog-new-small.jpg)')
+								//img(src='./client/img/blog/blog-new-small.jpg' width='368' height='256')
 								.category
 									h6 programación
 							.blog-new-description
@@ -53,8 +53,8 @@ html(lang='es')
 										h5 Ángel Espinoza
 										h6 Mar 14
 						a(href='detail-blog.html').new-small
-							figure.new-small-photo
-								img(src='./client/img/blog/blog-new-small.jpg' width='368' height='256')
+							.new-small-photo(style='background-image: url(./client/img/blog/blog-new-small.jpg)')
+								//img(src='./client/img/blog/blog-new-small.jpg' width='368' height='256')
 								.category
 									h6 programación
 							.blog-new-description
@@ -67,8 +67,8 @@ html(lang='es')
 										h5 Ángel Espinoza
 										h6 Mar 14
 						a(href='detail-blog.html').new-small
-							figure.new-small-photo
-								img(src='./client/img/blog/blog-new-small.jpg' width='368' height='256')
+							.new-small-photo(style='background-image: url(./client/img/blog/blog-new-small.jpg)')
+								//img(src='./client/img/blog/blog-new-small.jpg' width='368' height='256')
 								.category
 									h6 programación
 							.blog-new-description
@@ -81,8 +81,8 @@ html(lang='es')
 										h5 Ángel Espinoza
 										h6 Mar 14
 						a(href='detail-blog.html').new-small
-							figure.new-small-photo
-								img(src='./client/img/blog/blog-new-small.jpg' width='368' height='256')
+							.new-small-photo(style='background-image: url(./client/img/blog/blog-new-small.jpg)')
+								//img(src='./client/img/blog/blog-new-small.jpg' width='368' height='256')
 								.category
 									h6 programación
 							.blog-new-description
@@ -101,7 +101,7 @@ html(lang='es')
 							a(href='#').number-pag 4
 							a(href='#').number-pag 5
 					.btn-respon
-						a(href='contac.html').g-btn.btn-green Cargar más notas
+						a(href='contac.html').g-btn.btn-green1 Cargar más notas
 					.publicity
 						.question
 							figure.quesiton-icon
@@ -109,8 +109,8 @@ html(lang='es')
 							h5 Nuestra pregunta es
 							h6 ¿Te parece útil que se realice un curso de Github para desarrolladores?
 							.question-buttons
-								a(href='#').g-btn.btn-transparent SI
-								a(href='#').g-btn.btn-transparent NO
+								a(href='#').g-btn.btn-transparent-green SI
+								a(href='#').g-btn.btn-transparent-green NO
 						figure.publicity-image
 							img(src='./client/img/blog/publicity.jpg')
 		include ./blocks/footer.pug

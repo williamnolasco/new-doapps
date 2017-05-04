@@ -37,10 +37,12 @@
       <div class="wancho">
         <div class="detail-blog-top">
           <div class="detail-blog-new">
-            <div class="detail-blog-new-title">
-              <h3>¿Cómo generar apps moviles para iOs y con el lenguaje nativo Swift?</h3>
-            </div>
-            <figure class="detail-blog-new-photo"><img src="./client/img/detail-blog/new-image.jpg" width="771" height="397"></figure>
+            <!--
+            .detail-blog-new-title
+            	h3 ¿Cómo generar apps moviles para iOs y con el lenguaje nativo Swift?
+            figure.detail-blog-new-photo
+            	img(src='./client/img/detail-blog/new-image.jpg' width='771' height='397') 
+            -->
             <div class="detail-blog-description">
               <p>
                 	Let’s look at an example: The top voted post-it here says “I have no idea what’s happening on “project x”. Because many people have voted on it, we can <strong>application movil</strong>see it’s clearly an issue many people are having. Rephrasing the post-it in a “How Might We” format allows us to make it solvable and standardise the way the challenges are written. Here’s how that problem might be rewritten into a more general challenge:</p>
@@ -94,7 +96,7 @@
               <figure class="quesiton-icon"><img src="./client/img/blog/icon-question.png"></figure>
               <h5>Nuestra pregunta es</h5>
               <h6>¿Te parece útil que se realice un curso de Github para desarrolladores?</h6>
-              <div class="question-buttons"><a class="g-btn btn-transparent" href="#">SI</a><a class="g-btn btn-transparent" href="#">NO</a></div>
+              <div class="question-buttons"><a class="g-btn btn-transparent-green" href="#">SI</a><a class="g-btn btn-transparent-green" href="#">NO</a></div>
             </div>
             <figure class="publicity-image"><img src="./client/img/blog/publicity.jpg"></figure>
             <div class="nav-lateral">
@@ -124,11 +126,12 @@
             <h6>También te puede interesar</h6>
           </div>
           <div class="detal-blog-row-news"><a class="new-small" href="detail-blog.html">
-              <figure class="new-small-photo"><img src="./client/img/blog/blog-new-small.jpg" width="368" height="256">
+              <div class="new-small-photo" style="background-image: url(./client/img/blog/blog-new-small.jpg);">
+                <!--img(src='./client/img/blog/blog-new-small.jpg' width='368' height='256')-->
                 <div class="category">
                   <h6>programación</h6>
                 </div>
-              </figure>
+              </div>
               <div class="blog-new-description">
                 <h2>¿Cómo generar apps móviles desde cero?</h2>
                 <p>Aplicaciones Android, iOs, desarrollo móvil y mucho más, sin tener muchos conocimientos previos.</p>
@@ -140,11 +143,12 @@
                   </div>
                 </div>
               </div></a><a class="new-small" href="detail-blog.html">
-              <figure class="new-small-photo"><img src="./client/img/blog/blog-new-small.jpg" width="368" height="256">
+              <div class="new-small-photo" style="background-image: url(./client/img/blog/blog-new-small.jpg);">
+                <!--img(src='./client/img/blog/blog-new-small.jpg' width='368' height='256')-->
                 <div class="category">
                   <h6>programación</h6>
                 </div>
-              </figure>
+              </div>
               <div class="blog-new-description">
                 <h2>¿Cómo generar apps móviles desde cero?</h2>
                 <p>Aplicaciones Android, iOs, desarrollo móvil y mucho más, sin tener muchos conocimientos previos.</p>
@@ -156,11 +160,12 @@
                   </div>
                 </div>
               </div></a><a class="new-small" href="detail-blog.html">
-              <figure class="new-small-photo"><img src="./client/img/blog/blog-new-small.jpg" width="368" height="256">
+              <div class="new-small-photo" style="background-image: url(./client/img/blog/blog-new-small.jpg);">
+                <!--img(src='./client/img/blog/blog-new-small.jpg' width='368' height='256')-->
                 <div class="category">
                   <h6>programación</h6>
                 </div>
-              </figure>
+              </div>
               <div class="blog-new-description">
                 <h2>¿Cómo generar apps móviles desde cero?</h2>
                 <p>Aplicaciones Android, iOs, desarrollo móvil y mucho más, sin tener muchos conocimientos previos.</p>
@@ -201,13 +206,18 @@
             </div><span class="lively-bar"></span>
           </div>
           <div class="input-container">
-            <input class="form-select" id="product">
+            <select class="form-select" id="product">
+              <option val="">¿Qué eres?</option>
+              <option val="empresa">Empresa</option>
+              <option val="emprendedor">Emprendedor</option>
+            </select>
             <div class="row-input-content row-select-content"><img src="./client/img/footer/input-product.png" width="38" height="32">
-              <label for="product">¿Qué eres?</label>
-              <ul class="ul-form-select">
-                <li>Empresa</li>
-                <li>Emprendedor</li>
-              </ul>
+              <!--label(for='product') ¿Qué eres?-->
+              <!--
+              ul.ul-form-select
+              	li Empresa
+              	li Emprendedor
+              -->
             </div><span class="lively-bar"></span>
           </div>
           <div class="input-container textarea-container">
