@@ -413,7 +413,7 @@
 		top 50%
 		transform translateY(-50%)
 
-@media screen and (max-width 768px)
+@media screen and (max-width 1024px)
 	.project-title-left
 		h5
 			line-height: 1;
@@ -422,15 +422,104 @@
 			width: 70%
 	.row-detail-client-title
 		flex-flow: column;
-		margin-right: 0;
 		h6
+			margin-right: 0;
 			margin-bottom: 26px;
+	.detail-project-share
+		.g-title
+			margin: 0 auto;
+			h5
+				text-align: center;
+				line-height: 1.4em;
+				font-size: 28px !important;
+		.btn-share-container
+			margin: 50px auto;
+		.detail-project-share-number
+			width: 100%;
+			padding: 0 50px;
+			&:before
+				width: 100%;
+				height: 2px;
+				position: relative;
+				left: 0;
+				top: 0;
+			h5
+				padding-top: 50px;
+
 @media screen and (max-width 560px)
 	.detail-client-p p
 		font-size: 16px
 
-@media screen and (max-width 480px)
+@media screen and (max-width 680px)
+	.project-title
+		.wancho
+			.project-title-left
+				width: initial;
+				max-width: 80%;
+				margin: 0 auto;
+				padding: 0 0 50px;
+				text-align: center;
+				h5
+					margin-bottom: 15px;
+					font-size: 28px;
+				h6
+					width: initial;
+					font-size: 20px;
+			> img
+				max-width: 80%;
+				margin: 0 auto;
+				height: initial;
+
 	.detail-client-p
 		width 100%
-	.detail-client-p p
-		text-align: justify
+		p
+			text-align: justify
+
+	.detail-client, .detail-proposal, .detail-design, .detail-wireframe, .results
+		padding: 50px 0;
+		.row-detail-client-title
+			margin-bottom: 30px;
+		.logo-project
+			display: none;
+
+	.detail-wireframe-subtitle
+		display: none
+
+	.f-s-colors-container
+		margin: 40px 0;
+		position: relative;
+		z-index: 1;
+		flex-direction: column-reverse;
+		.f-s-typography
+			width: 100%;
+		.f-s-colors-left
+			width: inherit;
+			margin-top: 30px;
+
+	.set-screen
+		height: 450px;
+
+	.we-develop-bottom
+		.item-we-develop
+			width: 100%;
+			border: 0;
+			margin-bottom: 40px;
+			h5
+				max-width: initial;
+	.results-button-apps
+		margin: 40px auto 0;
+
+	.btn-share-container
+		justify-content: center !important;
+
+	.btn-share
+		&:nth-of-type(1)
+			margin-bottom: 20px !important;
+		&:nth-of-type(2)
+			margin-bottom: 20px !important;
+		&:nth-of-type(3)
+			margin-bottom: 20px !important;
+
+	.detail-project-share-number
+		width: 100%;
+		padding: 0 20px !important;
