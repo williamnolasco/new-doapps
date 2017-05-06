@@ -11,8 +11,10 @@
 	.row-author
 		margin-top 27px
 .detail-blog-new
-	width 66%
+	//width 66%
+	width calc(100% - 368px)
 	max-width 771px
+	padding-right 30px
 .detail-blog-new-title
 	margin-bottom 43px
 	h3 
@@ -54,17 +56,31 @@
 	width calc(100% - 32px)
 	padding-left 20px
 .tag 
+	using-flex(row, center, center)
 	width auto
 	height 40px
 	text-align center
-	border 1px solid lead-text
+	border 1px solid rgba(31,31,31,0.1)
 	margin 0 8px 16px
-	padding 0px 36px
+	// padding 0px 36px
+	border-radius 500px
+	transition all 0.25s cubic-bezier(0.37, 0.31, 0.2, 0.85)
 	a 
-		line-height 40px
-		font-size 16px
-		color lead-text
+		display inline-block
+		//line-height 40px
+		//font-size 16px
+		//color lead-text
+		line-height 1
+		font-size 12px
+		color rgba(31,31,31,0.6)
 		font-family font-8
+		transition all 0.25s cubic-bezier(0.37, 0.31, 0.2, 0.85)
+		padding 0px 36px
+	@media screen and (min-width 1025px)
+		&:hover
+			background-color #1f1f1f
+			a 
+				color white
 .btn-share
 	using-flex(row, center, center)
 	width 170px
@@ -124,8 +140,8 @@
 .detail-blog-top
 	using-flex(row, space-between, flex-start)
 	.publicity
-		position relative
-		top -30px
+		/*position relative
+		top -30px*/
 		.question
 			margin-bottom 29px
 .detail-blog-share
@@ -185,6 +201,22 @@
 		left 0
 		top 50%
 		transform translateY(-50%)
+		
+@media screen and (max-width 1220px)
+	.detail-blog-share
+		flex-direction column
+	.number-share
+		margin-top 20px
+		width 100%
+		border-left 0
+		border-top 1px solid rgba(100,100,100,0.7)
+		justify-content center
+		padding-top 20px
+	.btn-share-container
+		width 100%
+		justify-content center
+	.detail-blog-new
+		padding-right 50px
 @media screen and (max-width 1024px)
 	.detail-blog-top .publicity
 		top 0 
@@ -201,20 +233,14 @@
 	.detail-blog-tags
 		justify-content space-between
 	.tag
-		margin 0
+		margin 0 5px 10px
 	.detail-blog-tags
 		figure
 			display none
-	.new-small .blog-new-description h2
-		font-size 
+	.detail-blog-new
+		width calc(100% - 320px)
+		padding-right 30px
 @media screen and (max-width 960px)
-	.number-share
-		margin-top 40px
-		width 100%
-		border-left 0
-		border-top 1px solid rgba(100,100,100,0.7)
-		justify-content center
-		padding-top 20px
 	.detail-blog-share
 		justify-content center
 		align-items center
@@ -224,6 +250,14 @@
 		justify-content space-between
 	.btn-share:nth-of-type(2)
 		margin 0
+	.detail-blog-new
+		width 100%
+		max-width 100%
+		padding-right 0
+@media screen and (max-width 850px)
+	.detal-blog-row-news
+		.new-small
+			width calc(50% - 10px)
 @media screen and (max-width 768px)
 	.detail-blog-new
 		width 100%
@@ -233,15 +267,16 @@
 		margin-bottom 40px
 	.detail-blog-top .publicity
 		margin-bottom 40px
-	.new-small .blog-new-description h2
-		font-size 25px
 @media screen and (max-width 640px)
 	.detail-blog-new-title 
 		margin-bottom 30px
 		h3
 			font-size 22px
-	.detal-blog-row-news .new-small
-		width calc(50% - 14px)
+	.btn-share-container
+		justify-content center
+	.btn-share
+		&:nth-of-type(2)
+			margin 0 10px
 @media screen and (max-width 480px)
 	.detail-blog-content
 		padding-top 40px
@@ -260,10 +295,6 @@
 		flex-basis 70%
 		&:nth-of-type(2)
 			margin 25px 0
-	.tag
-		flex-basis 30%
-		margin-bottom 20px
-		max-width initial
 	.comments-facebook
 		margin-top 0
 	.detail-blog-author
@@ -288,3 +319,12 @@
 		p
 			font-size 16px
 			text-align center
+	.detail-group-tag
+		padding-left 8px
+	.new-small
+		.blog-new-description
+			h2 
+				font-size 19px
+	.detail-blog-content 
+		.blog-new-description
+			padding 30px 0 0

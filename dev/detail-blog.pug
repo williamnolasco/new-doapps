@@ -23,10 +23,11 @@ html(lang='es')
 			.wancho
 				.detail-blog-top
 					.detail-blog-new
-						.detail-blog-new-title
-							h3 ¿Cómo generar apps moviles para iOs y con el lenguaje nativo Swift?
-						figure.detail-blog-new-photo
-							img(src='./client/img/detail-blog/new-image.jpg' width='771' height='397') 
+						//
+							.detail-blog-new-title
+								h3 ¿Cómo generar apps moviles para iOs y con el lenguaje nativo Swift?
+							figure.detail-blog-new-photo
+								img(src='./client/img/detail-blog/new-image.jpg' width='771' height='397') 
 						.detail-blog-description
 							p 	
 								| Let’s look at an example: The top voted post-it here says “I have no idea what’s happening on “project x”. Because many people have voted on it, we can 
@@ -102,8 +103,8 @@ html(lang='es')
 								h5 Nuestra pregunta es
 								h6 ¿Te parece útil que se realice un curso de Github para desarrolladores?
 								.question-buttons
-									a(href='#').g-btn.btn-transparent SI
-									a(href='#').g-btn.btn-transparent NO
+									a(href='#').g-btn.btn-transparent-green SI
+									a(href='#').g-btn.btn-transparent-green NO
 							figure.publicity-image
 								img(src='./client/img/blog/publicity.jpg')
 							.nav-lateral
@@ -140,8 +141,8 @@ html(lang='es')
 						h6 También te puede interesar
 					.detal-blog-row-news
 						a(href='detail-blog.html').new-small
-							figure.new-small-photo
-								img(src='./client/img/blog/blog-new-small.jpg' width='368' height='256')
+							.new-small-photo(style='background-image: url(./client/img/blog/blog-new-small.jpg)')
+								//img(src='./client/img/blog/blog-new-small.jpg' width='368' height='256')
 								.category
 									h6 programación
 							.blog-new-description
@@ -154,8 +155,8 @@ html(lang='es')
 										h5 Ángel Espinoza
 										h6 Mar 14
 						a(href='detail-blog.html').new-small
-							figure.new-small-photo
-								img(src='./client/img/blog/blog-new-small.jpg' width='368' height='256')
+							.new-small-photo(style='background-image: url(./client/img/blog/blog-new-small.jpg)')
+								//img(src='./client/img/blog/blog-new-small.jpg' width='368' height='256')
 								.category
 									h6 programación
 							.blog-new-description
@@ -168,8 +169,8 @@ html(lang='es')
 										h5 Ángel Espinoza
 										h6 Mar 14
 						a(href='detail-blog.html').new-small
-							figure.new-small-photo
-								img(src='./client/img/blog/blog-new-small.jpg' width='368' height='256')
+							.new-small-photo(style='background-image: url(./client/img/blog/blog-new-small.jpg)')
+								//img(src='./client/img/blog/blog-new-small.jpg' width='368' height='256')
 								.category
 									h6 programación
 							.blog-new-description
