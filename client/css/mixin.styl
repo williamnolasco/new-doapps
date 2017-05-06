@@ -30,31 +30,42 @@ item-header-active()
 	transform translateX(-50%)
 	
 @font-face 
-	font-family 'Roboto-Thin'
-	src url(../fonts/Roboto-Thin.ttf)
+	font-family 'font-Light'
+	src url(../fonts/OpenSans-Light.ttf)
 @font-face 
-	font-family 'Roboto-Light'
-	src url(../fonts/Roboto-Light.ttf)
+	font-family 'font-Regular'
+	src url(../fonts/OpenSans-Regular.ttf)
 @font-face 
-	font-family 'Roboto-Regular'
-	src url(../fonts/Roboto-Regular.ttf)
+	font-family 'font-Bold'
+	src url(../fonts/OpenSans-Bold.ttf)
 @font-face 
-	font-family 'Roboto-Medium'
-	src url(../fonts/Roboto-Medium.ttf)
+	font-family 'font-Italic'
+	src url(../fonts/OpenSans-Italic.ttf)
 @font-face 
-	font-family 'Roboto-Bold'
-	src url(../fonts/Roboto-Bold.ttf)
+	font-family 'font-Black'
+	src url(../fonts/OpenSans-ExtraBold.ttf)
 @font-face 
-	font-family 'Roboto-Italic'
-	src url(../fonts/Roboto-Italic.ttf)
+	font-family 'font-BlackItalic'
+	src url(../fonts/OpenSans-ExtraBoldItalic.ttf)
 @font-face 
-	font-family 'Roboto-Black'
-	src url(../fonts/Roboto-Black.ttf)
+	font-family 'font-Medium'
+	src url(../fonts/OpenSans-Semibold.ttf)
+@font-face 
+	font-family 'font-BoldItalic'
+	src url(../fonts/OpenSans-BoldItalic.ttf)
 	
 green-doapps = #26ad91
 green-doapps-dark = #239e84
 black-text = #070707
 lead-text = #212121
+font-1 = 'font-Light'
+font-2 = 'font-Regular'
+font-3 = 'font-Bold'
+font-4 = 'font-Italic'
+font-6 = 'font-Black'
+font-7 = 'font-BlackItalic'
+font-8 = 'font-Medium'
+font-9 = 'font-BoldItalic'
 
 body
 	overflow-x hidden
@@ -77,16 +88,24 @@ input, select, textarea, button
 	max-width 1100px
 	margin auto
 .g-btn
-	width 190px
-	height 60px
+	//width 190px
+	//height 60px
+	height 53px 
+	line-height 53px
 	text-align center
-	border-radius 7px
-	font-family 'Roboto-Black'
-	font-size 16px
+	border-radius 4px
+	padding 0 45px
+	font-family font-6
+	//font-size 16px
+	font-weight 700
+	font-size 15px
 	text-transform uppercase
 	position relative
 	overflow hidden
-	&:before, &:after
+	box-sizing content-box
+	transition all .15s ease-in
+	cursor pointer
+	/*&:before, &:after
 		content ""
 		width 20px
 		height 20px
@@ -130,29 +149,54 @@ input, select, textarea, button
 		width 350px
 		height 350px
 		right 50%
-		z-index -1
-.btn-green
-	line-height 60px
+		z-index -1*/
+.btn-transparent-white
+	background-color transparent 
+	border 2px solid white
+	color white
+	@media screen and (min-width 1025px)
+		&:hover 
+			border-color green-doapps
+			background-color green-doapps
+.btn-green1
 	background-color green-doapps
 	color white
-	&:before, &:after 
-		background-color #3cc8ab
-.btn-transparent
-	line-height 56px
+	border 2px solid green-doapps
+	@media screen and (min-width 1025px)
+		&:hover
+			color green-doapps
+			background-color transparent
+	/*&:before, &:after 
+		background-color #3cc8ab*/
+.btn-green2
+	background-color green-doapps
+	color white
+	border 2px solid green-doapps
+	@media screen and (min-width 1025px)
+		&:hover
+			color green-doapps
+			background-color white
+			border 2px solid white
+.btn-transparent-green
 	background-color transparent 
 	border 2px solid green-doapps
 	color green-doapps
-	&:before, &:after 
-		background-color rgba(0, 0, 0, 0.4)
+	@media screen and (min-width 1025px)
+		&:hover 
+			background-color green-doapps
+			color white
+	/*&:before, &:after 
+		background-color rgba(0, 0, 0, 0.4)*/
 .g-title
 	text-align center
 	color #070707
 	line-height 1.2
 	h5
-		font-size 50px
-		font-family 'Roboto-Thin'
+		font-size 28px
+		//font-size 50px
+		font-family font-1
 		span
-			font-family 'Roboto-Bold'
+			font-family font-3
 			margin-left 10px
 .title-special
 	width auto
@@ -172,29 +216,36 @@ input, select, textarea, button
 		line-height 1
 	h6 
 		color #656565
-		font-family 'Roboto-Light'
+		font-family font-1
 		font-size 22px
 		margin-top 1px
 
-@media screen and (max-width 960px)
+/*@media screen and (max-width 960px)
 	.g-title
 		h5 
-			font-size 40px !important
+			font-size 40px !important*/
 @media screen and (max-width 768px)
 	.g-title h5
-		font-size 28px !important
+		font-size 25px !important
 @media screen and (max-width 480px)
 	.g-title
+<<<<<<< HEAD
 		h5
 			span
+=======
+		h5 
+			font-size 22px !important
+			span 
+>>>>>>> 1921b8ae4dd1f1212eaa0ee6630c9ac50dd9db6b
 				margin-top 2px
-				font-family 'Roboto-Black'
+				font-family font-6
 	.wancho 
 		width 87%
 	.g-btn 
 			width 180px !important
 			padding 0px !important
 			height 44px  !important
+			line-height 44px
 			font-size 14px !important
 			&.btn-transparent
 				line-height 40px !important

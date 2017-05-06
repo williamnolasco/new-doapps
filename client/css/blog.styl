@@ -27,18 +27,20 @@
 	padding-bottom 22px
 	border-bottom 1px solid #b9b9b9
 	h6
-		font-family 'Roboto-Black'
+		font-family font-6
 		font-size 22px
 .blog-new-big
 	using-flex(row, space-between, flex-start)
 	margin-top 33px
 .new-big-photo
-	background-image url(../img/blog/blog-new-big.jpg)
-	using-background()
+	// background-image url(../img/blog/blog-new-big.jpg)
+	// using-background()
 	width 66%
 	max-width 772px
-	height 397px
+	// height 397px
 	position relative
+	img 
+		img-responsive()
 .category
 	width 171px
 	height 43px
@@ -51,7 +53,7 @@
 	h6 
 		color white
 		text-transform uppercase
-		font-family 'Roboto-Medium'
+		font-family font-8
 		font-size 16px
 		line-height 43px
 		text-align center
@@ -59,14 +61,14 @@
 	width 34%
 	padding 25px 0 0 47px
 	h2 
-		font-family 'Roboto-Bold'
+		font-family font-3
 		font-size 36px
 		margin-bottom 7px
 		letter-spacing -.02em
 		line-height 1.1
 		color rgba(0, 0, 0, 0.8)
 	p 
-		font-family 'Roboto-Light'
+		font-family font-1
 		font-size 18px
 		color rgba(0, 0, 0, 0.8)
 		line-height 1.2
@@ -81,12 +83,12 @@
 .author-name
 	margin-left 18px
 	h5 
-		font-family 'Roboto-Medium'
+		font-family font-8
 		font-size 14px
 		color green-doapps
 		line-height 1.4
 	h6 
-		font-family 'Roboto-Light'
+		font-family font-1
 		font-size 12px
 		color rgba(0, 0, 0, 0.44)
 		line-height 1.4
@@ -102,12 +104,13 @@
 		p 
 			padding-top 2px
 .new-small-photo
-	background-image url(../img/blog/blog-new-small.jpg)
-	using-background()
+	// background-image url(../img/blog/blog-new-small.jpg)
+	// using-background()
 	width 100%
 	height 256px
 	position relative
-	
+	img 
+		img-responsive()
 .blog-list-new-small
 	using-flex(row, space-between, flex-start) 
 	width 66%
@@ -122,7 +125,7 @@
 	text-align center
 	border 1px solid #2a2a2a
 	line-height 40px 
-	font-family 'Roboto-Light'
+	font-family font-1
 	font-size 22px
 	color #2a2a2a
 	margin 0 12px
@@ -145,13 +148,13 @@
 	padding 60px 56px 51px
 	margin-bottom 47px
 	h5 
-		font-family 'Roboto-Bold'
+		font-family font-3
 		font-size 35px
 		color #070707
 		margin 12px 0 24px
 		line-height 1.1
 	h6 
-		font-family 'Roboto-Light'
+		font-family font-1
 		font-size 22px
 		color load-text
 		margin-bottom 38px

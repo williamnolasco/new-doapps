@@ -1,11 +1,12 @@
 @import 'mixin.styl'
 
-.list-items
-	li 
-		&:nth-of-type(2)
-			a 
-				&:after
-					item-header-active()
+.body-detail-project
+	.list-items
+		li 
+			&:nth-of-type(2)
+				a 
+					&:after
+						item-header-active()
 .project-title
 	background-image url(../img/detail-project/project-title-background.jpg)
 	using-background()
@@ -30,25 +31,25 @@
 	color white
 	padding 0 30px 87px 0 
 	h5
-		font-family 'Roboto-Bold'
+		font-family font-3
 		font-size 67px
 		line-height 1.15
 	h6 
 		width 45%
-		font-family 'Roboto-Light'
+		font-family font-1
 		font-size 26px
 		line-height 1.2
 .detail-client, .detail-proposal
 	padding 140px 0 160px
 .row-detail-client-title
 	using-flex(row, center, center)
-	margin-bottom 35px
+	margin-bottom 50px
 	h6
 		width 80px 
 		height 80px
 		text-align center 
 		line-height 80px
-		font-family 'Roboto-Black'
+		font-family font-6
 		font-size 25px
 		color #4b4b4b
 		border-radius 50%
@@ -58,13 +59,13 @@
 	width 86.5%
 	margin 0 auto
 	p 
-		font-family 'Roboto-Light'
+		font-family font-1
 		font-size 22px
 		color #353535
 		text-align center
 		line-height 1.6
 		strong 
-			font-family 'Roboto-Bold'
+			font-family font-3
 			margin 0 7px
 .detail-proposal
 	background-color green-doapps
@@ -84,6 +85,7 @@
 	padding 174px 0 278px
 	position relative
 	&:before
+		display none
 		content ''
 		width 100%
 		height 40%
@@ -93,10 +95,10 @@
 		border-right 1px solid #2e2e2e
 		border-bottom 1px solid transparent
 		position absolute
-		left 0 
+		left 50 
 		bottom 0
 		z-index 1
-		transform rotateX(180deg) translateY(13%)
+		transform rotateX(180deg) translateY(-50%)
 	.row-detail-client-title
 		h6 
 			color white
@@ -106,9 +108,6 @@
 			color white
 			span 
 				color white
-	.logo-project
-		text-align center
-		margin 65px 0 47px
 	.detail-row-screen
 		width 92%
 		max-width 1242px
@@ -119,18 +118,19 @@
 		&:before 
 			content ''
 			z-index 1
-			width 95%
-			height 100%
-			border-radius 800px 800px 0 0
-			border-top 1px solid #2e2e2e
-			border-left 1px solid #2e2e2e
+			width 140%
+			height 140%
+			border-radius 50%
+			border 1px solid #2e2e2e
+			/*border-left 1px solid #2e2e2e
 			border-right 1px solid #2e2e2e
-			border-bottom 1px solid transparent
+			border-bottom 1px solid transparent*/
 			position absolute
 			left 50%
-			top 0
-			-webkit-transform translate(-50%, -375px)
-			transform translate(-50%, -375px)
+			top 50%
+			-webkit-transform translate(-50%, -50%)
+			transform translate(-50%, -50%)
+			margin-top -50px
 	.screen
 		position relative
 		z-index 2
@@ -140,8 +140,16 @@
 			width calc(30% - 14px)
 		&:nth-of-type(2)
 			width 40%
+.logo-project
+	width 23%
+	text-align center
+	margin 50px auto 0
+	img 
+		img-responsive()
+		margin 0 auto
 .detail-wireframe
 	padding 172px 0 92px
+	background-color white
 .detail-wireframe-title
 	width auto
 	padding-left 27px
@@ -160,7 +168,7 @@
 		line-height 1
 	h6 
 		color #656565
-		font-family 'Roboto-Light'
+		font-family font-1
 		font-size 22px
 		margin-top 5px
 .detail-wireframe-row-screen
@@ -177,7 +185,7 @@
 	position relative
 	z-index 2
 	p 
-		font-family 'Roboto-Light'
+		font-family font-1
 		font-size 20px
 		color #1a1a1a
 		line-height 1.6
@@ -223,7 +231,7 @@
 		left 0
 		bottom 0
 		color #1c1c1c
-		font-family 'Roboto-Light'
+		font-family font-1
 		font-size 13px
 		border-radius 0 0 10px 10px
 	&.color1 
@@ -258,14 +266,14 @@
 		left 0
 	&:before
 		content 'Aa'
-		font-family 'Roboto-Black'
+		font-family font-6
 		font-size 56px
 		height 130px 
 		line-height 130px
 		top 0
 	&:after 
 		font-size 18px
-		font-family 'Roboto-Light'
+		font-family font-1
 		content 'Avenir'
 		height 48px
 		line-height 48px
@@ -297,12 +305,12 @@
 		using-flex(row, center, center)
 		flex-flow row nowrap
 		h4
-			font-family 'Roboto-Black'
+			font-family font-6
 			font-size 60px
 		span 
 			font-size 60px
 			color #1a1a1a
-			font-family 'Roboto-Black'
+			font-family font-6
 	.item-we-develop
 		width 33.333%
 		padding 0 15px
@@ -319,16 +327,27 @@
 		img 
 			margin-bottom 8px
 		h6 
-			font-family 'Roboto-Black'
+			font-family font-6
 			font-size 60px
 		h5 
 			width 100%
 			max-width 100px
 			line-height 1.2
-			font-family 'Roboto-Regular'
+			font-family font-2
 			font-size 15px
 			text-transform uppercase
 			margin 9px auto 0
+.results-button-apps
+	width 100%
+	max-width 500px
+	using-flex(row, center, center)
+	text-align center
+	margin 60px auto 0
+	.link-app
+		width calc(50% - 20px)
+		margin 0 10px
+		img 
+			img-responsive()
 .detail-project-share
 	background-color #1a1a1a
 	padding 84px 0 94px
@@ -354,7 +373,7 @@
 		height 60px
 		color white
 		text-align center
-		border-radius 10px
+		border-radius 4px
 		margin 0
 		&:nth-of-type(1)
 			background-color #23539d
@@ -371,7 +390,7 @@
 			font-size 16px
 			line-height 45px
 			color white
-			font-family 'Roboto-Black'
+			font-family font-6
 			text-transform uppercase
 .detail-project-share-number
 	using-flex(column, center, center)
@@ -379,11 +398,11 @@
 	padding-left 40px
 	position relative
 	h5 
-		font-family 'Roboto-Bold'
+		font-family font-3
 		font-size 50px
 	h6 
 		font-size 22px 
-		font-family 'Roboto-Light'
+		font-family font-1
 	&:before
 		content ''
 		width 1px 

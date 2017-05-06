@@ -1,5 +1,7 @@
 @import 'mixin.styl'
 
+.button-work-mobile
+	display none
 .we-love
 	using-flex(column, center, center)
 	height 100vh
@@ -20,28 +22,28 @@
 		top 0
 .we-love-content
 	width 90%
-	max-width 770px
+	max-width 700px
 	text-align center
 	color white
 	position relative
 	z-index 2
 	margin 0 auto
 	h1 
-		font-family 'Roboto-Bold'
-		font-size 66px
+		font-family font-3
+		font-size 60px
+		line-height 60px
+		margin-bottom 28px
+		letter-spacing -3px
 	h2 
-		font-family 'Roboto-Light'
+		font-family font-1
 		font-size 25px
-		margin-top 17px
+		line-height 1.25
+		letter-spacing -1px
 		span 
-			font-family 'Roboto-Italic'
-			font-weight bold
+			font-family font-3
 			margin-left 10px
 .row-buttons
-	margin-top 31px
-	a 
-		&:nth-of-type(1)
-			margin-right 28px
+	margin-top 40px
 .scroll-down
 	using-flex(row, center, center)
 	flex-flow row nowrap
@@ -53,7 +55,7 @@
 	z-index 2
 	color white
 	h6 
-		font-family 'Roboto-Regular'
+		font-family font-2
 		font-size 14px
 		margin-left 15px
 .client
@@ -63,7 +65,6 @@
 	.g-btn
 		margin-top 61px
 		@media screen and (min-width 1024px)
-			transition all 0.7s
 			transform translateY(100px) scaleX(0)
 			opacity 0
 			&.active
@@ -89,7 +90,7 @@
 	max-width 520px
 	margin 9px auto 0
 	p 
-		font-family 'Roboto-Light'
+		font-family font-1
 		font-size 17px
 		text-align center
 		line-height 1.5
@@ -164,12 +165,12 @@
 		h6 
 			width calc(100% - 27px)
 			font-size 22px
-			font-family 'Roboto-Light'
+			font-family font-1
 			color white
 			padding-left 23px
 			line-height 1.2
 			span 
-				font-family 'Roboto-Black'
+				font-family font-6
 				margin 0 10px
 .we-develop-bottom
 	width 100%
@@ -184,13 +185,13 @@
 	&:nth-last-child(1)
 		border-right 0
 	h6 
-		font-family 'Roboto-Black'
+		font-family font-6
 		font-size 60px
 	h5 
 		width 100%
 		max-width 150px
 		line-height 1.2
-		font-family 'Roboto-Regular'
+		font-family font-2
 		font-size 15px
 		text-transform uppercase
 		margin 0 auto
@@ -198,13 +199,14 @@
 	using-flex(row, center, center)
 	flex-flow row nowrap
 	h4
-		font-family 'Roboto-Black'
+		font-family font-6
 		font-size 60px
-.works 
+.works
+	padding-top 62px 
 	.g-title 
-		margin 62px 0 65px
+		margin-bottom 65px
 .works-container
-	using-flex(row, space-between, center)
+	using-flex(row, space-between, flex-start)
 .work-card-description
 	using-flex(column, center, center)
 	width 100%
@@ -221,14 +223,14 @@
 		text-transform uppercase
 		text-align center
 		line-height 1
-	h5, h6, a
 		transition all 1s ease-out
+	h5, h6, a
 		opacity 0
 	h5 
-		font-family 'Roboto-Black'
+		font-family font-6
 		font-size 32px
 	h6
-		font-family 'Roboto-Regular'
+		font-family font-2
 		font-size 16px
 		margin 5px 0 15px
 .work-card 
@@ -239,8 +241,10 @@
 	margin-bottom 1px
 	position relative
 	overflow hidden
-	&:nth-of-type(2), &:nth-last-child(2)
+	&:nth-of-type(2), &:nth-of-type(5)
 		margin 0 1px 1px
+	&:nth-of-type(6), &:nth-of-type(5), &:nth-of-type(4)
+		margin-bottom 0px
 	@media screen and (min-width 1025px)
 		&:hover	
 			.work-card-description
@@ -342,12 +346,14 @@
 @media screen and (max-width 767px)
 	.work-card
 		width calc(50% - 0.5px)
-		&:nth-of-type(2)
-			margin 0 0 1px 0
-		&:nth-last-child(2)
-			margin 0 0 1px 0
+		margin 0
+		margin-bottom 1px
 		&:nth-child(even)
 			margin-left 1px
+		&:nth-of-type(2), &:nth-of-type(5)
+			margin 0
+		&:nth-of-type(5), &:nth-of-type(6)
+			margin-bottom 0
 @media screen and (max-width 540px)
 	.we-love-content
 		width 100%
@@ -377,12 +383,7 @@
 			margin-top 8px
 			line-height 1.35
 	.row-buttons
-		using-flex(column, center, center)
 		margin-top 32px
-		a 
-			&:nth-of-type(1)
-				margin-right 0
-				margin-bottom 18px
 	.scroll-down
 		display none
 	.we-love-content
@@ -402,7 +403,7 @@
 			h6 
 				font-size 16px
 				span 
-					font-family 'Roboto-Light'
+					font-family font-1
 	.we-develop 
 		.wancho
 			.g-title
@@ -439,11 +440,14 @@
 				background-color transparent
 				transform rotateY(180deg) translateY(-100%)
 				font-size 15px
-				right 10px
+				right 15px
+				top 45%
 	.work-card
 		width 100%
 		height 484px
 		overflow visible
+		display none
+		margin-bottom 0
 		&:nth-child(even)
 			margin-left 0
 		.img-cel 
@@ -451,6 +455,8 @@
 			max-width 130px
 			top -27px
 			transform translate(-50%, -100%)
+		&:nth-of-type(1), &:nth-of-type(2), &:nth-of-type(3)
+			display block
 	.work-content
 		position relative
 		width 100%
@@ -460,3 +466,9 @@
 	.work-background
 		height 324px
 		position relative
+	.button-work-mobile
+		display block
+		margin-bottom 30px
+	.works-container
+		justify-content center
+	

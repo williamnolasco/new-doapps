@@ -21,15 +21,15 @@
 		span
 			display block
 	p
-		font-family 'Roboto-Light'
+		font-family font-1
 		font-size 25px
 		margin-top 14px
 		color #343434
 		&:last-child
-			font-family 'Roboto-Black'
+			font-family font-6
 			margin-top 12px	
 	a
-		font-family 'Roboto-Black'
+		font-family font-6
 		font-size 22px
 		color #343434
 		padding 0 10px
@@ -54,3 +54,45 @@
 			&:hover
 				color white
 				background-color #999999
+
+@media screen and (max-width 960px)
+	.contact-title
+		padding 60px 0
+@media screen and (max-width 768px)
+	.contact-title
+		padding 45px 0
+		p, a
+			font-size 20px
+	.contact-row-icon
+		a 
+			padding 10px
+			font-size 24px
+			&:nth-of-type(2)
+				margin 0 35px
+	.contact-ubication
+		height 400px
+	.contact-banner
+		.g-banner-content
+			width 90%
+			max-width 570px
+@media screen and (max-width 480px)
+	.contact-title
+		padding 30px 0
+		p 
+			font-size 16px
+			margin-top 20px
+			line-height 1.4
+			&:last-child
+				margin-top 16px
+			a 
+				font-size 16px
+	.contact-banner
+		.g-banner-content
+			width 100%
+	.contact-row-icon
+		margin-top 30px
+		a 
+			padding 7px
+			font-size 22px
+	.contact-ubication
+		height 380px

@@ -17,10 +17,10 @@
 		width 100%
 		height 100%
 		background linear-gradient(to bottom, rgba(0, 0, 0, 0.95) 0%,
-											rgba(0, 0, 0, 0.9) 25%,
-											rgba(0, 0, 0, 0.85) 50%,
-											rgba(0, 0, 0, 0.7) 70%,
-											rgba(0, 0, 0, 0.4) 100%)
+											rgba(0, 0, 0, 0.9) 20%,
+											rgba(0, 0, 0, 0.7) 50%,
+											rgba(0, 0, 0, 0.4) 70%,
+											rgba(0, 0, 0, 0.2) 100%)
 		position absolute
 		left 0
 		top 0
@@ -36,11 +36,13 @@
 	margin-bottom 80px
 	color white
 	h4 
-		font-size 66px
-		font-family 'Roboto-Bold'
-		line-height 0.97
+		font-family font-3
+		font-size 60px
+		line-height 60px
+		letter-spacing -3px
+		max-width 330px
 	h5, h6 
-		font-family 'Roboto-Light'
+		font-family font-1
 	h5 
 		font-size 22px
 		margin 22px 0 7px
@@ -49,12 +51,12 @@
 .courses-form
 	width 50%
 	max-width 470px
-	margin-left 20px
+	padding-left 20px
 	background-color white
 	padding 68px 49px 57px
 	text-align center
 	h5 
-		font-family 'Roboto-Black'
+		font-family font-6
 		font-size 35px
 		margin-bottom 67px
 	.input-container 
@@ -68,31 +70,31 @@
 		border-bottom 1px solid rgba(130, 130, 130, 0.6)
 		padding-left 45px
 		color #343434
-		font-family 'Roboto-Regular'
+		font-family font-2
 	.lively-bar
 		background-color green-doapps
 		transition all 1s
 	.row-input-content
 		top 0
 		label 
-			font-family 'Roboto-Regular'
+			font-family font-2
 			font-size 22px
 			position relative
 			color #7d7d7d
 			margin-left 5px
-			transition all 0.2s ease-out
-		img 
+			transition .2s ease-out
+		/*img 
 			position relative
-			top 0
+			top 0*/
 		&.active
-			top 0
-			img 
+			//top 0
+			/*img 
 				width 38px 
 				height auto
-				top 0
+				top 0*/
 			label 
-				font-size 15px
-				top -25px
+				font-size .8rem
+				transform translateY(-140%)
 	button
 		margin-top -12px
 .courses-objectives
@@ -106,16 +108,16 @@
 	using-flex(row, space-between, flex-start)
 	width 100%
 .courses-objectives-item
-	using-flex(row, flex-start, flex-start)
-	width 50%
+	using-flex(row, space-between, flex-start)
+	width 45%
 	max-width 530px
 	margin-bottom 70px
 	p 
 		width calc(100% - 27px)
 		max-width 490px
-		padding-left 41px
+		padding-left 20px
 		font-size 22px 
-		font-family 'Roboto-Regular'
+		font-family font-2
 		color #070707
 		line-height 1.25
 .courses-temary
@@ -132,7 +134,8 @@
 .courses-temary-item
 	width calc(33.333% - 20px)
 	max-width 372px
-	height 523px
+	//height 523px
+	height auto
 	border 1px solid #bebebe
 .courses-temary-item-top
 	using-flex(row, center, center)
@@ -148,16 +151,16 @@
 		color white
 		margin-left 20px
 		font-size 22px 
-		font-family 'Roboto-Bold'
+		font-family font-3
 .courses-temary-item-bottom
-	height calc(100% - 70px)
+	height auto
 	padding 57px 32px
 	background-color white
 .courses-temary-item-li
 	position relative
 	padding-left 20px
 	font-size 22px 
-	font-family 'Roboto-Regular'
+	font-family font-2
 	color black-text
 	margin-bottom 28px
 	line-height 1.17
@@ -183,6 +186,7 @@
 .courses-teacher-row
 	using-flex(row, space-between, flex-start)
 .courses-teacher-item
+	width 45%
 	using-flex(row, flex-start, center)
 	figure
 		img 
@@ -193,12 +197,12 @@
 	max-width 310px
 	padding-left 35px
 	h5 
-		font-family 'Roboto-Medium'
+		font-family font-8
 		font-size 26px
 		color green-doapps
 		margin-bottom 9px
 	p 
-		font-family 'Roboto-Light'
+		font-family font-1
 		font-size 18px
 		color #4e4e4e
 		line-height 1.47
@@ -226,10 +230,10 @@
 			margin 0 auto
 	h6 
 		font-size 22px
-		font-family 'Roboto-Black'
+		font-family font-6
 		margin 21px 0 10px
 	p
-		font-family 'Roboto-Regular'
+		font-family font-2
 		font-size 16px
 		line-height 1.6
 .courses-cost 
@@ -254,7 +258,7 @@
 	h6 
 		line-height 70px
 		text-align center
-		font-family 'Roboto-Bold'
+		font-family font-3
 		font-size 20px
 		text-transform uppercase
 		color white
@@ -269,13 +273,13 @@
 	h4 
 		display inline-block
 		position relative
-		font-family 'Roboto-Bold'
+		font-family font-3
 		font-size 108px
 		color white
 		text-align center
 		letter-spacing -5px
 		&:before, &:after
-			font-family 'Roboto-Bold'
+			font-family font-3
 			font-size 41px
 			position absolute
 			color white
@@ -289,7 +293,7 @@
 			top 5px
 			right -65px
 	h6 
-		font-family 'Roboto-Bold'
+		font-family font-3
 		font-size 20px
 		text-transform uppercase
 		letter-spacing 9px
@@ -311,7 +315,7 @@
 	h6 
 		width calc(100%- 27px)
 		font-size 18px
-		font-family 'Roboto-Regular'
+		font-family font-3
 		color black-text
 		padding-left 12px
 		text-align left
@@ -320,5 +324,84 @@
 		img 
 			display block
 			
-	
-		
+@media screen and (max-width 1024px)
+	.courses-date
+		h4 
+			font-size 50px
+	.courses-temary-item
+		width calc(33.3333% - 10px)
+		li 
+			font-size 20px
+	.courses-temary-item-bottom
+		padding 40px 20px
+
+@media screen and (max-width 768px)
+	.courses-objectives-item
+		justify-content: center;
+		align-items: flex-start;
+		width: 100%;
+		max-width: initial;
+	.courses-temary
+		.courses-temary-row
+			.courses-temary-item
+				width: 100%;
+				margin: 0 auto 45px;
+	.courses-teacher-item
+		width: 100%;
+		margin-bottom: 45px;
+		flex-direction: column;
+		.courses-teacher-description
+			width: auto;
+			padding-left: 0;
+			text-align: center;
+			margin-top: 30px;
+	.courses-feature
+		.courses-feature-row
+			flex-flow: column;
+			.courses-feature-item
+				width: 100%;
+				margin: 0 auto;
+				margin-bottom: 45px;
+				&:last-child
+					margin-bottom: 0;
+	.courses-cost
+		.courses-cost-row
+			.courses-cost-item
+				width: 100%;
+				margin: 0 auto;
+				&:nth-last-child(1)
+					margin: 45px auto 0;
+	.courses-banner
+		height 1000px
+	.courses-date
+		text-align: center;
+		width: 100%;
+		margin: 140px auto 40px;
+		h4
+			max-width: initial;
+    .courses-form
+		width: 100%;
+		margin: 0 auto;
+
+@media screen and (max-width 480px)
+	.courses-objectives
+		padding: 60px 0;
+		.g-title
+			margin-bottom: 45px;
+		h5
+			font-size: 28px !important;
+	.courses-objectives-item
+		margin-bottom: 30px;
+		p
+			font-size: 16px;
+	.courses-date
+		text-align: center;
+		width: 100%;
+		margin: 60px 0 0;
+		h4
+			font-size: 42px;
+	.courses-form
+		padding: 68px 30px 57px;
+		.row-input-content
+			label
+				font-size: 16px;

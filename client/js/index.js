@@ -94,9 +94,10 @@ $(window).resize(function(event) {
 
 //Click, en el boton "Scroll para mas", de la primera vista
 
-$('.scroll-down').click(function(){
+$('.button-work').click(function(e){
+	e.preventDefault();
 	$('html, body').animate({
-		scrollTop: $('.client').offset().top
+		scrollTop: $('.works').offset().top
 	}, 600);
 });
 

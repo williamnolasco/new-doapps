@@ -3,12 +3,13 @@ html(lang='es')
 	head
 		meta(charset='utf-8') 
 		title Detalle del proyecto
+		meta(name='viewport', content='width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0')
 		link(rel='stylesheet', type='text/css', href='./client/css/icons.css')
 		link(rel='stylesheet', type='text/css', href='./client/css/header.css')
 		link(rel='stylesheet', type='text/css', href='./client/css/footer.css')
 		link(rel='stylesheet', type='text/css', href='./client/css/icons.css')
 		link(rel='stylesheet', type='text/css', href='./client/css/detail-project.css')
-	body 
+	body.body-detail-project
 		include ./blocks/header.pug
 		section.project-title
 			.wancho
@@ -33,6 +34,8 @@ html(lang='es')
 						| Es muy importante que los anunciantes aprendan a planificarse. Algunas empresas suelen hacer acciones de
 						strong marketing por separado,
 						| pero se olvidan de que el marketing es algo global con tener que saber.
+				figure.logo-project
+					img(src='./client/img/detail-project/detail-logo-project.png' width='333' height='90')
 		section.detail-proposal
 			.wancho
 				.row-detail-client-title
@@ -57,8 +60,6 @@ html(lang='es')
 					h5 
 						| El 
 						span Diseño
-			figure.logo-project
-				img(src='./client/img/detail-project/detail-logo-project.png' width='333' height='90')
 			.detail-row-screen
 				figure.screen
 					img(src='./client/img/detail-project/detail-screen1.png' width='368' height='655')
@@ -149,6 +150,11 @@ html(lang='es')
 						img(src='./client/img/detail-project/results-icon3.png')
 						h6.timer3 80
 						h5 clientes satisfechos
+				.results-button-apps
+					a(href='#').link-app
+						img(src='./client/img/detail-project/play-store.png' width='557' height='161')
+					a(href='#').link-app
+						img(src='./client/img/detail-project/app-store.png' width='557' height='161')
 		section.detail-project-share
 			.wancho
 				.g-title

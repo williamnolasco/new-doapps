@@ -3,13 +3,14 @@
   <head>
     <meta charset="utf-8">
     <title>Detalle del proyecto</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <link rel="stylesheet" type="text/css" href="./client/css/icons.css">
     <link rel="stylesheet" type="text/css" href="./client/css/header.css">
     <link rel="stylesheet" type="text/css" href="./client/css/footer.css">
     <link rel="stylesheet" type="text/css" href="./client/css/icons.css">
     <link rel="stylesheet" type="text/css" href="./client/css/detail-project.css">
   </head>
-  <body> 
+  <body class="body-detail-project">
     <header>
       <div class="wancho"><a class="link-logo" href="index.html"><img src="./client/img/header/logo.png" width="228" height="67" alt="DoApps"></a><a class="link-logo-mobile" href="index.html"><img src="./client/img/header/logo-mobile.png" width="43" height="43" alt="DoApps"></a><i class="icon-menu2 open-menu-mobile"></i>
         <ul class="list-items"><span class="movable-bar"></span>
@@ -43,6 +44,7 @@
           <p>
              En primer lugar, nos encontramos con tener que saber y tener<strong>a la mano los reportes</strong>de<strong>tsunamis en el Perú.</strong>Es muy importante que los anunciantes aprendan a planificarse. Algunas empresas suelen hacer acciones de<strong>marketing por separado,</strong>pero se olvidan de que el marketing es algo global con tener que saber.</p>
         </div>
+        <figure class="logo-project"><img src="./client/img/detail-project/detail-logo-project.png" width="333" height="90"></figure>
       </div>
     </section>
     <section class="detail-proposal">
@@ -68,7 +70,6 @@
              El <span>Diseño</span></h5>
         </div>
       </div>
-      <figure class="logo-project"><img src="./client/img/detail-project/detail-logo-project.png" width="333" height="90"></figure>
       <div class="detail-row-screen">
         <figure class="screen"><img src="./client/img/detail-project/detail-screen1.png" width="368" height="655"></figure>
         <figure class="screen"> <img src="./client/img/detail-project/detail-screen2.png" width="547" height="1065"></figure>
@@ -159,6 +160,7 @@
             <h5>clientes satisfechos</h5>
           </div>
         </div>
+        <div class="results-button-apps"><a class="link-app" href="#"><img src="./client/img/detail-project/play-store.png" width="557" height="161"></a><a class="link-app" href="#"><img src="./client/img/detail-project/app-store.png" width="557" height="161"></a></div>
       </div>
     </section>
     <section class="detail-project-share">
@@ -187,34 +189,38 @@
           <div class="input-container">
             <input class="form-input" id="name">
             <div class="row-input-content"><img src="./client/img/footer/input-name.png" width="38" height="32">
-              <label for="name">Cúal es tu nombre?</label>
+              <label for="name">¿Cúal es tu nombre?</label>
             </div><span class="lively-bar"></span>
           </div>
           <div class="input-container">
             <input class="form-input" id="email">
             <div class="row-input-content"><img src="./client/img/footer/input-email.png" width="38" height="32">
-              <label for="email">Cúal es tu correo?</label>
+              <label for="email">¿Cúal es tu correo?</label>
             </div><span class="lively-bar"></span>
           </div>
           <div class="input-container">
             <input class="form-input" id="tel">
             <div class="row-input-content"><img src="./client/img/footer/input-tel.png" width="38" height="32">
-              <label for="tel">Cúal es tu teléfono?</label>
+              <label for="tel">¿Cúal es tu teléfono?</label>
             </div><span class="lively-bar"></span>
           </div>
           <div class="input-container">
-            <input class="form-input" id="product">
-            <div class="row-input-content"><img src="./client/img/footer/input-product.png" width="38" height="32">
-              <label for="product">Elige un producto?</label>
+            <input class="form-select" id="product">
+            <div class="row-input-content row-select-content"><img src="./client/img/footer/input-product.png" width="38" height="32">
+              <label for="product">¿Qué eres?</label>
+              <ul class="ul-form-select">
+                <li>Empresa</li>
+                <li>Emprendedor</li>
+              </ul>
             </div><span class="lively-bar"></span>
           </div>
           <div class="input-container textarea-container">
             <textarea class="form-input" id="write"></textarea>
             <div class="row-input-content"><img src="./client/img/footer/input-write.png" width="38" height="32">
-              <label for="write">Describenos tu proyecto</label>
+              <label for="write">Descríbenos tu proyecto</label>
             </div><span class="lively-bar"></span>
           </div>
-          <button class="g-btn btn-green button-form">Empecemos!</button>
+          <button class="g-btn btn-green2 button-form">Empecemos!</button>
         </form>
       </div>
     </div>

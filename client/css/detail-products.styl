@@ -1,4 +1,11 @@
 @import 'mixin.styl'
+.body-products
+	.list-items
+		li 
+			&:nth-of-type(3)
+				a 
+					&:after
+						item-header-active()
 .detail-products
 	.footer-top
 		display none
@@ -19,7 +26,7 @@
 		position relative
 		padding-left 45px
 		font-size 22px
-		font-family 'Roboto-Light'
+		font-family font-1
 		margin-bottom 40px
 		i
 			position absolute
@@ -30,8 +37,8 @@
 			background-image url('../img/products/icon.png')
 			using-background()
 	strong
-		font-family 'Roboto-Bold'
-		
+		font-family font-3
+		margin 0 7px
 .detail-products-preview
 	background-color #fcfcfc
 	padding 130px 0
@@ -66,8 +73,10 @@
 	p
 		max-width 520px
 		margin 20px auto 25px auto
-		font-family 'Roboto-Light'
+		font-family font-1
 		font-size 25px
+	.results-button-apps
+		margin 30px auto 0
 @media screen and (max-width 1200px)
 	.detail-products-item
 		width: 33%

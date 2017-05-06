@@ -7,52 +7,76 @@
 	using-background()
 	position relative
 	z-index -1
+	&:after
+		content ''
+		width 100%
+		height 100%
+		background-color rgba(#9badff, 0.4)
+		position absolute
+		left 0
+		top 0
+		mix-blend-mode multiply
 	&:before
 		content ''
 		width 100%
 		height 100%
 		background linear-gradient(to bottom, rgba(0, 0, 0, 0.95) 0%,
-											rgba(0, 0, 0, 0.9) 25%,
-											rgba(0, 0, 0, 0.85) 50%,
-											rgba(0, 0, 0, 0.7) 70%,
-											rgba(0, 0, 0, 0.4) 100%)
+											rgba(0, 0, 0, 0.9) 20%,
+											rgba(0, 0, 0, 0.7) 50%,
+											rgba(0, 0, 0, 0.4) 70%,
+											rgba(0, 0, 0, 0.2) 100%)
 		position absolute
 		left 0
 		top 0
 .g-banner-content
+	width 100%
+	max-width 700px
 	text-align center
 	color white
 	position relative
 	z-index 2
+	margin 0 auto
 	h5
-		font-family 'Roboto-Bold'
-		font-size 66px
-		margin-bottom 13px
+		font-family font-3
+		font-size 60px
+		line-height 60px
+		margin-bottom 20px
+		letter-spacing -3px
 	h6 
-		font-family 'Roboto-Light'
+		font-family font-1
 		font-size 25px
 		line-height 1.25
+		letter-spacing -1px
 		strong 
+			font-family font-3
 			margin 0 7px
-			font-family 'Roboto-Black'
-			font-style italic
-			letter-spacing 0.7px
-@media screen and (max-width 768px)
-	.g-banner 
-		height 500px
+@media screen and (max-width 960px)
+	.g-banner
+		height 580px
 	.g-banner-content
 		h5 
-			font-size 45px
+			font-size 50px
+			line-height 50px
+@media screen and (max-width 768px)
+	.g-banner 
+		height 480px
+	.g-banner-content
+		max-width 550px
+		top 30px
+		h5 
+			font-size 40px
+			line-height 40px
+			margin-bottom 15px
 		h6 
 			font-size 20px
 @media screen and (max-width 480px)
 	.g-banner 
-		height 400px
+		height 380px
 	.g-banner-content
 		h5 
 			font-size 28px
-			margin-bottom 10px
+			line-height 28px
 		h6 
-			font-size 16px
+			font-size 18px
 			strong 
-				font-family 'Roboto-Bold'
+				font-family font-3

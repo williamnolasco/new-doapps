@@ -1,8 +1,15 @@
 @import 'mixin.styl'
 
+.body-products
+	.list-items
+		li 
+			&:nth-of-type(3)
+				a 
+					&:after
+						item-header-active()
 .products-title
 	text-align center
-	padding 120px 0
+	padding 120px 0 0
 	.g-title
 		span
 			display block
@@ -39,10 +46,10 @@
 	margin-bottom 30px
 	p
 		font-size 22px
-		font-family 'Roboto-Regular'
+		font-family font-2
 		line-height 1.5
 	strong
-		font-family 'Roboto-Bold'
+		font-family font-3
 
 @media screen and (max-width 960px)
 	.product-item,

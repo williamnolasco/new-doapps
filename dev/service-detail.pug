@@ -1,7 +1,8 @@
 doctype html
 html(lang='es')
 	head
-		meta(charset='utf-8') 
+		meta(charset='utf-8')
+		meta(name='viewport', content='width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, suser-scalable=no')
 		title Detalle del servicio
 		link(rel='stylesheet', type='text/css', href='./client/css/icons.css')
 		link(rel='stylesheet', type='text/css', href='./client/css/header.css')
@@ -10,7 +11,7 @@ html(lang='es')
 		link(rel='stylesheet', type='text/css', href='./client/css/detail-products.css')
 		link(rel='stylesheet', type='text/css', href='./client/css/detail-project.css')
 		link(rel='stylesheet', type='text/css', href='./client/css/service-detail.css')
-	body
+	body.body-service-detail
 		include ./blocks/header.pug
 		section.service-detail.g-banner
 			.wancho 
@@ -72,7 +73,7 @@ html(lang='es')
 							|En junio de 2014 Apple anunció su nuevo lenguaje de
 							strong programación Swift 
 							|que ha tenido una recepción sorprendente por parte de la comunidad de de sus aplicaciones 
-						a(href='detail-project.html').g-btn.btn-transparent descubre más
+						a(href='detail-project.html').g-btn.btn-transparent-green descubre más
 				.service-detail-item
 					.service-detail-left
 						.service-detail-background
@@ -84,7 +85,7 @@ html(lang='es')
 							|En junio de 2014 Apple anunció su nuevo lenguaje de
 							strong programación Swift 
 							|que ha tenido una recepción sorprendente por parte de la comunidad de de sus aplicaciones 
-						a(href='detail-project.html').g-btn.btn-transparent descubre más
+						a(href='detail-project.html').g-btn.btn-transparent-green descubre más
 				.service-detail-item
 					.service-detail-left
 						.service-detail-background
@@ -96,7 +97,7 @@ html(lang='es')
 							|En junio de 2014 Apple anunció su nuevo lenguaje de
 							strong programación Swift 
 							|que ha tenido una recepción sorprendente por parte de la comunidad de de sus aplicaciones 
-						a(href='detail-project.html').g-btn.btn-transparent descubre más
+						a(href='detail-project.html').g-btn.btn-transparent-green descubre más
 		include ./blocks/footer.pug
 
 		script(src='./client/js/jquery1.8.3.min.js')
