@@ -7,7 +7,7 @@ header
 	position absolute
 	left 0
 	top 0
-	z-index 2
+	z-index 100
 	.wancho 
 		using-flex(row, space-between, center)
 .link-logo-mobile
@@ -119,7 +119,17 @@ header
 		display none
 	.link-logo-mobile
 		display block
+		&.active
+			position fixed 
+			left 20.8px
+			top 30px
 	.open-menu-mobile
 		font-size 30px
 		&.active
-			top 0
+			position fixed
+			right 20.8px 
+			top 36px
+	.list-items 
+		li 
+			height 55px
+			border-bottom 0

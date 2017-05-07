@@ -112,15 +112,17 @@
 	transition all 2s ease-out
 .success-stories-works
 	.g-title
-		margin 125px 0 98px
+		//margin 125px 0 98px
+		margin 62px 0
 		p 
 			width 100%
 			max-width 425px
 			font-family font-1
-			font-size 25px
+			//font-size 25px
+			font-size 17px
 			line-height 1.19
 			margin 10px auto 0
-			color #353535
+			color #000
 @media screen and (max-width 960px)
 	.works 
 		.g-title
@@ -148,10 +150,71 @@
 		&:nth-of-type(5), &:nth-of-type(6)
 			margin-bottom 0
 @media screen and (max-width 480px)
+	/*
+		.work-card-description
+			position relative
+			padding 0 30px
+			position relative
+			opacity 1
+			background-color white
+			h5, h6, a 
+				opacity 1
+			h5, h6
+				color black-text
+			h5 
+				font-size 18px
+				margin-top 15px
+				margin-bottom 4px
+			h6 
+				font-size 14px
+				margin-bottom 0
+			.g-btn 
+				background-color green-doapps
+				overflow visible
+				margin-top -2px
+				&.btn-green
+					background-color transparent
+					color green-doapps
+				&:before 
+					display none
+				&:after
+					display inline-block
+					content '\e91d'
+					color white
+					font-family 'icomoon'
+					background-color transparent
+					transform rotateY(180deg)
+					position relative
+					font-size 15px
+					right -10px
+		.work-card
+			width 100%
+			height 484px
+			overflow visible
+			display none
+			margin-bottom 0
+			&:nth-child(even)
+				margin-left 0
+			.img-cel 
+				width 130px
+				max-width 130px
+				top -27px
+				transform translate(-50%, -100%)
+			&:nth-of-type(1), &:nth-of-type(2), &:nth-of-type(3)
+				display block
+		.work-content
+			position relative
+			width 100%
+			height 160px
+			left 0
+			top 0
+		.work-background
+			height 324px
+			position relative*/
 	.work-card-description
 		position relative
-		padding 0 30px
-	.work-card-description
+		padding 0 20px
+		height auto
 		position relative
 		opacity 1
 		background-color white
@@ -161,31 +224,34 @@
 			color black-text
 		h5 
 			font-size 18px
-			margin-top 15px
+			//margin-top 15px
 			margin-bottom 4px
 		h6 
 			font-size 14px
 			margin-bottom 0
 		.g-btn 
+			background-color green-doapps
 			overflow visible
-			margin-top -2px
+			margin-top 15px
 			&.btn-green
 				background-color transparent
 				color green-doapps
 			&:before 
 				display none
 			&:after
+				display inline-block
 				content '\e91d'
-				color green-doapps
+				color white
 				font-family 'icomoon'
 				background-color transparent
-				transform rotateY(180deg) translateY(-100%)
+				transform rotateY(180deg)
+				position relative
 				font-size 15px
-				right 15px
-				top 45%
+				right -10px
 	.work-card
 		width 100%
-		height 484px
+		//height 484px
+		height auto
 		overflow visible
 		display none
 		margin-bottom 0
@@ -201,9 +267,11 @@
 	.work-content
 		position relative
 		width 100%
-		height 160px
+		//height 160px
+		height auto
 		left 0
 		top 0
+		padding 30px 0
 	.work-background
 		height 324px
 		position relative

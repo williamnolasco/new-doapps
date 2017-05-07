@@ -90,7 +90,7 @@
 	max-width 520px
 	margin 9px auto 0
 	p 
-		font-family font-2
+		font-family font-1
 		font-size 17px
 		text-align center
 		line-height 1.5
@@ -377,8 +377,9 @@
 			margin-top 20px
 @media screen and (max-width 480px)
 	.we-love 
-		height 480px
+		height 500px
 	.we-love-content
+		margin-top 60px
 		h1 
 			font-size 28px
 			line-height 1.2
@@ -390,8 +391,6 @@
 		margin-top 32px
 	.scroll-down
 		display none
-	.we-love-content
-		margin-top 20px
 	.client-description
 		display none
 	.row-clients
@@ -415,7 +414,6 @@
 	.work-card-description
 		position relative
 		padding 0 20px
-	.work-card-description
 		height auto
 		position relative
 		opacity 1
@@ -432,6 +430,7 @@
 			font-size 14px
 			margin-bottom 0
 		.g-btn 
+			background-color green-doapps
 			overflow visible
 			margin-top 15px
 			&.btn-green
@@ -440,14 +439,15 @@
 			&:before 
 				display none
 			&:after
+				display inline-block
 				content '\e91d'
-				color green-doapps
+				color white
 				font-family 'icomoon'
 				background-color transparent
-				transform rotateY(180deg) translateY(-100%)
+				transform rotateY(180deg)
+				position relative
 				font-size 15px
-				right 15px
-				top 45%
+				right -10px
 	.work-card
 		width 100%
 		//height 484px

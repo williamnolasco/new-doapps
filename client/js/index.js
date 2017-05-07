@@ -75,7 +75,7 @@ function animations(){
 		});*/
 
 		//Animacion en la seccion "Client"  -  Animando el boton d eesa seccion
-		var animate_client = $('.client');
+		/*var animate_client = $('.client');
 		animate_client.waypoint(function(direction){
 			if(direction === 'down'){
 				$('.btn-client').addClass('active');
@@ -83,7 +83,7 @@ function animations(){
 			}
 			}, {
 			offset: '0%'
-		});
+		});*/
 	}
 }
 

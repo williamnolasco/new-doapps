@@ -340,6 +340,6 @@ var styles = [
             var marker = new google.maps.Marker({
                 position: myLatlng,
                 map: map1,
-                icon: new google.maps.MarkerImage('../client/img/contact/icon-map.png'),
+                icon: new google.maps.MarkerImage('./client/img/contact/icon-map.png'),
                 animation: google.maps.Animation.DROP
             });
