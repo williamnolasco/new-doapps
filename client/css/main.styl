@@ -90,11 +90,12 @@
 	max-width 520px
 	margin 9px auto 0
 	p 
-		font-family font-1
+		font-family font-2
 		font-size 17px
 		text-align center
 		line-height 1.5
-		color #a0a0a0
+		//color #a0a0a0
+		color #000
 .row-clients
 	/*using-flex(row, space-around, center)*/
 	margin-top 50px
@@ -138,11 +139,11 @@
 	width 381px
 	height 646px
 	position relative
-	@media screen and (min-width 1024px)
+	/*@media screen and (min-width 1024px)
 		transition all 0.7s
 		transform translateY(100%)
 		&.active
-			transform translateY(0)
+			transform translateY(0)*/
 	img 
 		display block
 		max-width 100%
@@ -204,7 +205,8 @@
 .works
 	padding-top 62px 
 	.g-title 
-		margin-bottom 65px
+		max-width 500px
+		margin 0 auto 62px
 .works-container
 	using-flex(row, space-between, flex-start)
 .work-card-description
@@ -310,9 +312,10 @@
 		.wancho
 			.g-title
 				margin-bottom 45px
-	.works 
+	.works
+		padding-top 60px 
 		.g-title
-			margin 60px 0
+			margin-bottom 60px
 @media screen and (max-width 768px)
 	.we-love-content
 		h1 
@@ -341,8 +344,9 @@
 	.we-develop-bottom
 		margin-top 30px
 	.works 
+		padding-top 45px
 		.g-title
-			margin 30px 0
+			margin-bottom 45px
 @media screen and (max-width 767px)
 	.work-card
 		width calc(50% - 0.5px)
@@ -410,7 +414,9 @@
 				margin-bottom 30px
 	.work-card-description
 		position relative
+		padding 0 20px
 	.work-card-description
+		height auto
 		position relative
 		opacity 1
 		background-color white
@@ -420,14 +426,14 @@
 			color black-text
 		h5 
 			font-size 18px
-			margin-top 15px
+			//margin-top 15px
 			margin-bottom 4px
 		h6 
 			font-size 14px
 			margin-bottom 0
 		.g-btn 
 			overflow visible
-			margin-top -2px
+			margin-top 15px
 			&.btn-green
 				background-color transparent
 				color green-doapps
@@ -444,7 +450,8 @@
 				top 45%
 	.work-card
 		width 100%
-		height 484px
+		//height 484px
+		height auto
 		overflow visible
 		display none
 		margin-bottom 0
@@ -460,9 +467,11 @@
 	.work-content
 		position relative
 		width 100%
-		height 160px
+		//height 160px
+		height auto
 		left 0
 		top 0
+		padding 30px 0
 	.work-background
 		height 324px
 		position relative
@@ -471,4 +480,9 @@
 		margin-bottom 30px
 	.works-container
 		justify-content center
+	.works 
+		padding-top 30px 
+		.g-title
+			margin-bottom 30px
+	
 	

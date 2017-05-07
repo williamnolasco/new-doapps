@@ -8,6 +8,7 @@ if (items_length > 1) {
 		loop:true,
 		margin:0,
 		nav:false,
+		autoplayTimeout: 2000,
 		autoplay: true,
 		responsive:{
 			0:{
@@ -63,7 +64,7 @@ function animations(){
 		});
 
 		//Animaciones en la seccion "we-develop" -   Animando el celular
-		var animate_cel = $('.we-develop');
+		/*var animate_cel = $('.we-develop');
 		animate_cel.waypoint(function(direction) {
 			if (direction === 'down') {
 				$('.we-develop-right').addClass('active');
@@ -71,7 +72,7 @@ function animations(){
 			}
 			}, {
 			offset:'-40%'
-		});
+		});*/
 
 		//Animacion en la seccion "Client"  -  Animando el boton d eesa seccion
 		var animate_client = $('.client');

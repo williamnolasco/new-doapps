@@ -9,8 +9,6 @@
 		color white
 		margin-bottom 84px
 		line-height 1
-		h5 
-			font-size 40px
 .footer-form
 	using-flex(row, space-between, center)
 .input-container
@@ -38,6 +36,10 @@
 	padding-left 54px
 .form-select
 	font-family font-2
+	position relative
+	top -16px
+	border-bottom 0
+	z-index 1
 .row-input-content
 	width 100%
 	using-flex(row, flex-start, center)
@@ -63,6 +65,8 @@
 			font-size .8rem
 			transform translateY(-140%)
 .row-select-content
+	top -7px
+	z-index 0
 	&.active
 		label 
 			font-size 22px
@@ -141,6 +145,8 @@
 		cursor pointer
 		&:nth-last-child(1)
 			border-bottom 0
+.select-container
+	border-bottom 1px solid rgba(255,255,255,0.35)
 @media screen and (max-width 924px)
 	.footer-bottom-left
 		padding-left 20px
@@ -173,17 +179,20 @@
 					display none
 				span 
 					margin 0 2px
-	.row-input-content
+	/*.row-input-content
 		top 2px
 		&.active
 			top -20px
 		label 
 			font-size 20px
-			margin-left 3px
+			margin-left 3px*/
+	.row-input-content
+		label 
+			font-size 19px
 	.input-container
 		margin-bottom 45px
 	.form-input, .form-select
-		font-size 20px
+		font-size 19px
 		height 40px
 	.footer-form
 		.g-btn 
@@ -196,10 +205,12 @@
 		left 50%
 		transform translateX(-50%)
 		margin-top -40px
-	.textarea-container
+	.form-select
+		top -10px
+	/*.textarea-container
 		.row-input-content
 			&.active
-				top -25px
+				top -25px*/
 @media screen and (max-width 600px)
 	.input-container
 		width calc(50% - 10px)
@@ -215,7 +226,6 @@
 			margin 0 0 10px
 	.footer-row-tel
 		using-flex(row, center, center)
-@media screen and (max-width 500px)
 	.input-container
 		width 100%
 		&:nth-child(even)
@@ -252,6 +262,11 @@
 		img 
 			width 33px
 			height 33px
+	.form-input
+		padding-left 40px
+	.form-select
+		padding-left 37px
+		font-size 16px
 @media screen and (max-width 375px)
 	.footer-item
 		width 86%

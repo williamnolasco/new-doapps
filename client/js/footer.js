@@ -33,11 +33,13 @@ form_select.addEventListener('click', function(){
 
 //Para que si no escribes nada, regrese a aus estado
 $('.form-input').focusin(function() {
+	$(this).parent().find('.lively-bar').addClass('active');
 	$(this).parent().find('.row-input-content').addClass('active');
 
 });
 $('.form-input').focusout(function() {
 	$(this).parent().find('.row-input-content').removeClass('active');
+	$(this).parent().find('.lively-bar').removeClass('active');
 });
 $('body').on('change', '.form-input', function(event) {
 	$input = $(this);

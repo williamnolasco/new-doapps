@@ -29,7 +29,7 @@
 .project-title-left
 	width calc(100% - 330px)
 	color white
-	padding 0 30px 87px 0 
+	padding 0 40px 87px 0 
 	h5
 		font-family font-3
 		font-size 67px
@@ -84,6 +84,7 @@
 	background-color #1a1a1a
 	padding 174px 0 278px
 	position relative
+	overflow hidden
 	&:before
 		display none
 		content ''
@@ -209,7 +210,7 @@
 		transform translate(-50%, -50%)
 		z-index -1
 .f-s-colors-left
-	using-flex(row, space-between, center)
+	using-flex(row, space-between, flex-start)
 	width 394px
 .f-s-color
 	width 120px 
@@ -437,6 +438,11 @@
 		height 15px
 		background-color white
 		border 2px solid #727272
+.project-title-img
+	img 
+		max-width 100%
+		height auto 
+		display block
 @media screen and (max-width 1024px)
 	.detail-client, .detail-proposal, .detail-design, .detail-wireframe, .results
 		padding: 80px 0;
@@ -471,12 +477,22 @@
 				top: 0;
 			h5
 				padding-top: 50px;
-
+@media screen and (max-width 960px)
+	.project-title-left
+		width 60%
+		h5 
+			font-size 45px
+			margin-bottom 20px
+		h6 
+			width 100%
+			font-size 22px
+	.project-title-img
+		width 40%
 @media screen and (max-width 680px)
 	.project-title
 		.wancho
 			.project-title-left
-				width: initial;
+				width 100%
 				max-width: 80%;
 				margin: 0 auto;
 				padding: 0 0 50px;
@@ -491,14 +507,18 @@
 				max-width: 80%;
 				margin: 0 auto;
 				height: initial;
-
+	.project-title-img
+		width 70%
+		margin 0 auto
+		img 
+			margin 0 auto
 	.detail-client-p
 		width 100%
 		p
 			text-align: justify
 
-	.detail-client, .detail-proposal, .detail-design, .detail-wireframe, .results
-		padding: 50px 0;
+	.detail-client, .detail-proposal, .detail-design, .detail-wireframe, .results, .detail-project-share
+		padding 45px 0;
 		.row-detail-client-title
 			margin-bottom: 30px;
 		.logo-project
@@ -512,24 +532,25 @@
 		position: relative;
 		z-index: 1;
 		flex-direction: column-reverse;
-		.f-s-typography
-			width: 100%;
 		.f-s-colors-left
-			width: inherit;
+			width 100%
 			margin-top: 30px;
-
+	.f-s-typography
+		width 100%
+		max-width 230px
 	.set-screen
 		height: 450px;
 
 	.we-develop-bottom
+		margin-top 40px
 		.item-we-develop
-			width: 100%;
+			width 50%
 			border: 0;
-			margin-bottom: 40px;
+			margin-bottom: 30px;
 			h5
 				max-width: initial;
 	.results-button-apps
-		margin: 40px auto 0;
+		margin 20px auto 0
 
 	.btn-share-container
 		justify-content: center !important;
@@ -541,11 +562,33 @@
 			margin-bottom: 20px !important;
 		&:nth-of-type(3)
 			margin-bottom: 20px !important;
-
+	.detail-project-share
+		.detail-project-share-number
+			width 100%
+			padding 0 20px
+			h5 
+				padding-top 20px
 	.detail-project-share-number
-		width: 100%;
-		padding: 0 20px !important;
-
+		h5 
+			font-size 35px
+	.results 
+		.we-develop-bottom
+			margin-top 30px
+		.row-timer 
+			span, h6, h4
+				font-size 40px
+		.item-we-develop
+			h6 
+				font-size 40px
+	.detail-project-share
+		.btn-share-container
+			margin-bottom 10px
+	.f-s-colors-left
+		justify-content center
+	.f-s-color 
+		margin 10px
+	.final-screen
+		padding 45px 0 20px
 @media screen and (max-width 560px)
 	.detail-client-p p
 		font-size: 16px
@@ -559,9 +602,35 @@
 			text-align: center;
 			margin-top: 50px;
 			img
-				max-width: 80%;
-				margin: 0 auto;
-				max-height: initial;
-				padding: 0 50px;
-				width: 100%;
+				max-width 80%
+				margin 0 auto
+				max-height initial
+				padding 0 50px
+				width 100%
+@media screen and (max-width 480px)
+	.detail-client, .detail-proposal, .detail-design, .detail-wireframe, .results, .detail-project-share
+		padding 30px 0
+	.f-s-typography
+		max-width 190px
+		height 150px
+		&:before
+			height 102px 
+			line-height 102px
+			font-size 35px
+	.f-s-color
+		width calc(50% - 20px)
+	.we-develop-bottom
+		.item-we-develop
+			width 100%
+	.results-button-apps
+		margin-top 10px
+		flex-flow column wrap
+		.link-app
+			width 100%
+			max-width 200px
+			margin 10px
+	.final-screen
+		padding 30px 0 0
+	.results
+		padding 30px 0 20px
 
