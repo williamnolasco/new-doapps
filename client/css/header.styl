@@ -59,6 +59,9 @@ header
 			animation-name desaparece
 			animation-duration 2s
 			animation-iteration-count 1
+			position fixed 
+			left 3%
+			top 35px
 	.link-logo-mobile
 		img 
 			display block
@@ -87,22 +90,26 @@ header
 			pointer-events auto
 	.open-menu-mobile
 		display block
-		font-size 40px
+		font-size 30px
 		color white
 		position relative
 		z-index 1
 		&.active
-			position relative
-			//top 35px
-			//right 35px
 			animation-name desaparece
 			animation-duration 2s
 			animation-iteration-count 1
+			position fixed
+			right 3%
+			top 46px
 			&:before
 				content '\e117'
 	.item-link
 		width 100%
 		font-size 20px 
+	.list-items 
+		li 
+			height 55px
+			border-bottom 0
 	.movable-bar
 		display none
 	@keyframes desaparece
@@ -120,16 +127,9 @@ header
 	.link-logo-mobile
 		display block
 		&.active
-			position fixed 
 			left 20.8px
 			top 30px
 	.open-menu-mobile
-		font-size 30px
 		&.active
-			position fixed
 			right 20.8px 
 			top 36px
-	.list-items 
-		li 
-			height 55px
-			border-bottom 0
