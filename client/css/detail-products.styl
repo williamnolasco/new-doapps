@@ -40,7 +40,7 @@
 		font-family font-3
 		margin 0 7px
 .detail-products-preview
-	background-color #fcfcfc
+	background-color rgba(242,242,242,0.6)
 	padding 130px 0
 .detail-products-wrap
 	padding-top 80px
@@ -62,7 +62,8 @@
 		img-responsive()
 		
 .detail-products-question
-	height 465px
+	//height 465px
+	padding 70px 0
 	background-color #343434
 	display flex
 	flex-direction column
@@ -102,6 +103,10 @@
 		margin-right: 5%
 	.detail-characteristics-cnt li
 		font-size: 16px
+	.detail-products-question
+		padding 60px 0 90px
+		p 
+			font-size 20px
 @media screen and (max-width 560px)
 	.detail-characteristics-cnt .g-title
 		margin-bottom: 30px
@@ -130,7 +135,8 @@
 	.detail-products-question p
 		font-size: 16px
 		line-height: 20px
-	.detail-products-question .g-title
-		max-width: 80%
-		span
-			display: block
+	.detail-products-question
+		padding 30px 0 75px
+		.g-title
+			span
+				display block

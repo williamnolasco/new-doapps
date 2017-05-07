@@ -3,6 +3,7 @@ html(lang='es')
 	head
 		meta(charset='utf-8') 
 		title Detalle del producto
+		meta(name='viewport', content='width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0')
 		link(rel='stylesheet', type='text/css', href='./client/css/icons.css')
 		link(rel='stylesheet', type='text/css', href='./client/css/header.css')
 		link(rel='stylesheet', type='text/css', href='./client/css/footer.css')
@@ -17,7 +18,8 @@ html(lang='es')
 					h6
 						| Aplicación Nativa Android para
 						span Pideloo
-				img(src='./client/img/detail-project/project-title-cel.png' width='329' height='478')
+				figure.project-title-img
+					img(src='./client/img/detail-project/project-title-cel.png' width='329' height='478')
 
 
 		section.detail-client.products-detail
@@ -61,11 +63,11 @@ html(lang='es')
 						i.icon-check
 						strong tsunamis en el Peru  
 		.detail-products-preview
-			.g-title
-				h5 
-					| Las 
-					span Previsualización
 			.wancho
+				.g-title
+					h5 
+						| Las 
+						span Previsualización
 				.detail-products-wrap
 					.detail-products-item
 						figure
@@ -77,11 +79,11 @@ html(lang='es')
 						figure
 							img(src='./client/img/products/detail-products-3.png' width='317' height='611')
 		.detail-products-customers
-			.g-title
-				h5 
-					| Nuestros 
-					span Clientes
 			.wancho
+				.g-title
+					h5 
+						| Nuestros 
+						span Clientes
 				.detail-products-wrap
 					figure.detail-customers-item
 						img(src='./client/img/products/detail-products-img-1.jpg' width='219' height='137')
@@ -98,17 +100,19 @@ html(lang='es')
 					figure.detail-customers-item
 						img(src='./client/img/products/detail-products-img-1.jpg' width='219' height='137')
 		.detail-products-question
-			.g-title
-				h5 
-					| ¿Te interesa
-					span el producto?
-				p Y quieres adquirirlo o tener mayor información. Ponte en contacto con nosotros.
-				a(href='contac.html').g-btn.btn-green2 hazlo aquí 
-			.results-button-apps
-					a(href='#').link-app
-						img(src='./client/img/detail-project/play-store.png' width='557' height='161')
-					a(href='#').link-app
-						img(src='./client/img/detail-project/app-store.png' width='557' height='161')
+			.wancho
+				.g-title
+					h5 
+						| ¿Te interesa
+						span el producto?
+					p Y quieres adquirirlo o tener mayor información. Ponte en contacto con nosotros.
+					a(href='contac.html').g-btn.btn-green2 hazlo aquí
+				//
+					.results-button-apps
+						a(href='#').link-app
+							img(src='./client/img/detail-project/play-store.png' width='557' height='161')
+						a(href='#').link-app
+							img(src='./client/img/detail-project/app-store.png' width='557' height='161')
 
 
 		include ./blocks/footer.pug
