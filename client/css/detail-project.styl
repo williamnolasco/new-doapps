@@ -25,7 +25,7 @@
 	.wancho 
 		using-flex(row, space-between, flex-end)
 		position relative
-		z-index 2
+		z-index 1
 .project-title-left
 	width calc(100% - 330px)
 	color white
@@ -412,6 +412,7 @@
 		left 0
 		top 50%
 		transform translateY(-50%)
+<<<<<<< HEAD
 // @media screen and (max-width 960px)
 // 	.detail-client, .detail-proposal
 // 		padding 0px
@@ -423,7 +424,158 @@
 	.detail-client-p p
 		font-size: 16px
 @media screen and (max-width 480px)
+=======
+
+.slider-carousel-container
+	display: none;
+	.row-carousel
+		text-align: center;
+		img
+			max-width: 500px;
+			max-height: 500px;
+			padding: 50px;
+
+.owl-dots
+	using-flex(row, center, center)
+	margin-top 35px
+.owl-dot
+	width 12px
+	height 12px
+	background-color #727272
+	border-radius 50%
+	cursor pointer
+	margin 0 13px
+	&.active, &:hover
+		width 15px
+		height 15px
+		background-color white
+		border 2px solid #727272
+@media screen and (max-width 1024px)
+	.detail-client, .detail-proposal, .detail-design, .detail-wireframe, .results
+		padding: 80px 0;
+	.project-title-left
+		h5
+			line-height: 1;
+			margin-bottom: 30px;
+		h6
+			width: 70%
+	.row-detail-client-title
+		flex-flow: column;
+		h6
+			margin-right: 0;
+			margin-bottom: 26px;
+	.detail-project-share
+		.g-title
+			margin: 0 auto;
+			h5
+				text-align: center;
+				line-height: 1.4em;
+				font-size: 28px !important;
+		.btn-share-container
+			margin: 50px auto;
+		.detail-project-share-number
+			width: 100%;
+			padding: 0 50px;
+			&:before
+				width: 100%;
+				height: 2px;
+				position: relative;
+				left: 0;
+				top: 0;
+			h5
+				padding-top: 50px;
+
+@media screen and (max-width 680px)
+	.project-title
+		.wancho
+			.project-title-left
+				width: initial;
+				max-width: 80%;
+				margin: 0 auto;
+				padding: 0 0 50px;
+				text-align: center;
+				h5
+					margin-bottom: 15px;
+					font-size: 28px;
+				h6
+					width: initial;
+					font-size: 20px;
+			> img
+				max-width: 80%;
+				margin: 0 auto;
+				height: initial;
+
+>>>>>>> 16e3371f6118bd4567846759caf2b058fccd6b20
 	.detail-client-p
 		width 100%
+		p
+			text-align: justify
+
+	.detail-client, .detail-proposal, .detail-design, .detail-wireframe, .results
+		padding: 50px 0;
+		.row-detail-client-title
+			margin-bottom: 30px;
+		.logo-project
+			display: none;
+
+	.detail-wireframe-subtitle
+		display: none
+
+	.f-s-colors-container
+		margin: 40px 0;
+		position: relative;
+		z-index: 1;
+		flex-direction: column-reverse;
+		.f-s-typography
+			width: 100%;
+		.f-s-colors-left
+			width: inherit;
+			margin-top: 30px;
+
+	.set-screen
+		height: 450px;
+
+	.we-develop-bottom
+		.item-we-develop
+			width: 100%;
+			border: 0;
+			margin-bottom: 40px;
+			h5
+				max-width: initial;
+	.results-button-apps
+		margin: 40px auto 0;
+
+	.btn-share-container
+		justify-content: center !important;
+
+	.btn-share
+		&:nth-of-type(1)
+			margin-bottom: 20px !important;
+		&:nth-of-type(2)
+			margin-bottom: 20px !important;
+		&:nth-of-type(3)
+			margin-bottom: 20px !important;
+
+	.detail-project-share-number
+		width: 100%;
+		padding: 0 20px !important;
+
+@media screen and (max-width 560px)
 	.detail-client-p p
-		text-align: justify
+		font-size: 16px
+	.detail-row-screen
+		display: none !important;
+	.detail-wireframe-row-screen
+		display: none !important;
+	.slider-carousel-container
+		display: block;
+		.row-carousel
+			text-align: center;
+			margin-top: 50px;
+			img
+				max-width: 80%;
+				margin: 0 auto;
+				max-height: initial;
+				padding: 0 50px;
+				width: 100%;
+

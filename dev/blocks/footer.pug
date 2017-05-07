@@ -24,13 +24,17 @@
 					label(for='tel') ¿Cúal es tu teléfono?
 				span.lively-bar
 			.input-container
-				input(id='product').form-select
+				select(id='product').form-select
+					option(val='') ¿Qué eres?
+					option(val='empresa') Empresa
+					option(val='emprendedor') Emprendedor
 				.row-input-content.row-select-content
 					img(src='./client/img/footer/input-product.png', width='38', height='32')
-					label(for='product') ¿Qué eres?
-					ul.ul-form-select
-						li Empresa
-						li Emprendedor
+					//label(for='product') ¿Qué eres?
+					//
+						ul.ul-form-select
+							li Empresa
+							li Emprendedor
 				span.lively-bar
 			.input-container.textarea-container
 				textarea(id='write').form-input

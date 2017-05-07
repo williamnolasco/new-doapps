@@ -98,7 +98,7 @@
           <div class="courses-temary-item">
             <div class="courses-temary-item-top">
               <figure><img src="./client/img/courses/courses-temary-icon1.png" width="40" height="40"></figure>
-              <h5>MÓDULO 1</h5>
+              <h5>MÓDULO 1<span><i class="icon-angle-double-down"></i></span></h5>
             </div>
             <div class="courses-temary-item-bottom">
               <ul>
@@ -113,7 +113,7 @@
           <div class="courses-temary-item">
             <div class="courses-temary-item-top">
               <figure><img src="./client/img/courses/courses-temary-icon2.png" width="40" height="40"></figure>
-              <h5>MÓDULO 2</h5>
+              <h5>MÓDULO 2<span><i class="icon-angle-double-down"></i></span></h5>
             </div>
             <div class="courses-temary-item-bottom">
               <ul> 
@@ -128,7 +128,7 @@
           <div class="courses-temary-item">
             <div class="courses-temary-item-top">
               <figure><img src="./client/img/courses/courses-temary-icon3.png" width="40" height="40"></figure>
-              <h5>MÓDULO 3</h5>
+              <h5>MÓDULO 3<span><i class="icon-angle-double-down"></i></span></h5>
             </div>
             <div class="courses-temary-item-bottom">
               <ul> 
@@ -280,13 +280,18 @@
             </div><span class="lively-bar"></span>
           </div>
           <div class="input-container">
-            <input class="form-select" id="product">
+            <select class="form-select" id="product">
+              <option val="">¿Qué eres?</option>
+              <option val="empresa">Empresa</option>
+              <option val="emprendedor">Emprendedor</option>
+            </select>
             <div class="row-input-content row-select-content"><img src="./client/img/footer/input-product.png" width="38" height="32">
-              <label for="product">¿Qué eres?</label>
-              <ul class="ul-form-select">
-                <li>Empresa</li>
-                <li>Emprendedor</li>
-              </ul>
+              <!--label(for='product') ¿Qué eres?-->
+              <!--
+              ul.ul-form-select
+              	li Empresa
+              	li Emprendedor
+              -->
             </div><span class="lively-bar"></span>
           </div>
           <div class="input-container textarea-container">

@@ -5,6 +5,7 @@
     <title>Detalle del proyecto</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <link rel="stylesheet" type="text/css" href="./client/css/icons.css">
+    <link rel="stylesheet" type="text/css" href="./client/js/owl-carousel/owl.carousel.css">
     <link rel="stylesheet" type="text/css" href="./client/css/header.css">
     <link rel="stylesheet" type="text/css" href="./client/css/footer.css">
     <link rel="stylesheet" type="text/css" href="./client/css/icons.css">
@@ -75,6 +76,9 @@
         <figure class="screen"> <img src="./client/img/detail-project/detail-screen2.png" width="547" height="1065"></figure>
         <figure class="screen"> <img src="./client/img/detail-project/detail-screen3.png" width="368" height="655"></figure>
       </div>
+      <div class="slider-carousel-container">
+        <div class="row-carousel owl-carousel"><img src="./client/img/detail-project/detail-screen2.png"><img src="./client/img/detail-project/detail-screen1.png"><img src="./client/img/detail-project/detail-screen3.png"></div>
+      </div>
     </section>
     <section class="detail-wireframe">
       <div class="wancho">
@@ -97,6 +101,9 @@
           <figure><img src="./client/img/detail-wireframe/screen1.png" width="203" height="421"></figure>
           <figure><img src="./client/img/detail-wireframe/screen1.png" width="203" height="421"></figure>
           <figure><img src="./client/img/detail-wireframe/screen1.png" width="203" height="421"></figure>
+        </div>
+        <div class="slider-carousel-container">
+          <div class="row-carousel owl-carousel"><img src="./client/img/detail-wireframe/screen1.png"><img src="./client/img/detail-wireframe/screen1.png"><img src="./client/img/detail-wireframe/screen1.png"></div>
         </div>
       </div>
     </section>
@@ -205,13 +212,18 @@
             </div><span class="lively-bar"></span>
           </div>
           <div class="input-container">
-            <input class="form-select" id="product">
+            <select class="form-select" id="product">
+              <option val="">¿Qué eres?</option>
+              <option val="empresa">Empresa</option>
+              <option val="emprendedor">Emprendedor</option>
+            </select>
             <div class="row-input-content row-select-content"><img src="./client/img/footer/input-product.png" width="38" height="32">
-              <label for="product">¿Qué eres?</label>
-              <ul class="ul-form-select">
-                <li>Empresa</li>
-                <li>Emprendedor</li>
-              </ul>
+              <!--label(for='product') ¿Qué eres?-->
+              <!--
+              ul.ul-form-select
+              	li Empresa
+              	li Emprendedor
+              -->
             </div><span class="lively-bar"></span>
           </div>
           <div class="input-container textarea-container">
@@ -241,6 +253,7 @@
       </div>
     </footer>
     <script src="./client/js/jquery1.8.3.min.js"></script>
+    <script src="./client/js/owl-carousel/owl.carousel.js"></script>
     <script type="text/javascript" src="./client/js/jquery.waypoints.js"></script>
     <script type="text/javascript" src="./client/js/contador.js"></script>
     <script src="./client/js/footer.js"></script>
