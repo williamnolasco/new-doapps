@@ -4,6 +4,7 @@ html(lang='es')
 		meta(charset='utf-8') 
 		title Detalle del producto
 		meta(name='viewport', content='width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0')
+		link(rel='stylesheet', type='text/css', href='./client/js/owl-carousel/owl.carousel.css')
 		link(rel='stylesheet', type='text/css', href='./client/css/icons.css')
 		link(rel='stylesheet', type='text/css', href='./client/css/header.css')
 		link(rel='stylesheet', type='text/css', href='./client/css/footer.css')
@@ -68,7 +69,7 @@ html(lang='es')
 					h5 
 						| Las 
 						span Previsualización
-				.detail-products-wrap
+				.detail-products-wrap.preview-slider
 					.detail-products-item
 						figure
 							img(src='./client/img/products/detail-products-1.png' width='317' height='611')
@@ -118,6 +119,8 @@ html(lang='es')
 		include ./blocks/footer.pug
 
 		script(src='./client/js/jquery1.8.3.min.js')
-		script(type='text/javascript', src='./client/js/jquery.waypoints.js')
+		script(src='./client/js/owl-carousel/owl.carousel.js')
+		script(src='./client/js/jquery.waypoints.js')
 		script(src='./client/js/footer.js')
 		script(src='./client/js/header.js')
+		script(src='./client/js/detail-products.js')
