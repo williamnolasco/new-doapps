@@ -58,7 +58,7 @@ $('body').on('change', '.form-input', function(event) {
 $("form").validationEngine('attach', {
 	promptPosition : "bottomLeft",
 	autoHidePrompt: true,
-	autoHideDelay: 20000,
+	autoHideDelay: 2000,
 	binded: false,
 	scroll: false,
 	validateNonVisibleFields: true,
