@@ -53,26 +53,31 @@ $('body').on('change', '.form-input', function(event) {
 });
 
 
+//Validacion del formulario
 
+$("form").validationEngine('attach', {
+	promptPosition : "bottomLeft",
+	autoHidePrompt: true,
+	autoHideDelay: 20000,
+	binded: false,
+	scroll: false,
+	validateNonVisibleFields: true,
+	prettySelect : true,
+	useSuffix: "_chosen",
+	'custom_error_messages': {          
+		'custom[number]': {
+			'message': "Debe ingresar un número válido"
+		}   
 
-
-
-/*function animationsFooter(){
-	if($(window).width() >= 1024){
-		var footer_top = $('.footer-top');
-
-		footer_top.waypoint(function(direction){
-			if(direction === 'down'){
-				$('.button-form').addClass('active');
-			}else{
-			}
-			},{
-			offset: '-30%'
-		});
 	}
-}
+});
 
-animationsFooter();
-$(window).resize(function(event){
-	animationsFooter();
-});*/
+$(".button-form").click(function(e) {
+	e.preventDefault();
+	var valid = $(this).closest('form').validationEngine('validate');
+	if (!valid){
+		// alert ('error');
+	}else{
+		window.location.href='gracias.html';
+	}
+});

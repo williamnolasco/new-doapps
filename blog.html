@@ -6,7 +6,6 @@
     <title>Blog</title>
     <link rel="stylesheet" type="text/css" href="./client/css/icons.css">
     <link rel="stylesheet" type="text/css" href="./client/css/header.css">
-    <link rel="stylesheet" type="text/css" href="./client/css/footer.css">
     <link rel="stylesheet" type="text/css" href="./client/css/banner.css">
     <link rel="stylesheet" type="text/css" href="./client/css/blog.css">
   </head>
@@ -147,28 +146,28 @@
         </div>
         <form class="footer-form">
           <div class="input-container">
-            <input class="form-input" id="name">
+            <input class="validate[required, custom[onlyLetterSp]] form-input" id="name">
             <div class="row-input-content"><img src="./client/img/footer/input-name.png" width="38" height="32">
               <label for="name">¿Cúal es tu nombre?</label>
             </div><span class="lively-bar"></span>
           </div>
           <div class="input-container">
-            <input class="form-input" id="email">
+            <input class="validate[required,custom[email]] form-input" id="email">
             <div class="row-input-content"><img src="./client/img/footer/input-email.png" width="38" height="32">
               <label for="email">¿Cúal es tu correo?</label>
             </div><span class="lively-bar"></span>
           </div>
           <div class="input-container">
-            <input class="form-input" id="tel">
+            <input class="validate[required, custom[onlyNumberSp]] form-input" id="tel">
             <div class="row-input-content"><img src="./client/img/footer/input-tel.png" width="38" height="32">
               <label for="tel">¿Cúal es tu teléfono?</label>
             </div><span class="lively-bar"></span>
           </div>
           <div class="input-container select-container">
-            <select class="form-select" id="product">
-              <option val="">¿Qué eres?</option>
-              <option val="empresa">Empresa</option>
-              <option val="emprendedor">Emprendedor</option>
+            <select class="validate[required] form-select" id="product">
+              <option value="">¿Qué eres?</option>
+              <option value="empresa">Empresa</option>
+              <option value="emprendedor">Emprendedor</option>
             </select>
             <div class="row-input-content row-select-content"><img src="./client/img/footer/input-product.png" width="38" height="32">
               <!--label(for='product') ¿Qué eres?-->
@@ -180,12 +179,12 @@
             </div><span class="lively-bar"></span>
           </div>
           <div class="input-container textarea-container">
-            <textarea class="form-input" id="write"></textarea>
+            <textarea class="validate[required] form-input" id="write"></textarea>
             <div class="row-input-content"><img src="./client/img/footer/input-write.png" width="38" height="32">
               <label for="write">Descríbenos tu proyecto</label>
             </div><span class="lively-bar"></span>
           </div>
-          <button class="g-btn btn-transparent-white button-form">Empecemos!</button>
+          <button class="g-btn btn-transparent-white button-form" type="submit">Empecemos!</button>
         </form>
       </div>
     </div>
@@ -206,8 +205,6 @@
       </div>
     </footer>
     <script src="./client/js/jquery1.8.3.min.js"></script>
-    <script src="./client/js/jquery.waypoints.js"></script>
-    <script src="./client/js/footer.js"></script>
     <script src="./client/js/header.js"></script>
   </body>
 </html>

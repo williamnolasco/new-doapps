@@ -1,5 +1,28 @@
 @import 'mixin.styl'
 
+.formError
+	width 100%
+.formError .formErrorContent
+	background transparent
+	color #fff
+	border none
+	box-shadow none
+	position relative
+	&:before
+		content ''
+		width 100%
+		height 0
+		border 1px solid rgba(red, 0.8)
+		position absolute
+		left 0
+		top -5px
+.formError .formErrorArrow div
+	display none
+.formError .formErrorArrow .line3
+	display none
+.formError .formErrorArrow .line2,
+.formError .formErrorArrow .line1
+	display none
 .footer-top
 	background-image url(../img/footer/footer-background.jpg)
 	using-background()
@@ -37,7 +60,8 @@
 .form-select
 	font-family font-2
 	position relative
-	top -16px
+	//top -16px
+	top 0
 	border-bottom 0
 	z-index 1
 .row-input-content
@@ -45,7 +69,8 @@
 	using-flex(row, flex-start, center)
 	position absolute
 	left 0
-	top -7px
+	//top -7px
+	top 7px
 	transition all 0.5s
 	label, img
 		transition all 0.5s
@@ -59,13 +84,13 @@
 	&.active
 		label 
 			font-size .8rem
-			transform translateY(-140%)
+			transform translateY(-160%)
 	&.active1 
 		label 
 			font-size .8rem
-			transform translateY(-140%)
+			transform translateY(-160%)
 .row-select-content
-	top -7px
+	//top -7px
 	z-index 0
 	&.active
 		label 
@@ -169,6 +194,9 @@
 	.logo-footer
 		margin-top -80px
 @media screen and (max-width 768px)
+	.formError .formErrorContent
+		&:before
+			top -5px
 	.footer-top
 		padding 50px 0 85px
 		.g-title
@@ -187,6 +215,7 @@
 			font-size 20px
 			margin-left 3px*/
 	.row-input-content
+		top 3px
 		label 
 			font-size 19px
 	.input-container
@@ -205,9 +234,9 @@
 		left 50%
 		transform translateX(-50%)
 		margin-top -40px
-	.form-select
+	/*.form-select
 		top -10px
-	/*.textarea-container
+	.textarea-container
 		.row-input-content
 			&.active
 				top -25px*/
@@ -231,7 +260,7 @@
 		&:nth-child(even)
 			margin-left 0
 	.row-input-content
-		top -1px
+		top 7px
 		label 
 			font-size 16px
 			margin-left 10px
@@ -248,7 +277,7 @@
 				br 
 					display block
 	.textarea-container
-		margin-bottom 41px
+		//margin-bottom 41px
 		textarea 
 			height 110px
 	.logo-footer
