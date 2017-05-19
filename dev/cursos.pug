@@ -1,7 +1,7 @@
 doctype html
 html(lang='es')
 	head
-		meta(charset='utf-8') 
+		meta(charset='utf-8')
 		meta(name='viewport', content='width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0')
 		title Cursos
 		link(rel='stylesheet', href='./client/js/validationform/validationEngine.jquery.css')
@@ -10,10 +10,11 @@ html(lang='es')
 		link(rel='stylesheet', type='text/css', href='./client/css/footer.css')
 		link(rel='stylesheet', type='text/css', href='./client/css/banner.css')
 		link(rel='stylesheet', type='text/css', href='./client/css/courses.css')
+		link(rel='stylesheet', type='text/css', href='/client/css/sweetalert.min.css')
 	body.body-courses
 		include ./blocks/header.pug
 		section.courses-banner
-			.wancho 
+			.wancho
 				.courses-date
 					h4 Programación para iOs
 					h5 Fecha de inicio
@@ -42,7 +43,7 @@ html(lang='es')
 		section.courses-objectives
 			.wancho
 				.g-title
-					h5 
+					h5
 						| Los
 						span Objetivos
 				.courses-objectives-list
@@ -58,7 +59,7 @@ html(lang='es')
 						figure
 							img(src='./client/img/courses/courses-check.png' width='27px' height='27px')
 						p Aprender las bases de la programación de aplicaciones nativas para iOS en Objective C utilizando como herramienta Xcode.
-		
+
 					.courses-objectives-item
 						figure
 							img(src='./client/img/courses/courses-check.png' width='27px' height='27px')
@@ -74,7 +75,7 @@ html(lang='es')
 		section.courses-temary
 			.wancho
 				.g-title
-					h5 
+					h5
 						| El
 						span Temario
 				.courses-temary-row
@@ -102,7 +103,7 @@ html(lang='es')
 								span
 									i.icon-angle-double-down
 						.courses-temary-item-bottom
-							ul 
+							ul
 								li.courses-temary-item-li Acceso a funcionalidades
 								li.courses-temary-item-li Enfoque para el desarrollo movil
 								li.courses-temary-item-li Developer Experience
@@ -117,7 +118,7 @@ html(lang='es')
 								span
 									i.icon-angle-double-down
 						.courses-temary-item-bottom
-							ul 
+							ul
 								li.courses-temary-item-li Acceso a funcionalidades
 								li.courses-temary-item-li Enfoque para el desarrollo movil
 								li.courses-temary-item-li Developer Experience
@@ -126,7 +127,7 @@ html(lang='es')
 		section.courses-teacher
 			.wancho
 				.g-title
-					h5 
+					h5
 						| Los
 						span Profesores
 				.courses-teacher-row
@@ -135,7 +136,7 @@ html(lang='es')
 							img(src='./client/img/courses/courses-teacher.png' width='166' height='166')
 						.courses-teacher-description
 							h5 Jonathan Nolasco
-							p 
+							p
 								|Co-founder in DoApps. Tech Entrepenur, Android & iOs developer -
 								a(href='#') http://www.doapps.me/
 					.courses-teacher-item
@@ -143,13 +144,13 @@ html(lang='es')
 							img(src='./client/img/courses/courses-teacher.png' width='166' height='166')
 						.courses-teacher-description
 							h5 Jonathan Nolasco
-							p 
+							p
 								|Co-founder in DoApps. Tech Entrepenur, Android & iOs developer -
 								a(href='#') http://www.doapps.me/
 		section.courses-feature
 			.wancho
 				.g-title
-					h5 
+					h5
 						| ¿Qué
 						span Obtienes?
 				.courses-feature-row
@@ -171,7 +172,7 @@ html(lang='es')
 		section.courses-cost
 			.wancho
 				.g-title
-					h5 
+					h5
 						| ¿Cuánto
 						span Cuesta?
 				.courses-cost-row
@@ -182,7 +183,7 @@ html(lang='es')
 							h4 79
 							h6 Anual
 						.courses-cost-bottom
-							ul 
+							ul
 								li.courses-cost-bottom-li
 									figure
 										img(src='./client/img/courses/courses-check.png' width='27' height='27')
@@ -203,7 +204,7 @@ html(lang='es')
 							h4 119
 							h6 Anual
 						.courses-cost-bottom
-							ul 
+							ul
 								li.courses-cost-bottom-li
 									figure
 										img(src='./client/img/courses/courses-check.png' width='27' height='27')
@@ -224,3 +225,4 @@ html(lang='es')
 		script(src='./client/js/validationform/jquery.validationEngine-es.js')
 		script(src='./client/js/header.js')
 		script(src='./client/js/courses.js')
+		script(src='./client/js/sweetalert.min.js')

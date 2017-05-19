@@ -1,7 +1,7 @@
 doctype html
 html(lang='es')
 	head
-		meta(charset='utf-8') 
+		meta(charset='utf-8')
 		title Detalle del proyecto
 		meta(name='viewport', content='width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0')
 		link(rel='stylesheet', href='./client/js/validationform/validationEngine.jquery.css')
@@ -11,6 +11,7 @@ html(lang='es')
 		link(rel='stylesheet', type='text/css', href='./client/css/footer.css')
 		link(rel='stylesheet', type='text/css', href='./client/css/icons.css')
 		link(rel='stylesheet', type='text/css', href='./client/css/detail-project.css')
+		link(rel='stylesheet', type='text/css', href='/client/css/sweetalert.min.css')
 	body.body-detail-project
 		include ./blocks/header.pug
 		section.project-title
@@ -25,11 +26,11 @@ html(lang='es')
 				.row-detail-client-title
 					h6 01
 					.g-title
-						h5 
+						h5
 							| El
 							span Cliente
 				.detail-client-p
-					p 
+					p
 						| En primer lugar, nos encontramos con tener que saber y tener
 						strong a la mano los reportes
 						| de
@@ -44,11 +45,11 @@ html(lang='es')
 				.row-detail-client-title
 					h6 02
 					.g-title
-						h5 
+						h5
 							| La
 							span Propuesta
 				.detail-client-p
-					p 
+					p
 						| En primer lugar, nos encontramos con tener que saber y tener
 						strong a la mano los reportes
 						| de
@@ -60,15 +61,15 @@ html(lang='es')
 			.row-detail-client-title
 				h6 03
 				.g-title
-					h5 
-						| El 
+					h5
+						| El
 						span Diseño
 			.detail-row-screen
 				figure.screen
 					img(src='./client/img/detail-project/detail-screen1.png' width='368' height='655')
-				figure.screen 
+				figure.screen
 					img(src='./client/img/detail-project/detail-screen2.png' width='547' height='1065')
-				figure.screen 
+				figure.screen
 					img(src='./client/img/detail-project/detail-screen3.png' width='368' height='655')
 			.slider-carousel-container
 					.row-carousel.owl-carousel
@@ -79,7 +80,7 @@ html(lang='es')
 			.wancho
 				.detail-wireframe-title
 					.g-title
-						h5 
+						h5
 							| Los
 							span Wireframes
 					h6 UX (Experiencia de Usuario)
@@ -108,10 +109,10 @@ html(lang='es')
 						img(src='./client/img/detail-wireframe/screen1.png')
 						img(src='./client/img/detail-wireframe/screen1.png')
 		section.final-screen
-			.wancho 
+			.wancho
 				.detail-wireframe-title
 					.g-title
-						h5 
+						h5
 							| Pantallas
 							span Finales
 					h6 UI (Interfaz de Usuario)
@@ -133,11 +134,11 @@ html(lang='es')
 				.row-detail-client-title
 					h6 04
 					.g-title
-						h5 
+						h5
 							| Los
 							span Resultados
 				.detail-client-p
-					p 
+					p
 						| En primer lugar, nos encontramos con tener que saber y tener
 						strong a la mano los reportes
 						| de
@@ -171,7 +172,7 @@ html(lang='es')
 		section.detail-project-share
 			.wancho
 				.g-title
-					h5 
+					h5
 						| Si te gusto
 						span compártelo
 				.btn-share-container
@@ -185,7 +186,7 @@ html(lang='es')
 						i.icon-social-linkedin
 						h6 Compartelo
 				.detail-project-share-number
-					h5 20 
+					h5 20
 					h6 compartidos
 		include ./blocks/footer.pug
 
@@ -198,3 +199,4 @@ html(lang='es')
 		script(src='./client/js/footer.js')
 		script(src='./client/js/header.js')
 		script(src='./client/js/detail-project.js')
+		script(src='./client/js/sweetalert.min.js')

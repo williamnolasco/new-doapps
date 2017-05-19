@@ -1,7 +1,7 @@
 doctype html
 html(lang='es')
 	head
-		meta(charset='utf-8') 
+		meta(charset='utf-8')
 		title Detalle del producto
 		meta(name='viewport', content='width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0')
 		link(rel='stylesheet', type='text/css', href='./client/js/owl-carousel/owl.carousel.css')
@@ -10,6 +10,7 @@ html(lang='es')
 		link(rel='stylesheet', type='text/css', href='./client/css/footer.css')
 		link(rel='stylesheet', type='text/css', href='./client/css/detail-products.css')
 		link(rel='stylesheet', type='text/css', href='./client/css/detail-project.css')
+		link(rel='stylesheet', type='text/css', href='/client/css/sweetalert.min.css')
 	body.detail-products.body-products
 		include ./blocks/header.pug
 		section.project-title
@@ -26,11 +27,11 @@ html(lang='es')
 		section.detail-client.products-detail
 			.wancho
 				.g-title
-					h5 
+					h5
 						| La
 						span Descripción
 				.detail-client-p
-					p 
+					p
 						| En primer lugar, nos encontramos con tener que saber y tener
 						strong a la mano los reportes
 						| de
@@ -41,33 +42,33 @@ html(lang='es')
 		.wancho
 			.detail-characteristics-cnt
 				.g-title
-					h5 
-						| Las 
+					h5
+						| Las
 						span Características
 				ul.characteristics
 					li En primer lugar
 						i.icon-check
-						strong tsunamis en el Peru  
+						strong tsunamis en el Peru
 					li En primer lugar
 						i.icon-check
-						strong tsunamis en el Peru  
+						strong tsunamis en el Peru
 					li En primer lugar
 						i.icon-check
-						strong tsunamis en el Peru  
+						strong tsunamis en el Peru
 					li En primer lugar
 						i.icon-check
-						strong tsunamis en el Peru  
+						strong tsunamis en el Peru
 					li En primer lugar
 						i.icon-check
-						strong tsunamis en el Peru  
+						strong tsunamis en el Peru
 					li En primer lugar
 						i.icon-check
-						strong tsunamis en el Peru  
+						strong tsunamis en el Peru
 		.detail-products-preview
 			.wancho
 				.g-title
-					h5 
-						| Las 
+					h5
+						| Las
 						span Previsualización
 				.detail-products-wrap.preview-slider
 					.detail-products-item
@@ -82,8 +83,8 @@ html(lang='es')
 		.detail-products-customers
 			.wancho
 				.g-title
-					h5 
-						| Nuestros 
+					h5
+						| Nuestros
 						span Clientes
 				.detail-products-wrap
 					figure.detail-customers-item
@@ -103,7 +104,7 @@ html(lang='es')
 		.detail-products-question
 			.wancho
 				.g-title
-					h5 
+					h5
 						| ¿Te interesa
 						span el producto?
 					p Y quieres adquirirlo o tener mayor información. Ponte en contacto con nosotros.
@@ -122,3 +123,4 @@ html(lang='es')
 		script(src='./client/js/owl-carousel/owl.carousel.js')
 		script(src='./client/js/header.js')
 		script(src='./client/js/detail-products.js')
+		script(src='./client/js/sweetalert.min.js')

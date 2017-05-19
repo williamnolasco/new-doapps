@@ -1,7 +1,7 @@
 doctype html
 html(lang='es')
 	head
-		meta(charset='utf-8') 
+		meta(charset='utf-8')
 		meta(name='viewport', content='width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0')
 		title Servicios
 		link(rel='stylesheet', href='./client/js/validationform/validationEngine.jquery.css')
@@ -11,19 +11,20 @@ html(lang='es')
 		link(rel='stylesheet', type='text/css', href='./client/css/footer.css')
 		link(rel='stylesheet', type='text/css', href='./client/css/banner.css')
 		link(rel='stylesheet', type='text/css', href='./client/css/service.css')
+		link(rel='stylesheet', type='text/css', href='/client/css/sweetalert.min.css')
 	body.body-service
 		include ./blocks/header.pug
 		section.service.g-banner
-			.wancho 
+			.wancho
 				.g-banner-content
 					h5 Trazamos un camino
-					h6 
+					h6
 						| Desarrollando para Android y iOs, diseñando interfaces
 						strong móviles nativas y aplicando IOT.
 		section.service-list
 			.wancho
 				.g-title
-					h5 
+					h5
 						| Nuestros
 						span Servicios
 					h6 Descubre cada uno de los servicios que desarrollamos.
@@ -73,7 +74,7 @@ html(lang='es')
 		section.client.service-client
 			.wancho
 				.g-title
-					h5 
+					h5
 						| Nuestros
 						span Clientes
 				.client-description
@@ -96,7 +97,7 @@ html(lang='es')
 			.wancho
 				.title-special
 					.g-title
-						h5 
+						h5
 							| Nuestro
 							span Proceso
 					h6 lo hacemos en 5 pasos
@@ -112,3 +113,4 @@ html(lang='es')
 		script(src='./client/js/footer.js')
 		script(src='./client/js/header.js')
 		script(src='./client/js/service.js')
+		script(src='./client/js/sweetalert.min.js')
