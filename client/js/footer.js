@@ -87,7 +87,7 @@ $(".button-form").click(function(e) {
 		$.ajax({
 		type: 'POST',
 		dataType: 'json',
-				url: "http://www.doapps.me/api/sendEmail.php",
+				url: 'https://www.doapps.me/client/api/send-email.php',
 				data: {
 						message_name: name,
 						message_phone: phone,

@@ -5,7 +5,8 @@ RewriteBase /
 RewriteRule ^index\.php$ - [L]
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule . /index.php [L]
+# RewriteRule . /index.php [L]
+RewriteRule ^([^\.]+)$ $1.html [NC,L]
 
 RewriteCond %{HTTP_HOST} ^doapps.me [NC]
 RewriteRule ^(.*)$ http://www.doapps.me/$1 [R=301,L]
@@ -15,19 +16,14 @@ RewriteRule ^(.*)$ https://www.doapps.me/$1 [L,R=301]
 
 redirect 301 /Blog/ https://doapps.me/blog/
 redirect 301 /BLOG/ https://doapps.me/blog/
-redirect 301 /nosotros/ http://doapps.me
-redirect 301 /contacto/ http://doapps.me
-redirect 301 /portafolio/ http://doapps.me
-redirect 301 /portfolio-item/roypi/ http://doapps.me
-redirect 301 /portfolio-item/curioisity/ http://doapps.me
-redirect 301 /portfolio-item/appgis/ http://doapps.me
-redirect 301 /portfolio-item/pon-de-tu-parte/ http://doapps.me
-redirect 301 /portfolio-item/gobernacion-del-huila/ http://doapps.me
-redirect 301 /portfolio-item/examen-medico-enam/ http://doapps.me
-redirect 301 /portfolio-item/calculadora-de-igv/ http://doapps.me
-redirect 301 /portfolio-item/taxi-santa-victoria/ http://doapps.me
-redirect 301 /portfolio-item/imagenes-de-navidad/ http://doapps.me
-redirect 301 /portfolio-item/mundo-rd/ http://doapps.me
+redirect 301 /blog/ https://doapps.me/blog/
+
+#redirect 301 /servicios/ https://doapps.me/servicios/
+#redirect 301 /casos-de-exito/ https://doapps.me/casos-de-exito/
+#redirect 301 /productos/ https://doapps.me/productos/
+#redirect 301 /equipo/ https://doapps.me/equipo/
+#redirect 301 /contacto/ https://doapps.me/contacto/
+
 redirect 301 /graficos-estadisticos-android/ http://doapps.me/blog/graficos-estadisticos-android/
 redirect 301 /calculadora-de-igv/ http://doapps.me/blog/calculadora-de-igv/
 redirect 301 /menu-lateral-navigation-drawer/ http://doapps.me/blog/menu-lateral-navigation-drawer/
@@ -61,6 +57,7 @@ ExpiresByType client/fonts/OpenSans-Bold.ttf "access plus 1 month"
 ExpiresByType client/fonts/OpenSans-ExtraBold.ttf "access plus 1 month"
 ExpiresByType client/fonts/OpenSans-Light.ttf "access plus 1 month"
 ExpiresByType client/fonts/OpenSans-Regular.ttf "access plus 1 month"
+
 
 # Images
 # ExpiresByType image/gif "access plus 1 month"
