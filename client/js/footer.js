@@ -64,10 +64,10 @@ $("form").validationEngine('attach', {
 	validateNonVisibleFields: true,
 	prettySelect : true,
 	useSuffix: "_chosen",
-	'custom_error_messages': {          
+	'custom_error_messages': {
 		'custom[number]': {
 			'message': "Debe ingresar un número válido"
-		}   
+		}
 
 	}
 });
@@ -78,6 +78,43 @@ $(".button-form").click(function(e) {
 	if (!valid){
 		// alert ('error');
 	}else{
-		window.location.href='gracias.html';
+		// window.location.href='gracias.html';
+		var name = document.getElementById('name').value;
+		var email = document.getElementById('email').value;
+		var phone = document.getElementById('tel').value;
+		var description = document.getElementById('write').value;
+		console.log("Contactanos: "+name+","+email+","+phone+","+description);
+		$.ajax({
+		type: 'POST',
+		dataType: 'json',
+				url: "http://www.doapps.me/api/sendEmail.php",
+				data: {
+						message_name: name,
+						message_phone: phone,
+						message_email: email,
+						message_text: description},
+				beforeSend: function() {
+						swal({   title: "Enviando...",   text: "Falta muy poco.",   showConfirmButton: false });
+				},
+				success: function(data){
+						if (data.success == 1)
+						{
+								console.log(data.message);
+								swal("Mensaje enviado!", "Revisaremos tu correo, gracias por contactarnos.", "success")
+								document.getElementById('name').value = "";
+								document.getElementById('email').value = "";
+								document.getElementById('tel').value = "";
+								document.getElementById('write').value = "";
+						}
+						else{
+								console.log(data.message);
+								swal("Ocurrió un problema", "Inténtalo nuevamente o escríbenos a hola@doapps.me", "error");
+						}
+				},
+				error: function(){
+						console.log('error!');
+						swal("Ocurrió un problema", "Inténtalo nuevamente o escríbenos a hola@doapps.me", "error");
+				}
+		});
 	}
 });

@@ -25,6 +25,7 @@ if (items_length > 1) {
 	});
 }
 
+
 //animaciones
 
 function animations(){
@@ -101,7 +102,3 @@ $('.button-work').click(function(e){
 		scrollTop: $('.works').offset().top
 	}, 600);
 });
-
-
-
-

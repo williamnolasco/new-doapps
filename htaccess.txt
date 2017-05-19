@@ -1,0 +1,74 @@
+# BEGIN WordPress
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+
+RewriteCond %{HTTP_HOST} ^doapps.me [NC]
+RewriteRule ^(.*)$ http://www.doapps.me/$1 [R=301,L]
+
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://www.doapps.me/$1 [L,R=301]
+
+redirect 301 /Blog/ https://doapps.me/blog/
+redirect 301 /BLOG/ https://doapps.me/blog/
+redirect 301 /nosotros/ http://doapps.me
+redirect 301 /contacto/ http://doapps.me
+redirect 301 /portafolio/ http://doapps.me
+redirect 301 /portfolio-item/roypi/ http://doapps.me
+redirect 301 /portfolio-item/curioisity/ http://doapps.me
+redirect 301 /portfolio-item/appgis/ http://doapps.me
+redirect 301 /portfolio-item/pon-de-tu-parte/ http://doapps.me
+redirect 301 /portfolio-item/gobernacion-del-huila/ http://doapps.me
+redirect 301 /portfolio-item/examen-medico-enam/ http://doapps.me
+redirect 301 /portfolio-item/calculadora-de-igv/ http://doapps.me
+redirect 301 /portfolio-item/taxi-santa-victoria/ http://doapps.me
+redirect 301 /portfolio-item/imagenes-de-navidad/ http://doapps.me
+redirect 301 /portfolio-item/mundo-rd/ http://doapps.me
+redirect 301 /graficos-estadisticos-android/ http://doapps.me/blog/graficos-estadisticos-android/
+redirect 301 /calculadora-de-igv/ http://doapps.me/blog/calculadora-de-igv/
+redirect 301 /menu-lateral-navigation-drawer/ http://doapps.me/blog/menu-lateral-navigation-drawer/
+redirect 301 /que-es-el-aso/ http://doapps.me/blog/que-es-el-aso/
+redirect 301 /instalar-node-js-en-ubuntu/ http://doapps.me/blog/instalar-node-js-en-ubuntu/
+redirect 301 /graficos-estadisticos-android-con-hellocharts/ http://doapps.me/blog/graficos-estadisticos-android-con-hellocharts/
+redirect 301 /como-utilizar-pestanas-en-android-usando-titleviewindicator/ http://doapps.me/blog/como-utilizar-pestanas-en-android-usando-titleviewindicator/
+redirect 301 /crea-tu-cuenta-de-desarrollador-en-google-play/ http://doapps.me/blog/crea-tu-cuenta-de-desarrollador-en-google-play/
+redirect 301 /crear-una-cuenta-de-desarrollador-en-app-store/ http://doapps.me/blog/crear-una-cuenta-de-desarrollador-en-app-store/
+redirect 301 /login-con-facebook-android-api-2-3-2015/ http://doapps.me/blog/login-con-facebook-android-api-2-3-2015/
+redirect 301 /doapps-en-medellin-hackaton-digilac-organizada-por-el-bid/ http://doapps.me/blog/doapps-en-medellin-hackaton-digilac-organizada-por-el-bid/
+redirect 301 /cuatro-importantes-lenguajes-de-programacion-que-no-sabias-que-existian/ http://doapps.me/blog/cuatro-importantes-lenguajes-de-programacion-que-no-sabias-que-existian/
+redirect 301 /doapps-2do-puesto-en-la-hackaton-de-la-municipalidad-de-miraflores/ http://doapps.me/blog/doapps-2do-puesto-en-la-hackaton-de-la-municipalidad-de-miraflores/
+redirect 301 /huawei-p8-o-como-tener-un-smartphone-gama-alta-a-bajo-precio/ http://doapps.me/blog/huawei-p8-o-como-tener-un-smartphone-gama-alta-a-bajo-precio/
+
+</IfModule>
+# END WordPress
+
+# BEGIN EXPIRED
+<IfModule mod_expires.c>
+# Enable expirations
+ExpiresActive On
+# Default directive
+ExpiresDefault "access plus 1 month"
+
+# My favicon
+# ExpiresByType image/x-icon "access plus 1 year"
+
+# Fonts
+ExpiresByType client/fonts/OpenSans-Bold.ttf "access plus 1 month"
+ExpiresByType client/fonts/OpenSans-ExtraBold.ttf "access plus 1 month"
+ExpiresByType client/fonts/OpenSans-Light.ttf "access plus 1 month"
+ExpiresByType client/fonts/OpenSans-Regular.ttf "access plus 1 month"
+
+# Images
+# ExpiresByType image/gif "access plus 1 month"
+
+# CSS
+# ExpiresByType text/css "access plus 1 month"
+
+# Javascript
+# ExpiresByType application/javascript "access plus 1 year"
+</IfModule>
+# END EXPIRED
