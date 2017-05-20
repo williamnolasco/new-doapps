@@ -46,6 +46,7 @@
 	//outline 1px solid red
 	textarea
 		height 145px
+		padding-top 5px
 .form-input, .form-select
 	display block
 	width 100%
@@ -66,7 +67,8 @@
 	z-index 1
 .row-input-content
 	width 100%
-	using-flex(row, flex-start, center)
+	using-flex(row, flex-start, flex-start)
+	flex-flow row nowrap
 	position absolute
 	left 0
 	//top -7px
@@ -80,14 +82,17 @@
 		font-family font-2
 		color #c1c1c1
 		margin-left 15px
+		line-height 1
 		transition .2s ease-out
 	&.active
 		label
 			font-size .8rem
+			//transform translateY(-23px)
 			transform translateY(-160%)
 	&.active1
 		label
 			font-size .8rem
+			//transform translateY(-23px)
 			transform translateY(-160%)
 .row-select-content
 	//top -7px
@@ -244,6 +249,7 @@
 @media screen and (max-width 600px)
 	.input-container
 		width calc(50% - 10px)
+		margin-bottom 50px
 		&:nth-child(even)
 			margin-left 20px
 	.textarea-container
@@ -263,7 +269,7 @@
 	.row-input-content
 		top 7px
 		label
-			font-size 16px
+			font-size 15px
 			margin-left 10px
 		img
 			width 28px
