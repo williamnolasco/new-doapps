@@ -58,12 +58,17 @@ ExpiresByType client/fonts/OpenSans-ExtraBold.ttf "access plus 1 month"
 ExpiresByType client/fonts/OpenSans-Light.ttf "access plus 1 month"
 ExpiresByType client/fonts/OpenSans-Regular.ttf "access plus 1 month"
 
+ExpiresByType client/icons/icomoon.svg "access plus 1 minutes"
+ExpiresByType client/icons/icomoon.ttf "access plus 1 minutes"
+ExpiresByType client/icons/icomoon.eot "access plus 1 minutes"
+ExpiresByType client/icons/icomoon.woff "access plus 1 minutes"
 
 # Images
-# ExpiresByType image/gif "access plus 1 month"
+# ExpiresByType image/gif "access plus 5 minutes"
 
 # CSS
-# ExpiresByType text/css "access plus 1 month"
+ExpiresByType text/css "access plus 5 minutes"
+ExpiresByType client/css/icons.css "access plus 1 minutes"
 
 # Javascript
 # ExpiresByType application/javascript "access plus 1 year"
