@@ -12,7 +12,11 @@
   </head>
   <body class="body-blog">
     <header>
-      <div class="wancho"><a class="link-logo" href="./"><i class="icon-logo_header"></i></a><a class="link-logo-mobile" href="./"><img src="./client/img/header/logo-mobile.png" width="43" height="43" alt="DoApps"></a><i class="icon-align-left open-menu-mobile"></i>
+      <div class="wancho"><a class="link-logo" href="./"><i class="icon-logo_header"></i></a>
+        <!--
+        a.link-logo-mobile(href='./')
+        	img(src='./client/img/header/logo-mobile.png' width='43' height ='43' alt='DoApps')
+        --><i class="icon-menu open-menu-mobile"></i>
         <ul class="list-items"><span class="movable-bar"></span>
           <li><a class="item-link" href="servicios.html">Servicios</a></li>
           <li><a class="item-link" href="casos-de-exito.html">Casos de Éxito</a></li>
@@ -35,7 +39,7 @@
       <div class="wancho">
         <div class="blog-content-title">
           <h6>Publicaciones más recientes</h6>
-        </div><a class="blog-new-big" href="detail-blog.html">
+        </div><a class="blog-new-big" href="detalle-blog.html">
           <div class="new-big-photo" style="background-image: url(./client/img/blog/blog-new-big.jpg);">
             <!--img(src='./client/img/blog/blog-new-big.jpg' width='772' height='397')-->
             <div class="category">
@@ -54,7 +58,7 @@
             </div>
           </div></a>
         <div class="blog-content-down">
-          <div class="blog-list-new-small"><a class="new-small" href="detail-blog.html">
+          <div class="blog-list-new-small"><a class="new-small" href="detalle-blog.html">
               <div class="new-small-photo" style="background-image: url(./client/img/blog/blog-new-small.jpg);">
                 <!--img(src='./client/img/blog/blog-new-small.jpg' width='368' height='256')-->
                 <div class="category">
@@ -71,7 +75,7 @@
                     <h6>Mar 14</h6>
                   </div>
                 </div>
-              </div></a><a class="new-small" href="detail-blog.html">
+              </div></a><a class="new-small" href="detalle-blog.html">
               <div class="new-small-photo" style="background-image: url(./client/img/blog/blog-new-small.jpg);">
                 <!--img(src='./client/img/blog/blog-new-small.jpg' width='368' height='256')-->
                 <div class="category">
@@ -88,7 +92,7 @@
                     <h6>Mar 14</h6>
                   </div>
                 </div>
-              </div></a><a class="new-small" href="detail-blog.html">
+              </div></a><a class="new-small" href="detalle-blog.html">
               <div class="new-small-photo" style="background-image: url(./client/img/blog/blog-new-small.jpg);">
                 <!--img(src='./client/img/blog/blog-new-small.jpg' width='368' height='256')-->
                 <div class="category">
@@ -105,7 +109,7 @@
                     <h6>Mar 14</h6>
                   </div>
                 </div>
-              </div></a><a class="new-small" href="detail-blog.html">
+              </div></a><a class="new-small" href="detalle-blog.html">
               <div class="new-small-photo" style="background-image: url(./client/img/blog/blog-new-small.jpg);">
                 <!--img(src='./client/img/blog/blog-new-small.jpg' width='368' height='256')-->
                 <div class="category">
@@ -125,10 +129,9 @@
               </div></a>
             <div class="blog-pagination"><a class="number-pag active" href="#">1</a><a class="number-pag" href="#">2</a><a class="number-pag" href="#">3</a><a class="number-pag" href="#">4</a><a class="number-pag" href="#">5</a></div>
           </div>
-          <div class="btn-respon"><a class="g-btn btn-green1" href="contac.html">Cargar más notas</a></div>
+          <div class="btn-respon"><a class="g-btn btn-green1" href="contacto.html">Cargar más notas</a></div>
           <div class="publicity">
-            <div class="question">
-              <figure class="quesiton-icon"><img src="./client/img/blog/icon-question.png"></figure>
+            <div class="question"><i class="icon-help quesiton-icon"></i>
               <h5>Nuestra pregunta es</h5>
               <h6>¿Te parece útil que se realice un curso de Github para desarrolladores?</h6>
               <div class="question-buttons"><a class="g-btn btn-transparent-green" href="#">SI</a><a class="g-btn btn-transparent-green" href="#">NO</a></div>
