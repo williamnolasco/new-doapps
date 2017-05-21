@@ -8,19 +8,19 @@
 			.input-container
 				input(id='name', class='validate[required, custom[onlyLetterSp]]').form-input
 				.row-input-content
-					img(src='./client/img/footer/input-name.png', width='38', height='32')
+					i.icon-contacto-icon-nombre
 					label(for='name') ¿Cúal es tu nombre?
 				span.lively-bar
 			.input-container
 				input(id='email', class='validate[required,custom[email]]').form-input
 				.row-input-content
-					img(src='./client/img/footer/input-email.png', width='38', height='32')
+					i.icon-contacto-icon-correo
 					label(for='email') ¿Cúal es tu correo?
 				span.lively-bar
 			.input-container
 				input(id='tel', class='validate[required, custom[onlyNumberSp]]').form-input
 				.row-input-content
-					img(src='./client/img/footer/input-tel.png', width='38', height='32')
+					i.icon-contacto-icon-telefono
 					label(for='tel') ¿Cúal es tu teléfono?
 				span.lively-bar
 			.input-container.select-container
@@ -29,32 +29,27 @@
 					option(value='empresa') Empresa
 					option(value='emprendedor') Emprendedor
 				.row-input-content.row-select-content
-					img(src='./client/img/footer/input-product.png', width='38', height='32')
-					//label(for='product') ¿Qué eres?
-					//
-						ul.ul-form-select
-							li Empresa
-							li Emprendedor
+					i.icon-contacto-icon-producto
 				span.lively-bar
 			.input-container.textarea-container
 				textarea(id='write', class='validate[required]').form-input
 				.row-input-content
-					img(src='./client/img/footer/input-write.png', width='38', height='32')
+					i.icon-contacto-icon-describe
 					label(for='write') Explícanos tu idea, proyecto, empresa o mejora para tu negocio.
 				span.lively-bar
 			button(type='submit').g-btn.btn-transparent-white.button-form Enviar
 footer.footer-bottom
 	.wancho
-		img(src='./client/img/footer/logo-footer.png').logo-footer
+		img(src='./client/img/footer/logo-footer.png' width='125' height='125').logo-footer
 		.footer-bottom-left
 			.footer-item
-				img(src='./client/img/footer/footer-direction.png')
+				i.icon-footer-ubication
 				h6 Av. Aramburú #856 Of.301 / Surquillo
 			.footer-item
-				img(src='./client/img/footer/footer-email.png')
+				i.icon-footer-mail
 				a(href='mailto:hola@doapps.me') hola@doapps.me
 			.footer-item
-				img(src='./client/img/footer/footer-tel.png')
+				i.icon-footer-telefono
 				.footer-row-tel
 					a(href='tel:012883025') (+51) 288 3025
 					span /

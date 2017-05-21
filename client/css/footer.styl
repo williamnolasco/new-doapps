@@ -44,9 +44,9 @@
 	width 100%
 	margin-bottom 0
 	//outline 1px solid red
+	padding-top 10px
 	textarea
 		height 145px
-		padding-top 5px
 .form-input, .form-select
 	display block
 	width 100%
@@ -57,7 +57,7 @@
 	color #c1c1c1
 	font-size 22px
 	resize none
-	padding-left 54px
+	padding-left 40px
 .form-select
 	font-family font-2
 	position relative
@@ -72,9 +72,9 @@
 	position absolute
 	left 0
 	//top -7px
-	top 7px
+	top 14px
 	transition all 0.5s
-	label, img
+	label, i
 		transition all 0.5s
 	label
 		color white
@@ -84,16 +84,16 @@
 		margin-left 15px
 		line-height 1
 		transition .2s ease-out
+	i
+		font-size 25px
 	&.active
 		label
 			font-size .8rem
-			//transform translateY(-23px)
-			transform translateY(-160%)
+			transform translateY(-180%)
 	&.active1
 		label
 			font-size .8rem
-			//transform translateY(-23px)
-			transform translateY(-160%)
+			transform translateY(-180%)
 .row-select-content
 	//top -7px
 	z-index 0
@@ -135,7 +135,8 @@
 		color #343434
 		font-family font-2
 		font-size 14px
-	img
+	i
+		font-size 28px
 		margin-right 15px
 	&:nth-of-type(2)
 		justify-content center
@@ -177,7 +178,7 @@
 			border-bottom 0
 .select-container
 	border-bottom 1px solid rgba(255,255,255,0.35)
-	padding-left 45px
+	//padding-left 45px
 @media screen and (max-width 924px)
 	.footer-bottom-left
 		padding-left 20px
@@ -211,8 +212,6 @@
 				font-size 30px
 				br
 					display none
-				span
-					margin 0 2px
 	/*.row-input-content
 		top 2px
 		&.active
@@ -221,7 +220,7 @@
 			font-size 20px
 			margin-left 3px*/
 	.row-input-content
-		top 3px
+		top 10px
 		label
 			font-size 19px
 	.input-container
@@ -258,7 +257,7 @@
 		flex-direction column
 		h6
 			text-align center
-		img
+		i
 			margin 0 0 10px
 	.footer-row-tel
 		using-flex(row, center, center)
@@ -268,9 +267,16 @@
 			margin-left 0
 	.row-input-content
 		top 7px
+		&.active
+			label
+				transform translateY(-150%)
+		&.active1
+			label
+				transform translateY(-150%)
 		label
 			font-size 15px
 			margin-left 10px
+			padding-top 4px
 		img
 			width 28px
 			height auto
@@ -291,13 +297,12 @@
 		width 103px
 		height 103px
 		margin-top -41px
-		margin-bottom 25px
+		margin-bottom 10px
 	.footer-bottom-left
 		align-items flex-start
 	.footer-item
-		img
-			width 33px
-			height 33px
+		i
+			font-size 35px
 	.form-input
 		padding-left 40px
 	.form-select
@@ -313,10 +318,10 @@
 		&:nth-of-type(3)
 			width 86%
 			padding-top 13px
-			margin-bottom 42px
+			margin-bottom 20px
 		h6
 			font-size 16px
-		img
+		i
 			margin-bottom 7px
 	.footer-bottom
 		.wancho
