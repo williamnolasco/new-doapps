@@ -8,7 +8,6 @@
 					&:after
 						item-header-active()
 .project-title
-	background-image url(../img/detail-project/project-title-background.jpg)
 	using-background()
 	position relative
 	padding-top 156px
@@ -235,18 +234,6 @@
 		font-family font-1
 		font-size 13px
 		border-radius 0 0 10px 10px
-	&.color1 
-		background-color #ff7400
-	&.color2
-		background-color #fe9d4c
-	&.color3
-		background-color #ffb475
-	&.color4
-		background-color #4c4c4c
-	&.color5 
-		background-color #b6b6b6
-	&.color6 
-		background-color #cdcdcd
 .final-screen
 	padding 50px 0 20px
 	position relative
@@ -259,34 +246,31 @@
 	box-shadow 2px -2px 15px rgba(0, 0, 0, 0.15)
 	text-align center
 	border-radius 8px
-	&:before, &:after
+	.f-s-typography-top, .f-s-typography-bottom
 		width 100%
 		color #1c1c1c
 		text-align center
 		position absolute
 		left 0
-	&:before
-		content 'Aa'
-		font-family font-6
-		font-size 56px
+	.f-s-typography-top
 		height 130px 
-		line-height 130px
 		top 0
-	&:after 
-		font-size 18px
-		font-family font-1
-		content 'Avenir'
+		h5
+			font-size 56px
+			line-height 130px
+	.f-s-typography-bottom
 		height 48px
-		line-height 48px
 		bottom 0
 		border-top 1px solid #efefef
+		h5 
+			font-size 18px
+			line-height 48px
 .set-screen
 	width 100%
 	height 1202px
 	background-color #eeeeee
 	position relative
 .set-screen-background
-	background-image url(../img/detail-project/detail-project-screen-background.png)
 	using-background()
 	width 100%
 	height 100%
