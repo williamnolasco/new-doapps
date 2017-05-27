@@ -8,8 +8,6 @@
 					&:after
 						item-header-active()
 .service
-	&.g-banner
-		background-image url(../img/service/service-background.jpg)	
 	.g-banner-content
 		width 90%
 		max-width 620px
@@ -78,11 +76,13 @@
 			margin-bottom 11px
 		h6 
 			font-family font-1
-			font-size 25px
+			//font-size 25px
+			font-size 17px
 			width 100%
 			max-width 400px
 			margin 0 auto
-			line-height 1.2
+			//line-height 1.2
+			line-height 1.5
 .service-row-service
 	using-flex(row, space-between, center)
 	margin-top 78px
@@ -93,24 +93,6 @@
 	height 242px
 	border 1px solid #d4d4d4
 	margin-bottom 42px
-	&:nth-of-type(1)
-		.service-image	
-			background-image url(../img/service/service1.jpg)
-	&:nth-of-type(2)
-		.service-image	
-			background-image url(../img/service/service2.jpg)
-	&:nth-of-type(3)
-		.service-image	
-			background-image url(../img/service/service3.jpg)
-	&:nth-of-type(4)
-		.service-image	
-			background-image url(../img/service/service4.jpg)
-	&:nth-of-type(5)
-		.service-image	
-			background-image url(../img/service/service5.jpg)
-	&:nth-of-type(6)
-		.service-image	
-			background-image url(../img/service/service6.jpg)
 .service-image, .service-content-item
 	width 50%
 	height 100%
@@ -197,7 +179,8 @@
 			h5 
 				margin-bottom 10px
 			h6 
-				font-size 17px
+				//font-size 17px
+				line-height 1.3
 	.service-row-service
 		margin-top 40px
 	.service-item
@@ -244,6 +227,7 @@
 				margin-bottom 10px
 			h6 
 				font-size 16px
+				line-height 1.1
 	.service-client
 		padding 30px 0
 		.client-description

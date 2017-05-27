@@ -289,6 +289,7 @@
 	.row-timer
 		using-flex(row, center, center)
 		flex-flow row nowrap
+		height 60px
 		h4
 			font-family font-6
 			font-size 60px
@@ -297,12 +298,13 @@
 			color #1a1a1a
 			font-family font-6
 	.item-we-develop
+		using-flex(column, center, center)
 		width 33.333%
 		padding 0 15px
 		border-right 2px dashed rgba(#1a1a1a, 0.3)
 		text-align center
 		color #1a1a1a
-		&:nth-of-type(1)
+		/*&:nth-of-type(1)
 			img 
 				margin-bottom -16px 
 			h5 
@@ -310,7 +312,13 @@
 		&:nth-last-child(1)
 			border-right 0
 		img 
-			margin-bottom 8px
+			margin-bottom 8px*/
+		i 
+				display block
+				color green-doapps
+				font-size 50px
+				font-weight lighter
+				margin-bottom 20px
 		h6 
 			font-family font-6
 			font-size 60px
