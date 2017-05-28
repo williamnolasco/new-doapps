@@ -24,21 +24,29 @@
 		column-count 2
 	li
 		position relative
-		padding-left 45px
 		font-size 22px
 		font-family font-1
 		margin-bottom 40px
-		i
-			position absolute
-			left 0 
-			top 0
-			width 28px
-			height 28px
-			background-image url('../img/products/icon.png')
-			using-background()
-	strong
-		font-family font-3
-		margin 0 7px
+.characteristics-li
+	using-flex(row, flex-start, center)
+	flex-flow row nowrap
+	i 
+		using-flex(row, center, center)
+		text-align center
+		width 25px
+		height 25px
+		font-size 17px
+		color white
+		background-color green-doapps
+		border-radius 50%
+		padding 10px
+		font-weight bolder
+	h5 
+		margin-left 10px
+		line-height 1.1
+		strong
+			font-family font-3
+			margin 0 7px
 .detail-products-preview
 	background-color rgba(242,242,242,0.6)
 	padding 130px 0

@@ -13,7 +13,7 @@ html(lang='es')
 		link(rel='stylesheet', type='text/css', href='/client/css/sweetalert.min.css')
 	body.detail-products.body-products
 		include ./blocks/header.pug
-		section.project-title
+		section.project-title(style='background-image: url(../client/img/detail-project/project-title-background.jpg)')
 			.wancho
 				.project-title-left
 					h5 Comida Rápida
@@ -22,8 +22,6 @@ html(lang='es')
 						span Pideloo
 				figure.project-title-img
 					img(src='./client/img/detail-project/project-title-cel.png' width='329' height='478')
-
-
 		section.detail-client.products-detail
 			.wancho
 				.g-title
@@ -46,24 +44,36 @@ html(lang='es')
 						| Las
 						span Características
 				ul.characteristics
-					li En primer lugar
+					li.characteristics-li
 						i.icon-check
-						strong tsunamis en el Peru
-					li En primer lugar
+						h5 
+							|En primer lugar
+							strong tsunamis en el Peru
+					li.characteristics-li 
 						i.icon-check
-						strong tsunamis en el Peru
-					li En primer lugar
+						h5 
+							|En primer lugar
+							strong tsunamis en el Peru
+					li.characteristics-li 
 						i.icon-check
-						strong tsunamis en el Peru
-					li En primer lugar
+						h5 
+							|En primer lugar
+							strong tsunamis en el Peru
+					li.characteristics-li 
 						i.icon-check
-						strong tsunamis en el Peru
-					li En primer lugar
+						h5 
+							|En primer lugar
+							strong tsunamis en el Peru
+					li.characteristics-li 
 						i.icon-check
-						strong tsunamis en el Peru
-					li En primer lugar
+						h5 
+							|En primer lugar
+							strong tsunamis en el Peru
+					li.characteristics-li 
 						i.icon-check
-						strong tsunamis en el Peru
+						h5 
+							|En primer lugar
+							strong tsunamis en el Peru
 		.detail-products-preview
 			.wancho
 				.g-title

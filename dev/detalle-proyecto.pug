@@ -14,7 +14,7 @@ html(lang='es')
 		link(rel='stylesheet', type='text/css', href='/client/css/sweetalert.min.css')
 	body.body-detail-project
 		include ./blocks/header.pug
-		section.project-title
+		section.project-title(style='background-image: url(./client/img/detail-project/project-title-background.jpg)')
 			.wancho
 				.project-title-left
 					h5 Comida Rápida
@@ -120,15 +120,19 @@ html(lang='es')
 					p Tienen un propósito simple y específico, que queriamos que los usuarios estuvieran realmente enfocados al usa la aplicación. La experiencia principal se construye alrededor de la pantalla del tablero de instrumentos para faciliar la reproducción y grabación de mensajes de audio.
 				.f-s-colors-container
 					.f-s-colors-left
-						.f-s-color.color1
-						.f-s-color.color2
-						.f-s-color.color3
-						.f-s-color.color4
-						.f-s-color.color5
-						.f-s-color.color6
+						.f-s-color.color1(style='background-color: #ff7400')
+						.f-s-color.color2(style='background-color: #fe9d4c')
+						.f-s-color.color3(style='background-color: #ffb475')
+						.f-s-color.color4(style='background-color: #4c4c4c')
+						.f-s-color.color5(style='background-color: #b6b6b6')
+						.f-s-color.color6(style='background-color: #cdcdcd')
 					.f-s-typography
+						.f-s-typography-top
+							h5(style='font-family: font-Black') Aa
+						.f-s-typography-bottom
+							h5(style='font-family: font-Light') Avenir
 		section.set-screen
-			.set-screen-background
+			.set-screen-background(style='background-image: url(./client/img/detail-project/detail-project-screen-background.png)')
 		section.results
 			.wancho
 				.row-detail-client-title
@@ -148,21 +152,22 @@ html(lang='es')
 						| pero se olvidan de que el marketing es algo global con tener que saber.
 				.we-develop-bottom
 					.item-we-develop
-						img(src='./client/img/detail-project/results-icon1.png')
+						i.icon-files-empty
 						.row-timer
 							span +
 							h6.timer1 30
 							span %
 						h5 incremento en ventas
 					.item-we-develop
-						img(src='./client/img/detail-project/results-icon2.png')
+						i.icon-cloud-download2
 						.row-timer
 							h6.timer2 50
 							h4 k
 						h5 Descargas en tiendas
 					.item-we-develop
-						img(src='./client/img/detail-project/results-icon3.png')
-						h6.timer3 80
+						i.icon-like
+						.row-timer
+							h6.timer3 80
 						h5 clientes satisfechos
 				.results-button-apps
 					a(href='#').link-app

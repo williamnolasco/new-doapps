@@ -100,7 +100,7 @@ $(".button-form").click(function(e) {
 						if (data.success == 1)
 						{
 								console.log(data.message);
-								swal("Mensaje enviado!", "Revisaremos tu correo, gracias por contactarnos.", "success")
+								swal("Mensaje enviado!", "Revisaremos tu correo, gracias por contactarnos.", "success");
 								document.getElementById('name').value = "";
 								document.getElementById('email').value = "";
 								document.getElementById('tel').value = "";

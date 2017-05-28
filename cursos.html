@@ -36,27 +36,27 @@
           <h5>Fecha de inicio</h5>
           <h6>20 de marzo</h6>
         </div>
-        <form class="courses-form">
+        <form class="courses-form footer-form">
           <h5>Inscríbete</h5>
           <div class="input-container">
-            <input class="form-input" id="name">
-            <div class="row-input-content"><img src="./client/img/footer/input-name.png" width="38" height="32">
+            <input class="validate[required, custom[onlyLetterSp]] form-input" id="name">
+            <div class="row-input-content"><i class="icon-contacto-icon-nombre"></i>
               <label for="name">¿Cúal es tu nombre?</label>
             </div><span class="lively-bar"></span>
           </div>
           <div class="input-container">
-            <input class="form-input" id="name">
-            <div class="row-input-content"><img src="./client/img/footer/input-email.png" width="38" height="32">
-              <label for="name">¿Cúal es tu correo?</label>
+            <input class="validate[required,custom[email]] form-input" id="email">
+            <div class="row-input-content"><i class="icon-contacto-icon-correo"></i>
+              <label for="email">¿Cúal es tu correo?</label>
             </div><span class="lively-bar"></span>
           </div>
           <div class="input-container">
-            <input class="form-input" id="name">
-            <div class="row-input-content"><img src="./client/img/footer/input-tel.png" width="38" height="32">
-              <label for="name">¿Cúal es tu teléfono?</label>
+            <input class="validate[required, custom[onlyNumberSp]] form-input" id="tel">
+            <div class="row-input-content"><i class="icon-contacto-icon-telefono"></i>
+              <label for="tel">¿Cúal es tu teléfono?</label>
             </div><span class="lively-bar"></span>
           </div>
-          <button class="g-btn btn-green1">Comienza ahora</button>
+          <button class="g-btn btn-green1 button-form">Comienza ahora</button>
         </form>
       </div>
     </section>
@@ -66,28 +66,22 @@
           <h5>Los<span>Objetivos</span></h5>
         </div>
         <div class="courses-objectives-list">
-          <div class="courses-objectives-item">
-            <figure><img src="./client/img/courses/courses-check.png" width="27px" height="27px"></figure>
+          <div class="courses-objectives-item"><i class="icon-check"></i>
             <p>Aprender las bases de la programación de aplicaciones nativas para iOS en Objective C utilizando como herramienta Xcode.</p>
           </div>
-          <div class="courses-objectives-item">
-            <figure><img src="./client/img/courses/courses-check.png" width="27px" height="27px"></figure>
+          <div class="courses-objectives-item"><i class="icon-check"></i>
             <p>Aprender las bases de la programación de aplicaciones nativas para iOS en Objective C utilizando como herramienta Xcode.</p>
           </div>
-          <div class="courses-objectives-item">
-            <figure><img src="./client/img/courses/courses-check.png" width="27px" height="27px"></figure>
+          <div class="courses-objectives-item"><i class="icon-check"></i>
             <p>Aprender las bases de la programación de aplicaciones nativas para iOS en Objective C utilizando como herramienta Xcode.</p>
           </div>
-          <div class="courses-objectives-item">
-            <figure><img src="./client/img/courses/courses-check.png" width="27px" height="27px"></figure>
+          <div class="courses-objectives-item"><i class="icon-check"></i>
             <p>Aprender las bases de la programación de aplicaciones nativas para iOS en Objective C utilizando como herramienta Xcode.</p>
           </div>
-          <div class="courses-objectives-item">
-            <figure><img src="./client/img/courses/courses-check.png" width="27px" height="27px"></figure>
+          <div class="courses-objectives-item"><i class="icon-check"></i>
             <p>Aprender las bases de la programación de aplicaciones nativas para iOS en Objective C utilizando como herramienta Xcode.</p>
           </div>
-          <div class="courses-objectives-item">
-            <figure><img src="./client/img/courses/courses-check.png" width="27px" height="27px"></figure>
+          <div class="courses-objectives-item"><i class="icon-check"></i>
             <p>Aprender las bases de la programación de aplicaciones nativas para iOS en Objective C utilizando como herramienta Xcode.</p>
           </div>
         </div>
@@ -102,7 +96,7 @@
           <div class="courses-temary-item">
             <div class="courses-temary-item-top">
               <figure><img src="./client/img/courses/courses-temary-icon1.png" width="40" height="40"></figure>
-              <h5>MÓDULO 1<span><i class="icon-angle-double-down"></i></span></h5>
+              <h5>MÓDULO 1<span><i class="icon-chevron-thin-down"></i></span></h5>
             </div>
             <div class="courses-temary-item-bottom">
               <ul>
@@ -117,7 +111,7 @@
           <div class="courses-temary-item">
             <div class="courses-temary-item-top">
               <figure><img src="./client/img/courses/courses-temary-icon2.png" width="40" height="40"></figure>
-              <h5>MÓDULO 2<span><i class="icon-angle-double-down"></i></span></h5>
+              <h5>MÓDULO 2<span><i class="icon-chevron-thin-down"></i></span></h5>
             </div>
             <div class="courses-temary-item-bottom">
               <ul>
@@ -132,7 +126,7 @@
           <div class="courses-temary-item">
             <div class="courses-temary-item-top">
               <figure><img src="./client/img/courses/courses-temary-icon3.png" width="40" height="40"></figure>
-              <h5>MÓDULO 3<span><i class="icon-angle-double-down"></i></span></h5>
+              <h5>MÓDULO 3<span><i class="icon-chevron-thin-down"></i></span></h5>
             </div>
             <div class="courses-temary-item-bottom">
               <ul>
@@ -176,18 +170,15 @@
           <h5>¿Qué<span>Obtienes?</span></h5>
         </div>
         <div class="courses-feature-row">
-          <div class="courses-feature-item">
-            <figure><img src="./client/img/courses/courses-feature-icon1.png" width="88px" height="75px"></figure>
+          <div class="courses-feature-item"><i class="icon-laptop"></i>
             <h6>Videoclases 100% online</h6>
             <p>Contenidos 100% online. Disponible las 24 horas del dia</p>
           </div>
-          <div class="courses-feature-item">
-            <figure><img src="./client/img/courses/courses-feature-icon2.png" width="88px" height="75px"></figure>
+          <div class="courses-feature-item"><i class="icon-user-check"></i>
             <h6>Asesoría requerida</h6>
             <p>Contenidos 100% online. Disponible las 24 horas del dia</p>
           </div>
-          <div class="courses-feature-item">
-            <figure><img src="./client/img/courses/courses-feature-icon3.png" width="88px" height="75px"></figure>
+          <div class="courses-feature-item"><i class="icon-files"></i>
             <h6>Certificación del curso</h6>
             <p>Contenidos 100% online. Disponible las 24 horas del dia</p>
           </div>
@@ -210,16 +201,13 @@
             </div>
             <div class="courses-cost-bottom">
               <ul>
-                <li class="courses-cost-bottom-li">
-                  <figure><img src="./client/img/courses/courses-check.png" width="27" height="27"></figure>
+                <li class="courses-cost-bottom-li"><i class="icon-check"></i>
                   <h6>Grabaciones de clase</h6>
                 </li>
-                <li class="courses-cost-bottom-li">
-                  <figure><img src="./client/img/courses/courses-check.png" width="27" height="27"></figure>
+                <li class="courses-cost-bottom-li"><i class="icon-check"></i>
                   <h6>Asesoría por mensaje</h6>
                 </li>
-                <li class="courses-cost-bottom-li">
-                  <figure><img src="./client/img/courses/courses-check.png" width="27" height="27"></figure>
+                <li class="courses-cost-bottom-li"><i class="icon-check"></i>
                   <h6>70 videos disponibles</h6>
                 </li>
               </ul><a class="g-btn btn-green1" href="#">Pagar</a>
@@ -235,16 +223,13 @@
             </div>
             <div class="courses-cost-bottom">
               <ul>
-                <li class="courses-cost-bottom-li">
-                  <figure><img src="./client/img/courses/courses-check.png" width="27" height="27"></figure>
+                <li class="courses-cost-bottom-li"><i class="icon-check"></i>
                   <h6>Grabaciones de clase</h6>
                 </li>
-                <li class="courses-cost-bottom-li">
-                  <figure><img src="./client/img/courses/courses-check.png" width="27" height="27"></figure>
+                <li class="courses-cost-bottom-li"><i class="icon-check"></i>
                   <h6>Asesoría por mensaje y telefono</h6>
                 </li>
-                <li class="courses-cost-bottom-li">
-                  <figure><img src="./client/img/courses/courses-check.png" width="27" height="27"></figure>
+                <li class="courses-cost-bottom-li"><i class="icon-check"></i>
                   <h6>70 videos disponibles</h6>
                 </li>
               </ul><a class="g-btn btn-green1" href="#">Pagar</a>
@@ -315,6 +300,7 @@
     <script src="./client/js/validationform/jquery.validationEngine.js"></script>
     <script src="./client/js/validationform/jquery.validationEngine-es.js"></script>
     <script src="./client/js/header.js"></script>
+    <script src="./client/js/footer.js"></script>
     <script src="./client/js/courses.js"></script>
     <script src="./client/js/sweetalert.min.js"></script>
   </body>

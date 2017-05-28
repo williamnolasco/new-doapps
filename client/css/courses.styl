@@ -1,6 +1,9 @@
 @import 'mixin.styl'
 
 .body-courses
+	.formError .formErrorContent
+		color red
+		font-size 0
 	.footer-top
 		display none
 	.footer-bottom
@@ -56,6 +59,7 @@
 	padding 68px 49px 57px
 	text-align center
 	h5 
+		width 100%
 		font-family font-6
 		font-size 35px
 		margin-bottom 67px
@@ -71,30 +75,28 @@
 		padding-left 45px
 		color #343434
 		font-family font-2
+		position relative
+		z-index 1
 	.lively-bar
 		background-color green-doapps
 		transition all 1s
 	.row-input-content
+		label
+			color #7d7d7d
+			
+	/*.row-input-content
 		top 0
 		label 
 			font-family font-2
 			font-size 22px
 			position relative
 			color #7d7d7d
-			margin-left 5px
+			margin-left 15px
 			transition .2s ease-out
-		/*img 
-			position relative
-			top 0*/
 		&.active
-			//top 0
-			/*img 
-				width 38px 
-				height auto
-				top 0*/
 			label 
 				font-size .8rem
-				transform translateY(-140%)
+				transform translateY(-140%)*/
 	button
 		margin-top -12px
 .courses-objectives
@@ -120,6 +122,17 @@
 		font-family font-2
 		color #070707
 		line-height 1.25
+	i 
+		using-flex(row, center, center)
+		text-align center
+		width 25px
+		height 25px
+		font-size 17px
+		color white
+		background-color green-doapps
+		border-radius 50%
+		padding 10px
+		font-weight bolder
 .courses-temary
 	width 100%
 	background-image url(../img/courses/courses-temary-background.jpg)
@@ -224,10 +237,9 @@
 	width 33.333%
 	max-width 290px
 	padding 0 20px
-	figure
-		img 
-			display block
-			margin 0 auto
+	i 
+		font-size 50px
+		color green-doapps
 	h6 
 		font-size 22px
 		font-family font-6
@@ -301,7 +313,7 @@
 		margin-top 3px
 .courses-cost-bottom
 	background-color white
-	padding 50px 86px 30px
+	padding 50px 35px 30px
 	text-align center
 	a 
 		margin-top 47px
@@ -320,9 +332,17 @@
 		padding-left 12px
 		text-align left
 		line-height 1.25
-	figure
-		img 
-			display block
+	i
+		using-flex(row, center, center)
+		text-align center
+		width 25px
+		height 25px
+		font-size 17px
+		color white
+		background-color green-doapps
+		border-radius 50%
+		padding 10px
+		font-weight bolder
 
 .courses-temary-row
 	.courses-temary-item
@@ -350,42 +370,45 @@
 			h5
 				font-size: 35px !important;
 	.courses-objectives-item
-		justify-content: center;
-		align-items: flex-start;
-		width: 100%;
-		max-width: initial;
+		justify-content center
+		align-items flex-start
+		width 100%
+		max-width initial
 	.courses-temary
 		.courses-temary-row
 			.courses-temary-item
-				width: 100%;
-				margin: 0 auto;
+				width 100%
+				margin 0 auto
+				margin-bottom 6px 
+				&:nth-last-child(1)
+					margin-bottom 0
 	.courses-teacher-item
-		width: 100%;
-		margin-bottom: 45px;
-		flex-direction: column;
+		width 100%
+		margin-bottom 45px
+		flex-direction column
 		.courses-teacher-description
-			width: auto;
-			padding-left: 0;
-			text-align: center;
-			margin-top: 30px;
+			width auto
+			padding-left 0
+			text-align center
+			margin-top 30px
 	.courses-feature
 		.courses-feature-row
-			flex-flow: column;
+			flex-flow column
 			.courses-feature-item
-				width: 100%;
-				margin: 0 auto;
-				margin-bottom: 45px;
+				width: 100%
+				margin: 0 auto
+				margin-bottom: 45px
 				&:last-child
 					margin-bottom: 0;
 	.courses-cost
 		.courses-cost-row
 			.courses-cost-item
-				width: 100%;
-				margin: 0 auto;
+				width 100%
+				margin 0 auto
 				&:nth-last-child(1)
-					margin: 45px auto 0;
+					margin 45px auto 0;
 	.courses-banner
-		height: 1000px;
+		height 1000px
 	    .courses-form
 			width: 100%;
 			margin: 0 auto;
@@ -394,8 +417,7 @@
 			width: 100%;
 			margin: 140px auto 40px;
 			h4
-				max-width: initial;
-
+				max-width: initial
 @media screen and (max-width 480px)
 	.courses-objectives, .courses-temary, .courses-teacher, .courses-feature, .courses-cost
 		padding: 60px 0;

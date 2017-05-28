@@ -19,27 +19,27 @@ html(lang='es')
 					h4 Programación para iOs
 					h5 Fecha de inicio
 					h6 20 de marzo
-				form.courses-form
+				form.courses-form.footer-form
 					h5 Inscríbete
 					.input-container
-						input(id='name').form-input
+						input(id='name', class='validate[required, custom[onlyLetterSp]]').form-input
 						.row-input-content
-							img(src='./client/img/footer/input-name.png', width='38', height='32')
+							i.icon-contacto-icon-nombre
 							label(for='name') ¿Cúal es tu nombre?
 						span.lively-bar
 					.input-container
-						input(id='name').form-input
+						input(id='email', class='validate[required,custom[email]]').form-input
 						.row-input-content
-							img(src='./client/img/footer/input-email.png', width='38', height='32')
-							label(for='name') ¿Cúal es tu correo?
+							i.icon-contacto-icon-correo
+							label(for='email') ¿Cúal es tu correo?
 						span.lively-bar
 					.input-container
-						input(id='name').form-input
+						input(id='tel', class='validate[required, custom[onlyNumberSp]]').form-input
 						.row-input-content
-							img(src='./client/img/footer/input-tel.png', width='38', height='32')
-							label(for='name') ¿Cúal es tu teléfono?
+							i.icon-contacto-icon-telefono
+							label(for='tel') ¿Cúal es tu teléfono?
 						span.lively-bar
-					button.g-btn.btn-green1 Comienza ahora
+					button.g-btn.btn-green1.button-form Comienza ahora
 		section.courses-objectives
 			.wancho
 				.g-title
@@ -48,29 +48,22 @@ html(lang='es')
 						span Objetivos
 				.courses-objectives-list
 					.courses-objectives-item
-						figure
-							img(src='./client/img/courses/courses-check.png' width='27px' height='27px')
+						i.icon-check
 						p Aprender las bases de la programación de aplicaciones nativas para iOS en Objective C utilizando como herramienta Xcode.
 					.courses-objectives-item
-						figure
-							img(src='./client/img/courses/courses-check.png' width='27px' height='27px')
+						i.icon-check
 						p Aprender las bases de la programación de aplicaciones nativas para iOS en Objective C utilizando como herramienta Xcode.
 					.courses-objectives-item
-						figure
-							img(src='./client/img/courses/courses-check.png' width='27px' height='27px')
-						p Aprender las bases de la programación de aplicaciones nativas para iOS en Objective C utilizando como herramienta Xcode.
-
-					.courses-objectives-item
-						figure
-							img(src='./client/img/courses/courses-check.png' width='27px' height='27px')
+						i.icon-check
 						p Aprender las bases de la programación de aplicaciones nativas para iOS en Objective C utilizando como herramienta Xcode.
 					.courses-objectives-item
-						figure
-							img(src='./client/img/courses/courses-check.png' width='27px' height='27px')
+						i.icon-check
 						p Aprender las bases de la programación de aplicaciones nativas para iOS en Objective C utilizando como herramienta Xcode.
 					.courses-objectives-item
-						figure
-							img(src='./client/img/courses/courses-check.png' width='27px' height='27px')
+						i.icon-check
+						p Aprender las bases de la programación de aplicaciones nativas para iOS en Objective C utilizando como herramienta Xcode.
+					.courses-objectives-item
+						i.icon-check
 						p Aprender las bases de la programación de aplicaciones nativas para iOS en Objective C utilizando como herramienta Xcode.
 		section.courses-temary
 			.wancho
@@ -86,7 +79,7 @@ html(lang='es')
 							h5
 								| MÓDULO 1
 								span
-									i.icon-angle-double-down
+									i.icon-chevron-thin-down
 						.courses-temary-item-bottom
 							ul
 								li.courses-temary-item-li Acceso a funcionalidades
@@ -101,7 +94,7 @@ html(lang='es')
 							h5
 								| MÓDULO 2
 								span
-									i.icon-angle-double-down
+									i.icon-chevron-thin-down
 						.courses-temary-item-bottom
 							ul
 								li.courses-temary-item-li Acceso a funcionalidades
@@ -116,7 +109,7 @@ html(lang='es')
 							h5
 								| MÓDULO 3
 								span
-									i.icon-angle-double-down
+									i.icon-chevron-thin-down
 						.courses-temary-item-bottom
 							ul
 								li.courses-temary-item-li Acceso a funcionalidades
@@ -155,18 +148,15 @@ html(lang='es')
 						span Obtienes?
 				.courses-feature-row
 					.courses-feature-item
-						figure
-							img(src='./client/img/courses/courses-feature-icon1.png' width='88px' height='75px')
+						i.icon-laptop
 						h6 Videoclases 100% online
 						p Contenidos 100% online. Disponible las 24 horas del dia
 					.courses-feature-item
-						figure
-							img(src='./client/img/courses/courses-feature-icon2.png' width='88px' height='75px')
+						i.icon-user-check
 						h6 Asesoría requerida
 						p Contenidos 100% online. Disponible las 24 horas del dia
 					.courses-feature-item
-						figure
-							img(src='./client/img/courses/courses-feature-icon3.png' width='88px' height='75px')
+						i.icon-files
 						h6 Certificación del curso
 						p Contenidos 100% online. Disponible las 24 horas del dia
 		section.courses-cost
@@ -185,16 +175,13 @@ html(lang='es')
 						.courses-cost-bottom
 							ul
 								li.courses-cost-bottom-li
-									figure
-										img(src='./client/img/courses/courses-check.png' width='27' height='27')
+									i.icon-check
 									h6 Grabaciones de clase
 								li.courses-cost-bottom-li
-									figure
-										img(src='./client/img/courses/courses-check.png' width='27' height='27')
+									i.icon-check
 									h6 Asesoría por mensaje
 								li.courses-cost-bottom-li
-									figure
-										img(src='./client/img/courses/courses-check.png' width='27' height='27')
+									i.icon-check
 									h6 70 videos disponibles
 							a(href='#').g-btn.btn-green1 Pagar
 					.courses-cost-item
@@ -206,16 +193,13 @@ html(lang='es')
 						.courses-cost-bottom
 							ul
 								li.courses-cost-bottom-li
-									figure
-										img(src='./client/img/courses/courses-check.png' width='27' height='27')
+									i.icon-check
 									h6 Grabaciones de clase
 								li.courses-cost-bottom-li
-									figure
-										img(src='./client/img/courses/courses-check.png' width='27' height='27')
+									i.icon-check
 									h6 Asesoría por mensaje y telefono
 								li.courses-cost-bottom-li
-									figure
-										img(src='./client/img/courses/courses-check.png' width='27' height='27')
+									i.icon-check
 									h6 70 videos disponibles
 							a(href='#').g-btn.btn-green1 Pagar
 		include ./blocks/footer.pug
@@ -224,5 +208,6 @@ html(lang='es')
 		script(src='./client/js/validationform/jquery.validationEngine.js')
 		script(src='./client/js/validationform/jquery.validationEngine-es.js')
 		script(src='./client/js/header.js')
+		script(src='./client/js/footer.js')
 		script(src='./client/js/courses.js')
 		script(src='./client/js/sweetalert.min.js')
