@@ -1,4 +1,8 @@
 function animations(){
+	var timer1_value = $('.timer1').text(), 
+		timer2_value = $('.timer2').text(),
+		timer3_value = $('.timer3').text();
+
 	if ($(window).width() >= 1024){
 		//Contador
 		var anima_item_b7 = $('.we-develop-bottom');
@@ -6,7 +10,7 @@ function animations(){
 			if (direction === 'down') {
 				$('.timer1').countTo({
 					from: 0,
-					to: 30,
+					to: timer1_value,
 					speed: 1500,
 					refreshInterval: 50,
 					onComplete: function(value) {
@@ -14,7 +18,7 @@ function animations(){
 				});
 				$('.timer2').countTo({
 					from: 0,
-					to: 50,
+					to: timer2_value,
 					speed: 1500,
 					refreshInterval: 50,
 					onComplete: function(value) {
@@ -22,7 +26,7 @@ function animations(){
 				});
 				$('.timer3').countTo({
 					from: 0,
-					to: 80,
+					to: timer3_value,
 					speed: 1500,
 					refreshInterval: 50,
 					onComplete: function(value) {
