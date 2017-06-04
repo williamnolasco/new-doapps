@@ -48,15 +48,22 @@
 	flex-flow row nowrap
 	position absolute
 	left 50%
-	bottom 63px
+	//bottom 63px
+	bottom 50px
 	-webkit-transform translateX(-50%)
 	transform translateX(-50%)
 	z-index 2
 	color white
+	animation move_scroll 0.7s infinite linear alternate
 	h6
 		font-family font-2
 		font-size 14px
 		margin-left 15px
+@keyframes move_scroll
+	0%
+		bottom 50px
+	100%
+		bottom 65px
 .client
 	padding 114px 0 60px
 	.wancho
