@@ -137,19 +137,62 @@
 	img-responsive()
 	margin 0 auto
 .new-service-list
-	outline 2px solid red
+	using-flex(row, flex-start, flex-start)
 .new-service-item
-	width 300px 
-	height 250px
+	using-flex(column, flex-start, center)
+	width 33.333%
+	max-width 300px 
+	height 210px
+	padding 10px 0 0
 	border 2px solid #070707
+	position relative
+	overflow hidden
+	margin-top 20px
+	&:nth-child(3n-1)
+		margin-left 20px
+		margin-right 20px
 	h2 
-		font-size 16px 
-.new-h2 
-	color #070707
+		font-size 17px
+		font-family font-2
+		line-height 1.2
+		text-align center
+		strong
+			font-family font-3
+			margin-left 5px
+	figure 
+		img 
+			display block
+	@media screen and (min-width 1025px)
+		&:hover 
+			.new-figure, .new-h2
+				opacity 0
+			.new-figure
+				transform translateY(-30px)
+			.new-h2
+				transform translateY(30px)
+			.new-service-item-hover
+				opacity 1
+				pointer-events auto
 .new-h2-hover
 	color white
+.new-h2, .new-figure
+	opacity 1
+	transform translateY(0)
+	transition all 0.5s ease-out
+.new-h2
+	color #070707
+	margin-top 5px
 .new-service-item-hover
-	display none
+	using-flex(column, flex-end, center)
+	width 100%
+	height 100%
+	background-color green-doapps
+	opacity 1
+	pointer-events none
+	padding-bottom 20px
+	position absolute
+	left 0
+	top 0
 @media screen and (max-width 1200px)
 	.service-image
 		width 45%

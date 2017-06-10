@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <title>Producto</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="./client/js/validationform/validationEngine.jquery.css">
+    <link rel="stylesheet" type="text/css" href="./client/css/icons.css">
+    <link rel="stylesheet" type="text/css" href="./client/css/header.css">
+    <link rel="stylesheet" type="text/css" href="./client/css/footer.css">
+    <link rel="stylesheet" type="text/css" href="./client/css/banner.css">
+    <link rel="stylesheet" type="text/css" href="./client/css/products.css">
+    <link rel="stylesheet" type="text/css" href="./client/css/service-detail.css">
+    <link rel="stylesheet" type="text/css" href="/client/css/sweetalert.min.css">
+  </head>
+  <body class="body-products">
+    <header>
+      <div class="wancho"><a class="link-logo" href="./"><i class="icon-logo_header"></i></a>
+        <!--
+        a.link-logo-mobile(href='./')
+        	img(src='./client/img/header/logo-mobile.png' width='43' height ='43' alt='DoApps')
+        --><i class="icon-menu open-menu-mobile"></i>
+        <ul class="list-items"><span class="movable-bar"></span>
+          <li><a class="item-link" href="servicios.html">Servicios</a></li>
+          <li><a class="item-link" href="casos-de-exito.html">Casos de Éxito</a></li>
+          <li><a class="item-link" href="productos.html">Productos</a></li>
+          <li><a class="item-link" href="equipo.html">Equipo</a></li>
+          <li><a class="item-link" href="blog.html">Blog</a></li>
+          <li><a class="item-link" href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+    </header>
+    <div class="g-banner" style="background-image: url(./client/img/service-detail/service-detail-background.jpg);">
+      <div class="wancho">
+        <div class="g-banner-content">
+          <h5>Desarrollamos productos</h5>
+          <h6>a medida de lo que<strong>requiera el cliente</strong></h6>
+        </div>
+      </div>
+    </div>
+    <section class="products-title">
+      <div class="wancho">
+        <div class="g-title">
+          <h5>Algunos de nuestros<span>mejores trabajos</span></h5>
+        </div>
+      </div>
+    </section>
+    <section class="service-detail-works">
+      <div class="wancho">
+        <div class="service-detail-item">
+          <div class="service-detail-left">
+            <div class="service-detail-background" style="background-image: url(./client/img/service-detail/service-detail-item-backgrund.jpg);"></div>
+            <figure><img src="./client/img/service-detail/service-detail-item-image.png" width="188" height="383"></figure>
+          </div>
+          <div class="service-detail-right">
+            <h5>Admisión UPC</h5>
+            <p>En junio de 2014 Apple anunció su nuevo lenguaje de<strong>programación Swift</strong>que ha tenido una recepción sorprendente por parte de la comunidad de de sus aplicaciones</p><a class="g-btn btn-transparent-green" href="detalle-producto.html">descubre más</a>
+          </div>
+        </div>
+        <div class="service-detail-item">
+          <div class="service-detail-left">
+            <div class="service-detail-background" style="background-image: url(./client/img/service-detail/service-detail-item-backgrund.jpg);"></div>
+            <figure><img src="./client/img/service-detail/service-detail-item-image.png" width="188" height="383"></figure>
+          </div>
+          <div class="service-detail-right">
+            <h5>Admisión UPC</h5>
+            <p>En junio de 2014 Apple anunció su nuevo lenguaje de<strong>programación Swift</strong>que ha tenido una recepción sorprendente por parte de la comunidad de de sus aplicaciones</p><a class="g-btn btn-transparent-green" href="detalle-producto.html">descubre más</a>
+          </div>
+        </div>
+        <div class="service-detail-item">
+          <div class="service-detail-left">
+            <div class="service-detail-background" style="background-image: url(./client/img/service-detail/service-detail-item-backgrund.jpg);"></div>
+            <figure><img src="./client/img/service-detail/service-detail-item-image.png" width="188" height="383"></figure>
+          </div>
+          <div class="service-detail-right">
+            <h5>Admisión UPC</h5>
+            <p>En junio de 2014 Apple anunció su nuevo lenguaje de<strong>programación Swift</strong>que ha tenido una recepción sorprendente por parte de la comunidad de de sus aplicaciones</p><a class="g-btn btn-transparent-green" href="detalle-producto.html">descubre más</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="footer-top">
+      <div class="wancho">
+        <div class="g-title">
+          <h5>Habla con<span>nosotros</span></h5>
+        </div>
+        <form class="footer-form">
+          <div class="input-container">
+            <input class="validate[required, custom[onlyLetterSp]] form-input" id="name">
+            <div class="row-input-content"><i class="icon-contacto-icon-nombre"></i>
+              <label for="name">¿Cúal es tu nombre?</label>
+            </div><span class="lively-bar"></span>
+          </div>
+          <div class="input-container">
+            <input class="validate[required,custom[email]] form-input" id="email">
+            <div class="row-input-content"><i class="icon-contacto-icon-correo"></i>
+              <label for="email">¿Cúal es tu correo?</label>
+            </div><span class="lively-bar"></span>
+          </div>
+          <div class="input-container">
+            <input class="validate[required, custom[onlyNumberSp]] form-input" id="tel">
+            <div class="row-input-content"><i class="icon-contacto-icon-telefono"></i>
+              <label for="tel">¿Cúal es tu teléfono?</label>
+            </div><span class="lively-bar"></span>
+          </div>
+          <div class="input-container select-container">
+            <select class="validate[required] form-select" id="product">
+              <option value="">¿Qué eres?</option>
+              <option value="empresa">Empresa</option>
+              <option value="emprendedor">Emprendedor</option>
+            </select>
+            <div class="row-input-content row-select-content"><i class="icon-contacto-icon-producto"></i></div><span class="lively-bar"></span>
+          </div>
+          <div class="input-container textarea-container">
+            <textarea class="validate[required] form-input" id="write"></textarea>
+            <div class="row-input-content"><i class="icon-contacto-icon-describe"></i>
+              <label for="write">Explícanos tu idea, proyecto, empresa o mejora para tu negocio.</label>
+            </div><span class="lively-bar"></span>
+          </div>
+          <button class="g-btn btn-transparent-white button-form" type="submit">Enviar</button>
+        </form>
+      </div>
+    </div>
+    <footer class="footer-bottom">
+      <div class="wancho"><img class="logo-footer" src="./client/img/footer/logo-footer.png" width="125" height="125">
+        <div class="footer-bottom-left">
+          <div class="footer-item"><i class="icon-footer-ubication"></i>
+            <h6>Av. Aramburú #856 Of.301 / Surquillo</h6>
+          </div>
+          <div class="footer-item"><i class="icon-footer-mail"></i><a href="mailto:hola@doapps.me">hola@doapps.me</a></div>
+          <div class="footer-item"><i class="icon-footer-telefono"></i>
+            <div class="footer-row-tel"><a href="tel:012883025">(+51) 288 3025</a><span>/</span><a href="tel:986075524">986 075 524</a></div>
+          </div>
+          <div class="footer-copyright">
+            <h5>&copy 2017 DoApps S.A.C Todos los derechos reservados</h5>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="./client/js/jquery1.8.3.min.js"></script>
+    <script src="./client/js/validationform/jquery.validationEngine.js"></script>
+    <script src="./client/js/validationform/jquery.validationEngine-es.js"></script>
+    <script src="./client/js/footer.js"></script>
+    <script src="./client/js/header.js"></script>
+    <script src="./client/js/sweetalert.min.js"></script>
+  </body>
+</html>
