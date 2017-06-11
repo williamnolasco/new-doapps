@@ -138,47 +138,61 @@
 	margin 0 auto
 .new-service-list
 	using-flex(row, flex-start, flex-start)
+	width 100%
+	max-width 970px
+	margin 40px auto 0
 .new-service-item
 	using-flex(column, flex-start, center)
-	width 33.333%
-	max-width 300px 
+	width calc(33.333% - 13.33333px)
+	max-width 310px 
 	height 210px
 	padding 10px 0 0
-	border 2px solid #070707
+	border 2px solid rgba(#070707, 0.5)
 	position relative
 	overflow hidden
 	margin-top 20px
+	transition all 0.6s ease-out
 	&:nth-child(3n-1)
 		margin-left 20px
 		margin-right 20px
 	h2 
+		width 100%
+		padding 0 15px
 		font-size 17px
 		font-family font-2
 		line-height 1.2
 		text-align center
+		letter-spacing -1px
 		strong
 			font-family font-3
-			margin-left 5px
+			margin 0 5px
 	figure 
 		img 
+			max-width 100%
+			height auto
 			display block
 	@media screen and (min-width 1025px)
 		&:hover 
+			border-color green-doapps
 			.new-figure, .new-h2
 				opacity 0
 			.new-figure
-				transform translateY(-30px)
+				transform translateY(-20px)
 			.new-h2
-				transform translateY(30px)
+				transform translateY(20px)
 			.new-service-item-hover
+				transform scale(1)
 				opacity 1
 				pointer-events auto
 .new-h2-hover
-	color white
+	color rgba(white, 0.8)
+	margin-bottom 5px
+	strong 
+		color white
 .new-h2, .new-figure
 	opacity 1
 	transform translateY(0)
-	transition all 0.5s ease-out
+	transition all 0.3s ease-out
 .new-h2
 	color #070707
 	margin-top 5px
@@ -187,12 +201,14 @@
 	width 100%
 	height 100%
 	background-color green-doapps
-	opacity 1
+	opacity 0
 	pointer-events none
-	padding-bottom 20px
+	padding-bottom 5px
 	position absolute
 	left 0
 	top 0
+	transform scale(1.1)
+	transition all 0.4s ease-out 0.3s
 @media screen and (max-width 1200px)
 	.service-image
 		width 45%
@@ -230,7 +246,7 @@
 			margin-top 3px
 @media screen and (max-width 768px)
 	.service-list 
-		padding 45px 0 25px
+		padding 45px 0
 		.g-title
 			h5 
 				margin-bottom 10px
@@ -256,9 +272,24 @@
 		h6 
 			font-size 18px
 			margin-top 3px
+	.new-service-item
+		height 180px
+		figure
+			width 100px
+			padding-top 8px
+	.new-service-list
+		margin-top 20px
 @media screen and (max-width 750px)
 	.service-item
 		width calc(50% - 10px)
+@media screen and (max-width 600px)
+	.new-service-item
+		width calc(50% - 10px)
+		&:nth-child(3n-1)
+			margin-right 0
+			margin-left 0
+		&:nth-child(even)
+			margin-left 20px
 @media screen and (max-width 570px)
 	.service-item
 		width 100%
@@ -277,7 +308,7 @@
 			h6 
 				line-height 1.6
 	.service-list 
-		padding 30px 0 10px
+		padding 30px 0
 		.g-title
 			h5 
 				margin-bottom 10px
@@ -306,6 +337,14 @@
 	.service-content-item
 		h2 
 			font-size 17.5px
+@media screen and (max-width 425px)
+	.new-service-item
+		width 100%
+		&:nth-child(even)
+			margin-left 0
+	.new-service-list
+		justify-content center
+		margin-top 10px
 @media screen and (max-width 375px)
 	.service-item
 		height 178px
